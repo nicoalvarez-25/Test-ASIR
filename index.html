@@ -18,8 +18,9 @@
             font-family: 'Segoe UI', system-ui, sans-serif;
             background-color: var(--bg); color: var(--text);
             margin: 0; padding: 40px 20px; min-height: 100vh;
-            display: flex; justify-content: center; align-items: flex-start;
-            box-sizing: border-box; overflow-y: auto;
+            display: flex; flex-direction: column; align-items: center;
+            justify-content: flex-start;
+            box-sizing: border-box; overflow-y: auto; 
         }
 
         .container {
@@ -105,11 +106,80 @@
         .feedback-desc { color: rgba(255, 255, 255, 0.85); font-size: 0.95em; }
 
         .nav-buttons { 
-            display: flex; justify-content: space-between; margin-top: 30px; 
-            padding-top: 20px; border-top: 1px solid #374151; gap: 10px; 
+            display: flex; justify-content: space-between; margin-top: 25px; 
+            padding-top: 20px; border-top: 1px solid #374151; gap: 10px; align-items: center;
         }
         .nav-controls { display: flex; gap: 10px; }
         .score-text { font-size: 20px; text-align: center; margin-bottom: 30px; line-height: 1.6; }
+
+        /* Ocultar iconos en escritorio */
+        .btn-icon {
+            display: none;
+        }
+
+
+        /* Mostrar iconos y ocultar texto en móvil */
+@media (max-width: 525px) {
+
+    /* Ocultar texto en móvil */
+    .btn-text {
+        display: none !important;
+    }
+
+    /* Colocar todo en columna */
+    .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    /* Fila de iconos: ⟳ ❮ ❯ */
+    .nav-controls {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    /* Iconos centrados y grandes */
+    .btn-icon {
+        display: inline-flex !important;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.9rem;
+        width: 54px;
+        height: 54px;
+        border-radius: 10px;
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        padding: 0;
+    }
+
+    /* Reiniciar con outline (como querías) */
+    #restart-icon {
+        background-color: transparent;
+        border: 2px solid var(--primary);
+        color: var(--text);
+    }
+
+    /* Salir al menú debajo */
+    #menu-btn {
+        order: 2;
+    }
+}
+
+
+            .footer {
+                text-align: center;
+                font-size: 0.85rem;
+                color: #777;
+                padding: 20px 0;
+                margin-top: auto;
+                width: 100%;
+            }
+
+
     </style>
 </head>
 <body>
@@ -142,14 +212,37 @@
             
             <div id="feedback-box" class="feedback"></div>
             
-            <div class="nav-buttons">
-                <button class="btn btn-outline" onclick="returnToBlocks()">Salir al Menú</button>
-                <div class="nav-controls">
-                    <button class="btn btn-outline" id="restart-btn" onclick="restartBlock()" style="display: none;">Reiniciar</button>
-                    <button class="btn btn-outline" id="prev-btn" onclick="prevQuestion()" style="display: none;">Anterior</button>
-                    <button class="btn" id="next-btn" onclick="nextQuestion()">Siguiente</button>
-                </div>
-            </div>
+    <div class="nav-buttons">
+
+    <!-- Botón salir al menú -->
+    <button class="btn btn-outline" id="menu-btn" onclick="returnToBlocks()">Salir al Menú</button>
+
+    <div class="nav-controls">
+
+        <!-- Botones de texto (PC) -->
+        <button class="btn btn-outline btn-text" id="restart-btn" onclick="restartBlock()" style="display: none;">Reiniciar</button>
+        <button class="btn btn-outline btn-text" id="prev-btn" onclick="prevQuestion()" style="display: none;">Anterior</button>
+        <button class="btn btn-text btn-text" id="next-btn" onclick="nextQuestion()">Siguiente</button>
+
+        <!-- Botones icono (móvil) -->
+        <button class="btn btn-icon" id="restart-icon" onclick="restartBlock()" style="display: none;">⟳</button>
+        <button class="btn btn-icon" id="prev-icon" onclick="prevQuestion()" style="display: none;">❮</button>
+        <button class="btn btn-icon" id="next-icon" onclick="nextQuestion()">❯</button>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
         </div>
 
         <div id="result-area">
@@ -2929,5 +3022,23 @@
 
         init();
     </script>
+    <!-- <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const isMobile = window.innerWidth <= 525;
+
+    if (isMobile) {
+        document.getElementById("prev-icon").style.display = "inline-flex";
+        document.getElementById("next-icon").style.display = "inline-flex";
+        document.getElementById("restart-icon").style.display = "inline-flex";
+    }
+});
+</script> -->
+
+
+    <footer class="footer">
+    © 2026 — Súper Entrenador ASIR · Nicolás Álvarez
+    </footer>
+
+
 </body>
 </html>
