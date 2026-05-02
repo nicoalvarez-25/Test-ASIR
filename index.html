@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicon.png" type="image/png">
-    <title>Súper Entrenador ASIR - ISO, Marcas, Hardware y Redes</title>
+    <title>Test 1º ASIR - ISO, Marcas, Hardware y Redes</title>
     <style>
         :root {
             --primary: #6366F1; --primary-hover: #4F46E5; 
@@ -183,7 +183,7 @@
 
     <div class="container">
         <div id="subject-area" style="display: block;">
-            <h1>Súper Entrenador ASIR</h1>
+            <h1>Test 1º ASIR</h1>
             <p class="subtitle">Selecciona la asignatura que quieres repasar hoy.</p>
             <div class="menu" id="subjects-container"></div>
         </div>
@@ -232,7 +232,7 @@
 
 </div>
 
-        </div>
+        
 
         <div id="result-area">
             <h1>¡Bloque Completado!</h1>
@@ -838,6 +838,427 @@
                     // 🔽 MANTÉN AQUÍ TUS PREGUNTAS DE HARDWARE 🔽
                 ]
             },
+
+            "MPO - Nube": {
+                "Bloque general": [
+                                
+                {
+                    enunciado: "Una empresa quiere migrar sus servidores desde una infraestructura on-premise a la nube. ¿Cuál es la principal ventaja de este cambio?",
+                    opciones: [
+                        "Garantizar la capacidad de cómputo sobredimensionada de forma permanente.",
+                        "Mantener el control del hardware y su mantenimiento.",
+                        "Incrementar los costes fijos asociados a la infraestructura tecnológica.",
+                        "Ajustar los recursos de cómputo según la demanda del negocio."
+                    ],
+                    correcta: 3,
+                    feedback: [
+                        "Incorrecto. En la nube no necesitas sobredimensionar permanentemente; el objetivo es ser elástico y evitar gastar de más en recursos ociosos.",
+                        "Incorrecto. Esa es una característica del modelo tradicional on-premise. En la nube, el proveedor es quien mantiene el hardware físico.",
+                        "Incorrecto. Al contrario, la nube suele cambiar los costes fijos (CAPEX) por costes variables operativos (OPEX) según lo que consumas.",
+                        "¡Correcto! La nube permite escalar recursos arriba o abajo según necesidad (elasticidad), pagando solo por lo que usas."
+                    ]
+                },
+                {
+                    enunciado: "¿Cuál de las siguientes opciones NO es una característica propia de la computación en la nube?",
+                    opciones: [
+                        "Autoservicio bajo demanda para gestionar recursos",
+                        "Acceso a los servicios a través de internet",
+                        "Solo se facturan los recursos utilizados",
+                        "Aprovisionamiento definido de antemano"
+                    ],
+                    correcta: 3,
+                    feedback: [
+                        "Incorrecto. El autoservicio bajo demanda (poder lanzar servidores sin intervención humana) es uno de los pilares del cloud.",
+                        "Incorrecto. El acceso ubicuo a través de la red es una característica fundamental de la nube.",
+                        "Incorrecto. El pago por uso (pay-as-you-go) es una de sus ventajas financieras más clave.",
+                        "¡Correcto! En el modelo tradicional on-premise es donde aprovisionas de forma fija. En cloud, los recursos se aprovisionan bajo demanda de forma ágil."
+                    ]
+                },
+                {
+                    enunciado: "¿Cuál es la principal diferencia entre los modelos SaaS, PaaS e IaaS en computación en la nube?",
+                    opciones: [
+                        "El grado de responsabilidad que asume el proveedor en el mantenimiento del hardware físico",
+                        "El nivel de control y gestión que tiene el usuario sobre la infraestructura y el software",
+                        "El tipo de licenciamiento del sistema operativo utilizado",
+                        "El rendimiento de las aplicaciones desplegadas"
+                    ],
+                    correcta: 1,
+                    feedback: [
+                        "Incorrecto. En los tres modelos, el mantenimiento del hardware físico es siempre responsabilidad del proveedor de la nube.",
+                        "¡Correcto! Cuanto más bajo el modelo (IaaS), más control y responsabilidad tiene el usuario (SO, red). En SaaS, el proveedor lo gestiona casi todo.",
+                        "Incorrecto. El licenciamiento puede variar, pero no es lo que define la arquitectura de estos tres grandes modelos de servicio.",
+                        "Incorrecto. El rendimiento depende del tamaño de los recursos que escojas, no de la clasificación técnica del modelo de servicio."
+                    ]
+                },
+                {
+                    enunciado: "¿Cuál de los siguientes ejemplos NO está correctamente asociado a su modelo de servicio en la nube?",
+                    opciones: [
+                        "Amazon AWS como ejemplo de IaaS",
+                        "Google Drive como ejemplo de SaaS",
+                        "Microsoft Azure como ejemplo de IaaS",
+                        "WordPress instalado como ejemplo de SaaS"
+                    ],
+                    correcta: 3,
+                    feedback: [
+                        "Incorrecto. AWS sí ofrece infraestructura base como servicio (máquinas virtuales, redes), siendo un líder en IaaS.",
+                        "Incorrecto. Google Drive es un software final listo para consumir por el usuario, por lo que es un claro ejemplo de SaaS.",
+                        "Incorrecto. Al igual que AWS, Azure es uno de los principales proveedores de IaaS del mercado.",
+                        "¡Correcto! Si tú instalas y gestionas tu propio servidor con WordPress, es autogestionado. Solo sería SaaS si usaras su versión alojada y gestionada por ellos (WordPress.com)."
+                    ]
+                },
+                {
+                    enunciado: "En un modelo IaaS (Infrastructure as a Service), ¿qué componentes son responsabilidad del usuario?",
+                    opciones: [
+                        "Aplicaciones, datos, sistema operativo y middleware",
+                        "Aplicaciones y datos",
+                        "Servidores físicos y red",
+                        "Virtualización y almacenamiento"
+                    ],
+                    correcta: 0,
+                    feedback: [
+                        "¡Correcto! En IaaS el proveedor gestiona el hardware base y la virtualización. El cliente gestiona desde el sistema operativo hacia arriba.",
+                        "Incorrecto. Eso describe mejor a un modelo PaaS, donde el proveedor te da ya el sistema operativo y entorno de ejecución preparado.",
+                        "Incorrecto. Los servidores físicos y el cableado de red son responsabilidad total del proveedor cloud.",
+                        "Incorrecto. La capa de hipervisor (virtualización) y los discos físicos los mantiene el proveedor, tú solo alquilas una parte virtual."
+                    ]
+                },
+                {
+                    enunciado: "¿Cuál es la principal diferencia entre una nube pública, una nube privada y una nube híbrida?",
+                    opciones: [
+                        "El tipo de sistema operativo que utilizan",
+                        "Quién es el propietario y cómo se comparten los recursos",
+                        "El número de usuarios que pueden acceder",
+                        "El lenguaje de programación de las aplicaciones"
+                    ],
+                    correcta: 1,
+                    feedback: [
+                        "Incorrecto. Cualquier modelo de despliegue cloud puede utilizar SO como Windows o Linux indistintamente.",
+                        "¡Correcto! La clave es la propiedad de la infraestructura y si el hardware se comparte con otros clientes (pública) o es dedicado en exclusiva (privada).",
+                        "Incorrecto. Una nube privada de una gran multinacional puede albergar a muchos más usuarios que una pequeña app en una nube pública.",
+                        "Incorrecto. El código y lenguaje de las aplicaciones es independiente del tipo de nube en la que se desplieguen."
+                    ]
+                },
+                {
+                    enunciado: "¿En qué situación tiene más sentido utilizar una estrategia multicloud?",
+                    opciones: [
+                        "Cuando una empresa quiere consolidar la infraestructura y reducir el número de servidores físicos.",
+                        "Cuando se utilizan servicios de un único proveedor para simplificar la gestión",
+                        "Cuando se combinan servicios de varios proveedores para evitar dependencia de uno solo",
+                        "Cuando se requiere una alta disponibilidad dentro de una misma región utilizando múltiples cuentas de un único proveedor cloud"
+                    ],
+                    correcta: 2,
+                    feedback: [
+                        "Incorrecto. Eso justifica migrar al cloud en general, pero no la necesidad de usar múltiples proveedores a la vez.",
+                        "Incorrecto. Justo lo contrario: multicloud implica usar más de un proveedor, lo que generalmente hace la gestión más compleja, no más simple.",
+                        "¡Correcto! Usar AWS, Azure o Google simultáneamente reduce el riesgo de quedar atrapado técnica y financieramente con un solo proveedor (vendor lock-in).",
+                        "Incorrecto. La alta disponibilidad se logra usando múltiples Zonas de Disponibilidad (AZs), no requiere usar múltiples proveedores."
+                    ]
+                },
+                {
+                    enunciado: "¿Cuál de las siguientes opciones es correcta?",
+                    opciones: [
+                        "Una región está formada por varias Availability Zones independientes entre sí",
+                        "Una Availability Zone contiene varias regiones dentro de ella",
+                        "Una región está en un único centro de datos físico",
+                        "Las regiones y las Availability Zones son exactamente lo mismo"
+                    ],
+                    correcta: 0,
+                    feedback: [
+                        "¡Correcto! Una Región (ej. Irlanda) es un área geográfica que contiene múltiples Availability Zones (AZs), siendo cada AZ uno o varios data centers aislados para evitar fallos en cadena.",
+                        "Incorrecto. La jerarquía es al revés: La Región es la zona más amplia y la AZ está dentro de ella.",
+                        "Incorrecto. Una región siempre abarca varios centros de datos (AZs) físicamente separados para garantizar tolerancia a desastres locales.",
+                        "Incorrecto. Son conceptos complementarios. La Región agrupa y la AZ aísla físicamente a nivel local."
+                    ]
+                },
+                {
+                    enunciado: "Una empresa que maneja datos personales quiere desplegar su aplicación en AWS. ¿Qué criterio puede ser determinante a la hora de elegir una región?",
+                    opciones: [
+                        "El tipo de hardware utilizado en los centros de datos",
+                        "La legislación y normativas de protección de datos aplicables en esa región",
+                        "El número de cuentas de usuario creadas en AWS",
+                        "La interfaz de la consola de AWS en ese país"
+                    ],
+                    correcta: 1,
+                    feedback: [
+                        "Incorrecto. El hardware está estandarizado por AWS a nivel global, no suele ser el motivo para elegir en temas de datos personales.",
+                        "¡Correcto! El cumplimiento legal (como el RGPD en Europa) es crítico y obliga a almacenar los datos dentro de fronteras geográficas concretas.",
+                        "Incorrecto. El número de cuentas lógicas no influye en la elección física de dónde se guardan los datos.",
+                        "Incorrecto. La consola web de AWS es global y puedes usarla en varios idiomas independientemente de dónde estén tus recursos."
+                    ]
+                },
+                {
+                    enunciado: "¿Por qué es importante elegir correctamente la región en la nube donde se despliega una aplicación?",
+                    opciones: [
+                        "Porque mejora la latencia al estar cerca de los usuarios, ayuda a cumplir normativas legales y puede optimizar costes",
+                        "Porque garantiza automáticamente la seguridad total de los datos y elimina la necesidad de copias de seguridad",
+                        "Porque permite usar cualquier región sin impacto en rendimiento, costes o cumplimiento legal",
+                        "Ninguna de las anteriores"
+                    ],
+                    correcta: 0,
+                    feedback: [
+                        "¡Correcto! La región elegida impacta directamente en la velocidad (latencia física), en la legalidad de los datos y en el dinero, ya que los precios varían.",
+                        "Incorrecto. AWS no elimina la necesidad de hacer copias de seguridad de tus datos, esa sigue siendo tu responsabilidad (Modelo de responsabilidad compartida).",
+                        "Incorrecto. Cambiar de región sí tiene impacto directo en el rendimiento (física pura) y en los costes.",
+                        "Incorrecto. La primera opción describe perfectamente los motivos principales."
+                    ]
+                },
+                {
+                    enunciado: "¿Cuál de las siguientes asociaciones entre un servicio de AWS y su función es correcta?",
+                    opciones: [
+                        "EC2: almacenamiento de objetos para guardar archivos",
+                        "S3: servicio de bases de datos relacionales gestionadas",
+                        "VPC: red privada donde se despliegan los recursos en la nube",
+                        "IAM: servicio para crear máquinas virtuales"
+                    ],
+                    correcta: 2,
+                    feedback: [
+                        "Incorrecto. EC2 (Elastic Compute Cloud) provee cómputo (servidores virtuales), no almacenamiento de objetos.",
+                        "Incorrecto. S3 (Simple Storage Service) es para guardar objetos (archivos), no bases de datos estructuradas (eso sería RDS).",
+                        "¡Correcto! VPC (Virtual Private Cloud) te permite crear tu propia red privada aislada dentro de AWS para lanzar tus recursos.",
+                        "Incorrecto. IAM gestiona usuarios, grupos y permisos de seguridad, no crea máquinas virtuales."
+                    ]
+                },
+                {
+                    enunciado: "¿Qué es el Free Tier de AWS y por qué es importante conocerlo?",
+                    opciones: [
+                        "Un conjunto de servicios gratuitos disponibles para los usuarios sin límites.",
+                        "Un periodo de prueba con límites de uso gratuitos que ayudan a aprender y evitar costes inesperados",
+                        "Un servicio que bloquea automáticamente cualquier gasto en la cuenta inesperado",
+                        "Una herramienta exclusiva para empresas grandes que optan a ventajas exclusivas."
+                    ],
+                    correcta: 1,
+                    feedback: [
+                        "Incorrecto. No es 'sin límites'; tiene cuotas mensuales muy estrictas (horas encendido, GB de espacio, peticiones).",
+                        "¡Correcto! Es una capa gratuita ideal para aprender probando servicios. Si te mantienes bajo los límites que te marcan, tu factura será de 0€.",
+                        "Incorrecto. ¡Mucho cuidado con esto! El Free Tier no bloquea el gasto, si te pasas de los límites, AWS te cobrará el exceso automáticamente.",
+                        "Incorrecto. El Free Tier está disponible automáticamente para cualquier usuario nuevo que registre una cuenta."
+                    ]
+                },
+                {
+                    enunciado: "¿Cuál es el objetivo principal de la Calculadora de precios de AWS (Pricing Calculator)?",
+                    opciones: [
+                        "Monitorizar el consumo real y generar facturas mensuales",
+                        "Crear y desplegar recursos directamente en AWS",
+                        "Estimar el coste de distintos servicios antes de desplegarlos y comparar configuraciones",
+                        "Aplicar automáticamente descuentos por uso prolongado"
+                    ],
+                    correcta: 2,
+                    feedback: [
+                        "Incorrecto. Para monitorizar facturas y gastos reales se utiliza la herramienta AWS Cost Explorer / Billing dashboard.",
+                        "Incorrecto. La calculadora es solo una herramienta de estimación vía web, no lanza ni aprovisiona recursos reales.",
+                        "¡Correcto! Su función es la previsión. Te permite crear presupuestos teóricos de arquitectura para saber cuánto te costará antes de encender nada.",
+                        "Incorrecto. Simula cómo quedarían los costes si aplicas descuentos, pero no los contrata de forma real en tu cuenta."
+                    ]
+                },
+                {
+                    enunciado: "¿Cuál de las siguientes limitaciones de la Calculadora de precios de AWS es correcta?",
+                    opciones: [
+                        "No figuran todos los servicios en la calculadora, lo que genera problemas en los presupuestos.",
+                        "No permite estimar más de un servicio a la vez",
+                        "La estimación puede no ser exacta, el uso real puede variar respecto a lo estimado",
+                        "Solo puede usarse con cuentas de pago"
+                    ],
+                    correcta: 2,
+                    feedback: [
+                        "Incorrecto. La inmensa mayoría de los servicios, especialmente los principales, están disponibles para estimar.",
+                        "Incorrecto. Puedes agrupar múltiples servicios para simular una infraestructura completa.",
+                        "¡Correcto! Es puramente una previsión matemática basada en tus datos introducidos. Picos de tráfico o almacenamiento inesperados cambiarán la factura real.",
+                        "Incorrecto. Es una herramienta pública en internet, no requiere siquiera tener cuenta creada para hacer estimaciones."
+                    ]
+                },
+                {
+                    enunciado: "Al realizar una estimación en la AWS Pricing Calculator, ¿qué combinación de factores suele tener un impacto más alto en el coste final?",
+                    opciones: [
+                        "Tipo de servicio, tamaño del recurso, horas de uso y región seleccionada",
+                        "Número de usuarios IAM, políticas de permisos y grupos asignados",
+                        "Zona de disponibilidad elegida, nombre del recurso y etiquetas aplicadas",
+                        "Ninguna de las anteriores"
+                    ],
+                    correcta: 0,
+                    feedback: [
+                        "¡Correcto! Qué compras, lo potente que es, cuánto tiempo lo enciendes y dónde lo enciendes físicamente son las cuatro variables que definen la factura.",
+                        "Incorrecto. El servicio IAM (gestión de identidades) por lo general es un servicio totalmente gratuito en AWS.",
+                        "Incorrecto. El precio varía por Región, pero no entre AZs de la misma región. Las etiquetas y nombres son solo metadatos gratuitos.",
+                        "Incorrecto. La primera opción define perfectamente los vectores de coste."
+                    ]
+                },
+                {
+                    enunciado: "¿Qué es Amazon EC2 dentro de los servicios de AWS?",
+                    opciones: [
+                        "Un servicio para crear y gestionar máquinas virtuales bajo demanda",
+                        "Un sistema de almacenamiento de archivos distribuido",
+                        "Un servicio de bases de datos gestionadas",
+                        "Un servicio de computación serverless, donde no se levantan servidores."
+                    ],
+                    correcta: 0,
+                    feedback: [
+                        "¡Correcto! EC2 (Elastic Compute Cloud) es la base de computación clásica (IaaS) para alquilar servidores virtuales en la nube.",
+                        "Incorrecto. Eso describe mejor a soluciones de almacenamiento como EFS o S3.",
+                        "Incorrecto. El servicio principal de bases de datos relacionales es Amazon RDS.",
+                        "Incorrecto. Computación sin servidor (serverless) es AWS Lambda. En EC2 sí ves, administras y gestionas el servidor virtual."
+                    ]
+                },
+                {
+                    enunciado: "¿Cuál es la función principal de Amazon S3?",
+                    opciones: [
+                        "Ejecutar aplicaciones sin necesidad de servidores",
+                        "Crear redes privadas virtuales en la nube",
+                        "Proporcionar almacenamiento de objetos escalable",
+                        "Gestionar usuarios y permisos"
+                    ],
+                    correcta: 2,
+                    feedback: [
+                        "Incorrecto. Ese es el propósito de AWS Lambda.",
+                        "Incorrecto. Eso lo hace Amazon VPC.",
+                        "¡Correcto! S3 almacena archivos como 'objetos' organizados en cubos (buckets). Muy usado para backups, imágenes estáticas y logs.",
+                        "Incorrecto. La gestión de identidad y accesos es responsabilidad de IAM."
+                    ]
+                },
+                {
+                    enunciado: "¿Qué es un usuario de IAM en AWS?",
+                    opciones: [
+                        "Un recurso que define permisos sobre otros servicios",
+                        "Una persona o aplicación que puede autenticarse en una cuenta de AWS",
+                        "Un conjunto de permisos reutilizables",
+                        "Un mecanismo para conectar cuentas entre regiones"
+                    ],
+                    correcta: 1,
+                    feedback: [
+                        "Incorrecto. Las reglas que definen permisos se denominan 'Políticas' (Policies).",
+                        "¡Correcto! Es una identidad dentro de AWS que tiene credenciales (contraseña web o access keys) para hacer login y operar en tu cuenta.",
+                        "Incorrecto. Eso describe mejor la función de un Grupo o un Rol de IAM.",
+                        "Incorrecto. Las conexiones de red recaen sobre Transit Gateway o VPC Peering, no sobre IAM."
+                    ]
+                },
+                {
+                    enunciado: "¿Qué es una política de IAM y en qué formato están escritas normalmente?",
+                    opciones: [
+                        "Un conjunto de reglas de red escritas en YAML",
+                        "Un usuario especial con permisos administrativos",
+                        "Un documento que define permisos sobre recursos y que está escrito en formato JSON",
+                        "Un rol que se asigna automáticamente a los servicios de AWS"
+                    ],
+                    correcta: 2,
+                    feedback: [
+                        "Incorrecto. Las reglas de red se configuran en Security Groups y NACLs, y las políticas IAM no se escriben habitualmente en YAML.",
+                        "Incorrecto. Un administrador es simplemente un usuario que tiene asociada la política 'AdministratorAccess', la política no es la persona.",
+                        "¡Correcto! Son los documentos técnicos que establecen qué acciones están permitidas o denegadas. Se estructuran siempre en bloques JSON.",
+                        "Incorrecto. Una política puede ser asignada a un Rol, pero no son lo mismo."
+                    ]
+                },
+                {
+                    enunciado: "Un usuario pertenece simultáneamente a los grupos EC2-Admin y S3-Support. Según el funcionamiento estándar, ¿qué acciones podrá realizar este usuario?",
+                    opciones: [
+                        "Solo podrá ver información de EC2 y S3, sin realizar cambios",
+                        "Podrá iniciar y detener instancias EC2 y leer objetos en Amazon S3",
+                        "Podrá administrar completamente EC2, S3 e IAM",
+                        "Ninguna de las anteriores"
+                    ],
+                    correcta: 1,
+                    feedback: [
+                        "Incorrecto. Si tiene capacidades de 'Admin' en el primer grupo, no estará limitado solo a lectura.",
+                        "¡Correcto! En AWS, si estás en varios grupos, los permisos se combinan y se suman. Obtendrá las capacidades de ambos grupos a la vez.",
+                        "Incorrecto. No recibe mágicamente permisos sobre IAM a menos que uno de esos dos grupos lo contemple expresamente en sus políticas.",
+                        "Incorrecto. La opción de suma de permisos (B) es la correcta."
+                    ]
+                },
+                {
+                    enunciado: "Dada una dirección IPv4 como 192.0.2.0, ¿cuál de las siguientes afirmaciones es correcta?",
+                    opciones: [
+                        "Cada número decimal de la dirección IPv4 se representa usando 4 bits",
+                        "Cada uno de los cuatro bloques de la dirección IPv4 se representa con 8 bits",
+                        "La dirección IPv4 completa se representa usando 16 bits",
+                        "El valor decimal máximo que puede tomar uno de los bloques es 512"
+                    ],
+                    correcta: 1,
+                    feedback: [
+                        "Incorrecto. Se utilizan 8 bits por bloque, no 4.",
+                        "¡Correcto! Una IPv4 tiene 4 bloques separados por puntos, llamados 'octetos' porque cada uno ocupa exactamente 8 bits de memoria.",
+                        "Incorrecto. 4 bloques de 8 bits suman un total de 32 bits de longitud para la IPv4.",
+                        "Incorrecto. Con 8 bits en código binario, el valor máximo posible es 255 (del 0 al 255 hay 256 valores)."
+                    ]
+                },
+                {
+                    enunciado: "¿Por qué fue necesario introducir el protocolo IPv6 frente a IPv4?",
+                    opciones: [
+                        "Porque IPv6 utiliza un formato de direcciones más legible que IPv4.",
+                        "Porque IPv4 no permite el uso de direcciones en formato hexadecimal.",
+                        "Porque el número de direcciones disponibles en IPv4 es insuficiente.",
+                        "Porque IPv6 sustituye completamente a los protocolos de enrutamiento."
+                    ],
+                    correcta: 2,
+                    feedback: [
+                        "Incorrecto. De hecho, el formato alfanumérico hexadecimal de IPv6 suele ser menos amigable a la vista humana que los decimales de IPv4.",
+                        "Incorrecto. Que IPv6 use hexadecimal es consecuencia de ser una dirección inmensamente más larga, pero no fue el motivo de su creación.",
+                        "¡Correcto! El espacio de IPs públicas de IPv4 (unos 4.300 millones) se agotó por la explosión de dispositivos conectados a nivel mundial.",
+                        "Incorrecto. Los protocolos de enrutamiento (como OSPF o BGP) se adaptaron a IPv6, no fueron sustituidos."
+                    ]
+                },
+                {
+                    enunciado: "¿Qué rango de direcciones IP representa la red 192.168.1.0/24?",
+                    opciones: [
+                        "Desde 192.168.1.0 hasta 192.168.1.255",
+                        "Desde 192.168.1.1 hasta 192.168.1.24",
+                        "Desde 192.168.0.0 hasta 192.168.255.255",
+                        "Desde 192.168.1.0 hasta 192.168.1.24"
+                    ],
+                    correcta: 0,
+                    feedback: [
+                        "¡Correcto! La máscara /24 congela los primeros tres octetos para identificar la red. Quedan 8 bits libres, permitiendo 256 direcciones (de la .0 a la .255).",
+                        "Incorrecto. Confunde el indicador del prefijo de red (/24) pensando que representa el número máximo de host disponible.",
+                        "Incorrecto. Ese inmenso rango correspondería a una máscara /16, donde solo los dos primeros octetos estuvieran bloqueados.",
+                        "Incorrecto. Vuelve a confundir la máscara /24 con la última IP válida del rango."
+                    ]
+                },
+                {
+                    enunciado: "¿Cuál de las siguientes opciones describe correctamente una función de una puerta de enlace a Internet (Internet Gateway) en una VPC?",
+                    opciones: [
+                        "Permitir la comunicación privada entre subredes dentro de la misma VPC sin acceso a Internet.",
+                        "Proporcionar acceso a Internet únicamente para instancias que no tienen direcciones IP públicas.",
+                        "Actuar como destino en las tablas de enrutamiento para el tráfico que debe salir a Internet.",
+                        "Ninguna de las anteriores."
+                    ],
+                    correcta: 2,
+                    feedback: [
+                        "Incorrecto. El tráfico interno de la VPC se enruta automáticamente por defecto gracias al router implícito (local), no requiere Internet Gateway.",
+                        "Incorrecto. Todo lo contrario: para que una instancia salga por el IGW necesita obligatoriamente una IP pública. Para salir sin IP pública se usa un NAT Gateway.",
+                        "¡Correcto! Es el componente que anclas a tu VPC y configuras en tus tablas de enrutamiento para dar salida al exterior hacia la red global.",
+                        "Incorrecto. La opción C es correcta."
+                    ]
+                },
+                {
+                    enunciado: "¿Qué significa permitir tráfico desde 0.0.0.0/0 en una regla de un grupo de seguridad de AWS?",
+                    opciones: [
+                        "Que solo se permite tráfico desde la red interna de la VPC",
+                        "Que se permite tráfico desde cualquier dirección IP",
+                        "Que únicamente se permite tráfico desde direcciones privadas",
+                        "Que se restringe el acceso a una única subred concreta"
+                    ],
+                    correcta: 1,
+                    feedback: [
+                        "Incorrecto. Para la red interna se utilizaría el rango CIDR específico de tu VPC (por ejemplo, 10.0.0.0/16).",
+                        "¡Correcto! El CIDR 0.0.0.0/0 es el comodín para 'todo Internet'. Abre la puerta de forma global, común para puertos HTTP/HTTPS de servidores web.",
+                        "Incorrecto. Incluye explícitamente todo Internet público, no se limita a rangos privados.",
+                        "Incorrecto. Para restingir a una subred, se indicaría el bloque CIDR concreto (ej. 192.168.1.0/24)."
+                    ]
+                },
+                {
+                    enunciado: "¿Cuál de las siguientes afirmaciones es correcta sobre los Security Groups y las Network ACL (NACL) en AWS?",
+                    opciones: [
+                        "Las Network ACL se aplican a nivel de instancia y los Security Groups a nivel de subred.",
+                        "Los Security Groups se aplican a nivel de instancia y las Network ACL a nivel de subred.",
+                        "Los Security Groups y las Network ACL se aplican exactamente al mismo nivel."
+                    ],
+                    correcta: 1,
+                    feedback: [
+                        "Incorrecto. Es justamente al revés.",
+                        "¡Correcto! Funciona como defensa en profundidad: la NACL protege el bloque entero del barrio (subred), mientras que el Security Group es el vigilante en la puerta de la casa (instancia EC2).",
+                        "Incorrecto. Operan a dos niveles arquitectónicos distintos. Las NACLs actúan antes en el flujo de red."
+                    ]
+                }
+            ]
+                            
+        },
             "Redes": {
                 "Bloque 1: Fundamentos OSI, Capa Física y Ethernet": [
                    {
@@ -2763,7 +3184,2695 @@
                     {enunciado: "¿Qué función tiene la restricción CHECK en SQL?", opciones: ["Validar reglas o condiciones sobre los datos", "Crear tablas", "Eliminar datos", "Insertar datos"], correcta: 0, feedback: ["¡Correcto! Impone reglas de negocio a nivel de base de datos. Por ejemplo: CHECK (Edad >= 18).", "Incorrecto.", "Falso.", "Incorrecto."]},
                     {enunciado: "¿Qué representa una fila dentro de una tabla relacional?", opciones: ["Columna", "Registro", "Tabla", "Clave"], correcta: 1, feedback: ["Incorrecto. Las columnas definen los atributos.", "¡Sí! Una fila (tupla o registro) contiene los datos concretos y completos de una única instancia o elemento (ej. el cliente Pepe).", "Falso.", "Incorrecto."]}
                 ]
+            },
+            "Itinerario Personal para la Empleabilidad (IPE)": {
+        "Tema 1: Prevención de Riesgos y Organismos": [
+            {
+                enunciado: "La siniestralidad laboral es un elemento muy importante a tener en cuenta de cara a proteger la salud de la población. ¿Sabrías decir cuántos accidentes de trabajo hay, aproximadamente, al año?",
+                opciones: [
+                    "Más de un millón",
+                    "Medio millón",
+                    "Doscientos cincuenta mil",
+                    "Trescientos Mil"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. No llega a cifras tan elevadas.",
+                    "¡Correcto! Medio millón.",
+                    "Incorrecto. La cifra es superior.",
+                    "Incorrecto. La cifra es superior."
+                ]
+            },
+            {
+                enunciado: "Marcos Urrutia, que es diseñador gráfico, ha tenido un corte en la muñeca derivado de realizar trabajos de carpintería. ¿Tendría la consideración de accidente o enfermedad profesional?",
+                opciones: [
+                    "Sería un accidente laboral",
+                    "Sería una enfermedad profesional",
+                    "Se trataría de una enfermedad profesional o de un accidente laboral dependiendo de si se ha producido de forma repentina o de si se ha generado de forma prolongada en el tiempo",
+                    "No sería ni enfermedad profesional ni accidente laboral."
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. El corte se produce haciendo trabajos de carpintería, no de diseñador gráfico.",
+                    "Incorrecto. El corte se produce haciendo trabajos de carpintería, no de diseñador gráfico.",
+                    "Incorrecto. El corte se produce haciendo trabajos de carpintería, no de diseñador gráfico.",
+                    "¡Correcto! No sería ni enfermedad profesional ni accidente laboral."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es la norma de mayor rango que recoge la protección de los trabajadores como algo fundamental?",
+                opciones: [
+                    "La Constitución",
+                    "El Estatuto de los Trabajadores",
+                    "La Ley de Prevención de Riesgos Laborales",
+                    "La Biblia"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! La Constitución es la norma de mayor rango en la jerarquía normativa.",
+                    "Incorrecto. La Constitución tiene mayor rango.",
+                    "Incorrecto. La Constitución tiene mayor rango.",
+                    "Incorrecto. No es una norma legal."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de las siguientes NO tendría la condición de accidente de trabajo?",
+                opciones: [
+                    "Loli, se rompe el codo como consecuencia de una caída a distinto nivel cuando subía las escaleras de la oficina.",
+                    "Gloria, tiene un accidente de coche cuando iba a casa desde el trabajo.",
+                    "Mar, le detectan una enfermedad derivada de la exposición a sustancias químicas en su trabajo",
+                    "León, profesor de profesión. Un alumno le hace un mataleón (es una llave de esas que te ponen a dormir con los angelitos)"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Esto se considera accidente de trabajo en el centro.",
+                    "Incorrecto. Esto se considera accidente 'in itinere' y es accidente de trabajo.",
+                    "¡Correcto! Esto tendría la condición de enfermedad profesional, no accidente de trabajo.",
+                    "Incorrecto. Las agresiones sufridas en el trabajo se consideran accidente."
+                ]
+            },
+            {
+                enunciado: "¿En quién recae la responsabilidad de velar por la protección de la salud de los trabajadores y evitar accidentes?",
+                opciones: [
+                    "Exclusivamente en el empresario",
+                    "Tanto en el empresario como en los trabajadores",
+                    "Exclusivamente a los trabajadores",
+                    "Exclusivamente a los representantes de los trabajadores"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Los trabajadores también tienen responsabilidades preventivas.",
+                    "¡Correcto! Tanto el empresario (obligación de proteger) como los trabajadores (obligación de cumplir las medidas) tienen responsabilidad.",
+                    "Incorrecto. El empresario tiene el deber principal de protección.",
+                    "Incorrecto. Es responsabilidad de empresarios y trabajadores."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de las siguientes NO tiene la condición de enfermedad laboral?",
+                opciones: [
+                    "C Tangana, es carpintero. Desarrolla una alergia incurable al pino.",
+                    "Mercedes, desarrolla síndrome del túnel carpiano como consecuencia de coser 12 horas al día en un taller de ropa.",
+                    "Luck, desarrolla lumbalgia crónica tras 15 años trabajando como jornalero recogiendo cebollas.",
+                    "Javi, enfermero, se lesiona el hombro entrenando cuando va a mover un paciente."
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Es una enfermedad profesional derivada de la exposición a agentes biológicos/químicos en su trabajo.",
+                    "Incorrecto. Es una enfermedad profesional provocada por posturas forzadas y movimientos repetitivos.",
+                    "Incorrecto. Es una enfermedad profesional provocada por sobreesfuerzos.",
+                    "¡Correcto! Se lesiona entrenando, no realizando las tareas propias de su puesto de trabajo."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de los siguientes NO es un derecho de los trabajadores en materia preventiva",
+                opciones: [
+                    "Recibir formación en materia preventiva",
+                    "Formular propuestas al empresario",
+                    "Vigilancia de su salud",
+                    "Usar adecuadamente los equipos de trabajo"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Es un derecho reconocido por ley.",
+                    "Incorrecto. Es un derecho de participación.",
+                    "Incorrecto. Es un derecho del trabajador.",
+                    "¡Correcto! Usar adecuadamente los equipos es una obligación (deber) del trabajador, no un derecho."
+                ]
+            },
+            {
+                enunciado: "¿A qué hay que dar prioridad a la hora de diseñar la prevención de riesgos laborales en una empresa?",
+                opciones: [
+                    "Eliminar los riesgos de raíz",
+                    "Comprar equipos de protección adecuados",
+                    "Instruir a los trabajadores adecuadamente",
+                    "Contratar un seguro médico que sea barato y a la vez bueno"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! El primer principio de la acción preventiva es evitar los riesgos en su origen.",
+                    "Incorrecto. La protección es subsidiaria a la prevención en origen.",
+                    "Incorrecto. La formación es importante, pero lo primero es eliminar el riesgo.",
+                    "Incorrecto. Un seguro médico actúa cuando el daño ya está hecho."
+                ]
+            },
+            {
+                enunciado: "¿Qué significan las siglas OIT?",
+                opciones: [
+                    "Organización independiente de trabajadores",
+                    "Organización para el tránsito internacional de trabajadores",
+                    "Organización Internacional del Trabajo",
+                    "Organización del trabajo obrero internacional"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Significa Organización Internacional del Trabajo.",
+                    "Incorrecto. Significa Organización Internacional del Trabajo.",
+                    "¡Correcto! Organización Internacional del Trabajo.",
+                    "Incorrecto. Significa Organización Internacional del Trabajo."
+                ]
+            },
+            {
+                enunciado: "¿De qué Organismo internacional forma parte la OIT?",
+                opciones: [
+                    "Unión Europea",
+                    "Unión de Pequeños Agricultores",
+                    "Organización de las Naciones Unidas",
+                    "Organización del Tratado del Atlántico Norte (OTAN)"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. La OIT es un organismo de la ONU.",
+                    "Incorrecto. La OIT es un organismo de la ONU.",
+                    "¡Correcto! Organización de las Naciones Unidas.",
+                    "Incorrecto. La OIT es un organismo de la ONU."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de los siguientes organismos tiene capacidad punitiva (es decir, puede poner sanciones que hacen mucha pupa al bolsillo)?",
+                opciones: [
+                    "La Inspección de Trabajo",
+                    "La Organización Mundial de la Salud",
+                    "La Fudación Europea para la Mejora de las Condiciones de Vida y de Trabajo",
+                    "La Agencia Europea para la Seguridad y Salud en el Trabajo"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! La Inspección de Trabajo vigila el cumplimiento de la normativa y tiene potestad sancionadora.",
+                    "Incorrecto. Emite recomendaciones, no tiene capacidad punitiva.",
+                    "Incorrecto. Es un organismo de investigación y divulgación.",
+                    "Incorrecto. Es un organismo de investigación y divulgación."
+                ]
             }
+        ],
+        "Tema 2: Técnicas Preventivas y Evaluación de Riesgos": [
+            {
+                enunciado: "¿Cuál de las siguientes medidas preventivas no pertenece al ámbito de la seguridad en el trabajo?",
+                opciones: [
+                    "Control de exposición.",
+                    "Protecciones en maquinaria.",
+                    "Señalización",
+                    "Formación en seguridad."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! El control de exposición pertenece a la especialidad de Higiene Industrial.",
+                    "Incorrecto. Pertenece a Seguridad en el trabajo.",
+                    "Incorrecto. Pertenece a Seguridad en el trabajo.",
+                    "Incorrecto. Pertenece a Seguridad en el trabajo."
+                ]
+            },
+            {
+                enunciado: "Un inspector de trabajo observa que, analizando las bajas laborales que hay en tu empresa, el 90 por ciento son derivadas de la insatisfacción laboral, desmotivación de los trabajadores, depresiones y acoso laboral. ¿Qué técnica de prevención debería aplicarse para prevenir dichas patologías?",
+                opciones: [
+                    "Seguridad en el trabajo",
+                    "Higiene industrial",
+                    "Ergonomía",
+                    "Psicología"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. La seguridad trata de evitar accidentes.",
+                    "Incorrecto. La higiene previene enfermedades profesionales por exposición a agentes.",
+                    "Incorrecto. La ergonomía adapta el puesto al trabajador.",
+                    "¡Correcto! La psicología (o psicosociología) se encarga de los riesgos organizacionales que generan estrés, acoso, etc."
+                ]
+            },
+            {
+                enunciado: "Las medidas de protección se clasificarían de la siguiente forma:",
+                opciones: [
+                    "Individuales y colectivas",
+                    "Generales y concretas",
+                    "Abstractas y generales",
+                    "Singulares y plurales"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Las medidas de protección se dividen en EPIs (individuales) y protecciones colectivas.",
+                    "Incorrecto. Esa no es la clasificación técnica correcta.",
+                    "Incorrecto. Esa no es la clasificación técnica correcta.",
+                    "Incorrecto. Esa no es la clasificación técnica correcta."
+                ]
+            },
+            {
+                enunciado: "En la empresa good mercancías, SLU, se almacenan bienes que se organizan utilizando vehículos de carga. ¿Qué medida no sería idónea para evitar atropellos que espachurren a trabajadores?",
+                opciones: [
+                    "Instalación de semáforos.",
+                    "Delimitar las zonas de tráfico.",
+                    "Controlar la velocidad de los vehículos.",
+                    "Equipos individuales de protección."
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Es una medida preventiva adecuada.",
+                    "Incorrecto. Es una medida preventiva adecuada.",
+                    "Incorrecto. Es una medida preventiva adecuada.",
+                    "¡Correcto! Los EPIs no evitan un atropello. Deben priorizarse las medidas organizativas y de protección colectiva."
+                ]
+            },
+            {
+                enunciado: "Los riesgos derivados de las condiciones ambientales (o medioambientales) de la empresa se clasifican en:",
+                opciones: [
+                    "Físicos, biológicos y químicos.",
+                    "Mecánicos, ambientales y psicológicos.",
+                    "Generales, particulares y concretos.",
+                    "Abstractos y concretos."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Son los tres grandes grupos de agentes higiénicos ambientales.",
+                    "Incorrecto. Esa no es la clasificación higiénica correcta.",
+                    "Incorrecto. Esa no es la clasificación técnica correcta.",
+                    "Incorrecto. Esa no es la clasificación técnica correcta."
+                ]
+            },
+            {
+                enunciado: "La evaluación de riesgos se centra en:",
+                opciones: [
+                    "Verificar si el riesgo se puede producir, al menos una vez cada mes.",
+                    "Comprobar la gravedad y la probabilidad de que ocurra un riesgo.",
+                    "Tener en cuenta la evolución de la técnica.",
+                    "Evitar los riesgos en su origen."
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. La frecuencia es solo una parte de la probabilidad.",
+                    "¡Correcto! Evaluar un riesgo consiste en cruzar la probabilidad de que ocurra con la severidad (gravedad) de sus consecuencias.",
+                    "Incorrecto. Es un principio preventivo, no la definición de evaluación.",
+                    "Incorrecto. Es un principio preventivo, no la definición de evaluación."
+                ]
+            },
+            {
+                enunciado: "¿Qué técnica de prevención se debería utilizar para ayudar a una persona que tiene problemas de hombro derivados del uso continuado del ratón?",
+                opciones: [
+                    "Seguridad en el trabajo.",
+                    "Higiene industrial",
+                    "Ergonomía",
+                    "Psicosociología"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. No es un problema de seguridad por accidente traumático.",
+                    "Incorrecto. No está expuesto a contaminantes.",
+                    "¡Correcto! La ergonomía estudia la adaptación del puesto (silla, ratón) a las características del trabajador para evitar trastornos musculoesqueléticos.",
+                    "Incorrecto. No es un riesgo organizacional."
+                ]
+            },
+            {
+                enunciado: "Según la Agencia Europea para la Seguridad y Salud en el trabajo, ¿Qué porcentaje de trabajadores se enfrentan a factores relacionados con el trabajo que puede afectar a su salud mental?",
+                opciones: [
+                    "20%",
+                    "45%",
+                    "15%",
+                    "10%"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. El porcentaje es mayor.",
+                    "¡Correcto! 45%.",
+                    "Incorrecto. El porcentaje es mayor.",
+                    "Incorrecto. El porcentaje es mayor."
+                ]
+            },
+            {
+                enunciado: "¿Cómo se denomina a la manifestación de agotamiento emocional, despersonalización y baja realización personal en el trabajo?",
+                opciones: [
+                    "Estrés laboral",
+                    "Mobbing",
+                    "Carga mental excesiva",
+                    "Bournout"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. El estrés es diferente, aunque puede derivar en burnout.",
+                    "Incorrecto. El mobbing es acoso psicológico en el trabajo.",
+                    "Incorrecto. Es una exigencia, no el síndrome en sí.",
+                    "¡Correcto! Es la definición clínica del Síndrome de Burnout (estar 'quemado')."
+                ]
+            },
+            {
+                enunciado: "En materia de prevención de riesgos laborales, siempre se debe priorizar",
+                opciones: [
+                    "Las medidas individuales de protección frente a las colectivas",
+                    "Las medidas de protección colectivas frente a las individuales",
+                    "Las medidas de protección frente a la evitación de los riesgos",
+                    "Las medidas de protección basadas en EPIs (equipos de protección individual)"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. La protección colectiva prima sobre la individual.",
+                    "¡Correcto! Uno de los principios de la acción preventiva es anteponer la protección colectiva a la individual.",
+                    "Incorrecto. Siempre se debe priorizar evitar el riesgo en origen.",
+                    "Incorrecto. Los EPIs son la última barrera."
+                ]
+            }
+        ],
+        "Tema 3: Plan de Emergencia y Primeros Auxilios": [
+            {
+                enunciado: "¿Cuál de los siguientes NO es un objetivo de los simulacros que deben efectuarse en todo plan de evacuación?",
+                opciones: [
+                    "Evaluar la efectividad del plan",
+                    "Formar y concienciar al personal",
+                    "Identificar y corregir deficiencias",
+                    "Aplicar las medidas disciplinarias correspondientes a aquellos trabajadores que no efectúen el simulacro de forma satisfactoria."
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Es un objetivo fundamental.",
+                    "Incorrecto. Es un objetivo fundamental.",
+                    "Incorrecto. Es un objetivo fundamental.",
+                    "¡Correcto! Los simulacros tienen un fin formativo y de mejora, no disciplinario."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de los siguientes NO es un medio de protección frente a emergencias?",
+                opciones: [
+                    "Equipos de detección",
+                    "Alarma contra incendios",
+                    "Extintores",
+                    "Simulacros"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Son medios técnicos de protección.",
+                    "Incorrecto. Son medios técnicos de protección.",
+                    "Incorrecto. Son medios técnicos de extinción.",
+                    "¡Correcto! Los simulacros son una actividad organizativa, no un medio físico o material de protección."
+                ]
+            },
+            {
+                enunciado: "La persona encargada de dirigir y supervisar la actuación que debe llevarse a cabo en una emergencia se denomina",
+                opciones: [
+                    "Jefe de servicio",
+                    "Jefe de intervención",
+                    "Jefe de planta",
+                    "Jefazo"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. No es la terminología del Plan de Emergencia.",
+                    "¡Correcto! El Jefe de Intervención (JI) dirige las operaciones de emergencia.",
+                    "Incorrecto. Es otro rol de menor responsabilidad en la evacuación.",
+                    "Incorrecto. No es una figura contemplada."
+                ]
+            },
+            {
+                enunciado: "Las señales que advierten de algún peligro tendrán una forma y color",
+                opciones: [
+                    "Triangular de color amarillo",
+                    "Redonda con borde rojo",
+                    "Redonda de color azul",
+                    "Cuadrada de color verde"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Las señales de advertencia son triangulares con fondo amarillo y bordes negros.",
+                    "Incorrecto. Esa forma corresponde a señales de prohibición.",
+                    "Incorrecto. Esa forma corresponde a señales de obligación.",
+                    "Incorrecto. Esa forma corresponde a señales de salvamento o socorro."
+                ]
+            },
+            {
+                enunciado: "La actualización de las señales de advertencia conforme a la nomenclatura actual es una actuación que debería llevarse a cabo",
+                opciones: [
+                    "Antes de emergencia",
+                    "Durante la emergencia",
+                    "Después de la emergencia",
+                    "Todas las respuestas son correctas"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Las instalaciones deben estar preparadas y señalizadas preventivamente antes de que ocurra nada.",
+                    "Incorrecto. Durante la emergencia no hay tiempo para actualizar señales.",
+                    "Incorrecto. Después ya es tarde.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "El mantenimiento de las instalaciones presentes en una empresa es una actuación que se debe llevar a cabo",
+                opciones: [
+                    "Antes de la emergencia",
+                    "Durante la emergencia",
+                    "Después de la emergencia",
+                    "En cualquier momento, incluso durante la propia emergencia"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! El mantenimiento es preventivo y debe realizarse antes para asegurar que todo funcione si hay una emergencia.",
+                    "Incorrecto. Durante la emergencia se usan las instalaciones, no se mantienen.",
+                    "Incorrecto. Después sirve para reparar, pero el mantenimiento preventivo es anterior.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es el primer paso en la regla PAS?",
+                opciones: [
+                    "Socorrer a la víctima",
+                    "Avisar a los servicios de emergencia",
+                    "Proteger al accidentado",
+                    "Realizar una evaluación médica"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Socorrer es el tercer paso (S).",
+                    "Incorrecto. Avisar es el segundo paso (A).",
+                    "¡Correcto! El primer paso es P (Proteger) el lugar y al accidentado para evitar nuevos accidentes.",
+                    "Incorrecto. No corresponde a la regla PAS."
+                ]
+            },
+            {
+                enunciado: "¿Qué significa la 'A' en la regla PAS?",
+                opciones: [
+                    "Asistir a la víctima",
+                    "Alertar a los servicios de emergencia especializados",
+                    "Analizar la situación",
+                    "Ayudar a los testigos"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Eso sería la 'S' (Socorrer).",
+                    "¡Correcto! La 'A' significa Avisar/Alertar a los servicios de emergencia (112).",
+                    "Incorrecto. Analizar se incluye en Proteger.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué es el triaje?",
+                opciones: [
+                    "Un método para transportar heridos.",
+                    "Un método para prevenir accidentes.",
+                    "Un método para categorizar heridos en situaciones donde el número es desconocido.",
+                    "Un método para identificar enfermedades."
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Es un método de clasificación, no de transporte.",
+                    "Incorrecto. Actúa tras el accidente.",
+                    "¡Correcto! Es el método para clasificar y priorizar la atención de múltiples víctimas.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué se debe hacer con una persona inconsciente que respira?",
+                opciones: [
+                    "No hacer nada",
+                    "Colocarla en posición lateral de seguridad",
+                    "Administrar RCP.",
+                    "Moverla a un lugar seguro"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Hay que actuar para evitar que se asfixie con su propia lengua o vómito.",
+                    "¡Correcto! La Posición Lateral de Seguridad (PLS) mantiene la vía aérea abierta y evita atragantamientos.",
+                    "Incorrecto. Si respira, no necesita RCP.",
+                    "Incorrecto. Moverla no asegura su vía aérea."
+                ]
+            },
+            {
+                enunciado: "¿Cuántas compresiones por minuto se deben realizar en la RCP?",
+                opciones: [
+                    "60-80",
+                    "80-100",
+                    "100-120",
+                    "120-140"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Es un ritmo demasiado lento.",
+                    "Incorrecto. Es un ritmo demasiado lento.",
+                    "¡Correcto! El ritmo adecuado es de 100 a 120 compresiones por minuto.",
+                    "Incorrecto. Es un ritmo demasiado rápido."
+                ]
+            },
+            {
+                enunciado: "¿Qué tipo de quemadura afecta solo la capa superficial de la piel?",
+                opciones: [
+                    "Tercer grado",
+                    "Segundo grado",
+                    "Primer grado",
+                    "Cuarto grado"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Afecta a todas las capas y tejidos subyacentes.",
+                    "Incorrecto. Afecta a epidermis y parte de la dermis (aparecen ampollas).",
+                    "¡Correcto! Las de primer grado solo afectan a la epidermis (enrojecimiento).",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué maniobra se usa en un atragantamiento?",
+                opciones: [
+                    "Maniobra de Heimlich",
+                    "Maniobra de Valsalva",
+                    "Maniobra de Epley",
+                    "Maniobra de Miller"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! La maniobra de Heimlich (compresiones abdominales) sirve para desobstruir la vía aérea.",
+                    "Incorrecto. Sirve para igualar presiones en el oído.",
+                    "Incorrecto. Trata el vértigo posicional.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es la postura ante hemorragia nasal?",
+                opciones: [
+                    "Acostado boca abajo",
+                    "Sentado cabeza adelante",
+                    "De pie",
+                    "Acostado boca arriba"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. No ayuda a controlar el sangrado.",
+                    "¡Correcto! Se debe inclinar la cabeza hacia adelante para evitar tragar la sangre y presionar la fosa nasal.",
+                    "Incorrecto. Estar de pie puede provocar mareos.",
+                    "Incorrecto. Provocaría que la sangre se tragase."
+                ]
+            },
+            {
+                enunciado: "Adulto inconsciente y no respira. ¿Qué haces?",
+                opciones: [
+                    "Dar agua",
+                    "Llamar al 112, abrir las vías aéreas y RCP",
+                    "Esperar especialistas",
+                    "Intentar despertarle"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. A un inconsciente nunca se le da de beber.",
+                    "¡Correcto! Es el protocolo de Soporte Vital Básico: alertar e iniciar RCP.",
+                    "Incorrecto. El tiempo es vital para la supervivencia cerebral.",
+                    "Incorrecto. Ya se ha comprobado que está inconsciente."
+                ]
+            },
+            {
+                enunciado: "Prioridad en múltiples víctimas:",
+                opciones: [
+                    "Quien grita más",
+                    "Heridas visibles",
+                    "Quien lo pida",
+                    "Peligro inmediato de muerte"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Quien grita al menos respira.",
+                    "Incorrecto. Puede haber lesiones internas graves no visibles.",
+                    "Incorrecto. No es criterio médico.",
+                    "¡Correcto! Se prioriza a quienes tienen lesiones con riesgo inminente de muerte pero son recuperables."
+                ]
+            },
+            {
+                enunciado: "Como actuarías en una herida con sangrado abundante:",
+                opciones: [
+                    "Limpiar con jabón.",
+                    "Antiséptico.",
+                    "Presión directa.",
+                    "Esperar a que baje."
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Lo primero es detener el sangrado.",
+                    "Incorrecto. Lo primero es detener el sangrado.",
+                    "¡Correcto! La presión directa sobre la herida es la medida principal para cohibir hemorragias.",
+                    "Incorrecto. Puede ser fatal."
+                ]
+            },
+            {
+                enunciado: "Una persona tragó un objeto y tose fuerte. ¿Qué hacemos?",
+                opciones: [
+                    "Dejar toser",
+                    "Golpes espalda",
+                    "Heimlich",
+                    "Dar agua"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Si tose fuerte (obstrucción leve), la tos es el mecanismo más efectivo, no debemos interferir.",
+                    "Incorrecto. Podría introducir el objeto más al fondo.",
+                    "Incorrecto. Solo se aplica en obstrucción grave (no tose ni respira).",
+                    "Incorrecto. Podría agravar la obstrucción."
+                ]
+            },
+            {
+                enunciado: "¿En qué caso se debe usar PLS?",
+                opciones: [
+                    "Inconsciente que respira.",
+                    "Inconsciente que no respira.",
+                    "Fractura.",
+                    "Quemaduras."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! La Posición Lateral de Seguridad mantiene la vía aérea despejada.",
+                    "Incorrecto. En este caso se requiere RCP.",
+                    "Incorrecto. Movilizarlo sin saber puede empeorar la fractura.",
+                    "Incorrecto. No tiene relación directa."
+                ]
+            },
+            {
+                enunciado: "Cuál es la secuencia correcta RCP adulto:",
+                opciones: [
+                    "2 ventilaciones / 15 compresiones",
+                    "30 compresiones / 2 ventilaciones",
+                    "15 compresiones / 2 ventilaciones",
+                    "2 ventilaciones y 30 compresiones"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Esa pauta es antigua o para niños por dos reanimadores.",
+                    "¡Correcto! La secuencia estándar para un reanimador es 30 compresiones seguidas de 2 ventilaciones.",
+                    "Incorrecto. Esa pauta es antigua o para niños por dos reanimadores.",
+                    "Incorrecto. Se empieza por las compresiones."
+                ]
+            },
+            {
+                enunciado: "Qué actuación forma parte de la Evaluación primaria:",
+                opciones: [
+                    "Verificar fracturas craneales.",
+                    "Comprobar si la persona presenta sangrado.",
+                    "Comprobar la consciencia, respiración y pulso.",
+                    "Comprobar si la persona tiene dolor."
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Es parte de la evaluación secundaria.",
+                    "Incorrecto. Es parte de la evaluación secundaria.",
+                    "¡Correcto! La evaluación primaria busca detectar si hay riesgo vital inminente comprobando signos vitales básicos.",
+                    "Incorrecto. Es parte de la evaluación secundaria."
+                ]
+            },
+            {
+                enunciado: "Cuál es el número de emergencias en España:",
+                opciones: [
+                    "911",
+                    "112",
+                    "999",
+                    "000"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Es el de USA.",
+                    "¡Correcto! El 112 es el número único de emergencias en toda Europa.",
+                    "Incorrecto. Es el de UK.",
+                    "Incorrecto. Es el de Australia."
+                ]
+            }
+        ],
+        "Tema 4: Derecho Laboral y Relaciones Laborales": [
+            {
+                enunciado: "¿Cuál es la norma básica que regula las relaciones laborales en España?",
+                opciones: [
+                    "Código Civil",
+                    "Ley General Tributaria",
+                    "Estatuto de los Trabajadores",
+                    "Estatuto Básico del Empleado Público"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Regula relaciones privadas generales.",
+                    "Incorrecto. Regula impuestos.",
+                    "¡Correcto! El Estatuto de los Trabajadores (ET) es la ley fundamental del derecho laboral.",
+                    "Incorrecto. Regula a los funcionarios."
+                ]
+            },
+            {
+                enunciado: "El Derecho del Trabajo regula:",
+                opciones: [
+                    "Solo las relaciones entre empresas",
+                    "Las relaciones entre empresarios y trabajadores",
+                    "Las relaciones entre consumidores y empresas",
+                    "Solo las relaciones con la Administración"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Eso lo regula el derecho mercantil.",
+                    "¡Correcto! El objeto del derecho laboral son las relaciones surgidas del contrato de trabajo entre empresa y trabajador.",
+                    "Incorrecto. Eso lo regula el derecho de consumo.",
+                    "Incorrecto. Eso lo regula el derecho administrativo."
+                ]
+            },
+            {
+                enunciado: "Para que exista relación laboral deben darse ciertos elementos. ¿Cuál de los siguientes es uno de ellos?",
+                opciones: [
+                    "Competencia empresarial",
+                    "Independencia",
+                    "Voluntariedad",
+                    "Autonomía"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. No es un requisito de la relación laboral.",
+                    "Incorrecto. En una relación laboral hay dependencia, no independencia.",
+                    "¡Correcto! El trabajo debe prestarse de forma voluntaria, libre.",
+                    "Incorrecto. En una relación laboral hay dependencia."
+                ]
+            },
+            {
+                enunciado: "Un trabajador presta sus servicios libremente sin imposición. ¿Qué elemento de la relación laboral se cumple?",
+                opciones: [
+                    "Dependencia",
+                    "Voluntariedad",
+                    "Remuneración",
+                    "Ajeneidad"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. La dependencia se refiere a estar bajo la dirección del empresario.",
+                    "¡Correcto! La ausencia de coacción define la voluntariedad.",
+                    "Incorrecto. Se refiere al pago salarial.",
+                    "Incorrecto. Se refiere a trabajar para los frutos y riesgos de otro."
+                ]
+            },
+            {
+                enunciado: "Cuando el trabajador está sometido a la organización del empresario se habla de:",
+                opciones: [
+                    "Remuneración",
+                    "Jerarquía normativa",
+                    "Ajenidad",
+                    "Dependencia"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! La dependencia (o subordinación) significa trabajar bajo el poder de dirección de la empresa."
+                ]
+            },
+            {
+                enunciado: "Cuando los beneficios y riesgos del negocio pertenecen al empresario hablamos de:",
+                opciones: [
+                    "Ajenidad",
+                    "Dependencia",
+                    "Personalidad",
+                    "Subordinación jurídica"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! La ajenidad implica que los frutos del trabajo (y los riesgos del negocio) son del empresario, no del trabajador.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de las siguientes situaciones no se considera relación laboral?",
+                opciones: [
+                    "Empleado administrativo en una empresa",
+                    "Trabajo voluntario en una ONG sin salario",
+                    "Dependiente en una tienda",
+                    "Trabajador contratado en una empresa"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Es laboral.",
+                    "¡Correcto! Al faltar la retribución (salario), no hay relación laboral. Es trabajo voluntario.",
+                    "Incorrecto. Es laboral.",
+                    "Incorrecto. Es laboral."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de los siguientes colectivos tiene una relación laboral excluida?",
+                opciones: [
+                    "Personal del hogar",
+                    "Alta dirección",
+                    "Funcionarios públicos",
+                    "Deportistas profesionales"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Es relación especial.",
+                    "Incorrecto. Es relación especial.",
+                    "¡Correcto! Los funcionarios se rigen por el Derecho Administrativo, están expresamente excluidos del ET.",
+                    "Incorrecto. Es relación especial."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de los siguientes casos se considera relación laboral especial?",
+                opciones: [
+                    "Funcionarios",
+                    "Deportistas profesionales",
+                    "Trabajo por amistad",
+                    "Trabajo familiar hasta segundo grado"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Es excluida.",
+                    "¡Correcto! Están dentro del derecho laboral pero tienen su normativa específica.",
+                    "Incorrecto. Es excluida.",
+                    "Incorrecto. Es excluida."
+                ]
+            },
+            {
+                enunciado: "Los trabajos realizados por amistad o buena vecindad se consideran:",
+                opciones: [
+                    "Relación laboral común",
+                    "Relación laboral especial",
+                    "Relación laboral excluida",
+                    "Relación funcional"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Están fuera del ámbito del derecho del trabajo.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Un administrador de una sociedad mercantil normalmente tiene una relación:",
+                opciones: [
+                    "Laboral común",
+                    "Laboral especial",
+                    "Excluida del ámbito laboral",
+                    "Funcionarial"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! El mero desempeño del cargo de consejero o administrador se excluye del ET.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Dentro de la jerarquía normativa laboral, ¿qué norma tiene mayor rango?",
+                opciones: [
+                    "Constitución",
+                    "Reglamento",
+                    "Contrato de trabajo",
+                    "Convenio colectivo"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! La Constitución Española es la norma suprema.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de las siguientes normas tiene rango de ley?",
+                opciones: [
+                    "Circular administrativa",
+                    "Real Decreto-ley",
+                    "Orden ministerial",
+                    "Instrucción"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Rango inferior.",
+                    "¡Correcto! Es una norma con rango de ley dictada por el Gobierno en caso de urgencia.",
+                    "Incorrecto. Rango de reglamento.",
+                    "Incorrecto. Rango inferior."
+                ]
+            },
+            {
+                enunciado: "El Estatuto de los Trabajadores es un ejemplo de:",
+                opciones: [
+                    "Norma con rango de ley",
+                    "Reglamento",
+                    "Tratado Internacional",
+                    "Uso y costumbre"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Es un Real Decreto Legislativo (norma con rango de ley).",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Los convenios colectivos forman parte de:",
+                opciones: [
+                    "Jurisprudencia",
+                    "Autonomía colectiva",
+                    "Reglamentos",
+                    "Derecho internacional"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Son fruto de la negociación entre representantes de trabajadores y empresarios.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Los usos y costumbres laborales se aplican cuando:",
+                opciones: [
+                    "Lo decide el empresario",
+                    "La ley no regula una situación",
+                    "El trabajador lo solicita",
+                    "Lo establece el contrato"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Tienen carácter subsidiario; solo se aplican en defecto de ley o convenio, o si éstos se remiten a la costumbre.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "La jurisprudencia laboral está formada por:",
+                opciones: [
+                    "Convenios colectivos",
+                    "Reglamentos",
+                    "Sentencias del Tribunal Supremo",
+                    "Órdenes ministeriales"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Las sentencias reiteradas del TS complementan el ordenamiento jurídico.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Las normas de la Unión Europea forman parte de:",
+                opciones: [
+                    "Fuentes externas del derecho laboral",
+                    "Autonomía colectiva",
+                    "Usos y costumbres",
+                    "Fuentes internas"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Proceden de organismos supranacionales, no nacionales.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de los siguientes no es un principio de aplicación de las normas laborales?",
+                opciones: [
+                    "Norma mínima",
+                    "Norma más favorable",
+                    "Principio de productividad",
+                    "In dubio pro operario"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Sí lo es.",
+                    "Incorrecto. Sí lo es.",
+                    "¡Correcto! No es un principio jurídico de aplicación de normas.",
+                    "Incorrecto. Sí lo es."
+                ]
+            },
+            {
+                enunciado: "El principio de norma mínima significa que:",
+                opciones: [
+                    "Solo se puede mejorar lo establecido en normas superiores",
+                    "Se aplican siempre las normas más antiguas",
+                    "La empresa decide qué norma aplicar.",
+                    "Las normas pueden empeorar la ley"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Las normas inferiores deben respetar los mínimos marcados por las superiores y solo pueden mejorarlos.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "El principio de norma más favorable se aplica cuando:",
+                opciones: [
+                    "La empresa quiere modificar el contrato",
+                    "Hay dos normas aplicables al mismo caso",
+                    "El trabajador cambia de empresa",
+                    "Hay dudas en una norma"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Ante la concurrencia de normas, se aplica la que, en su conjunto, beneficie más al trabajador.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "El principio in dubio pro operario significa que:",
+                opciones: [
+                    "Se interpreta la norma a favor del trabajador cuando hay duda",
+                    "Decide el empresario",
+                    "Se aplica siempre el convenio colectivo",
+                    "Se aplica la norma más antigua"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! 'En caso de duda, a favor del operario' (trabajador) en la interpretación de la norma.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "El principio de irrenunciabilidad de derechos implica que:",
+                opciones: [
+                    "El trabajador puede renuncia al salario mínimo",
+                    "El trabajador no puede renunciar a derechos reconocidos por la ley",
+                    "La empresa puede eliminar derechos si el trabajador acepta",
+                    "El trabajador puede renunciar a vacaciones"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Los derechos laborales reconocidos por ley o convenio son indisponibles por el trabajador.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Una empresa ofrece 35 días de vacaciones aunque el convenio establece 30. ¿Qué principio se aplica?",
+                opciones: [
+                    "Jerarquía normativa",
+                    "Norma mínima",
+                    "Condición más beneficiosa",
+                    "Usos y costumbres"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! La empresa ha otorgado una condición mejor que la exigible, que se consolida.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Si un trabajador tiene dos convenios aplicables y uno establece mejores condiciones salariales:",
+                opciones: [
+                    "Se aplica el más favorable al trabajador",
+                    "Se aplica el más antiguo",
+                    "Decide la empresa",
+                    "Se aplica el de menor rango"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Por el principio de norma más favorable.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Si una norma puede interpretarse de dos formas y una beneficia más al trabajador:",
+                opciones: [
+                    "Se aplica la más restrictiva",
+                    "Decide el empresario",
+                    "Se aplica la interpretación más favorable al trabajador",
+                    "Se aplica el convenio colectivo"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Por el principio in dubio pro operario.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Un trabajador firma un documento renunciando a sus vacaciones anuales. Según el derecho laboral:",
+                opciones: [
+                    "Es válido si lo firma voluntariamente",
+                    "No es válido por el principio de irrenunciabilidad",
+                    "Es válido si lo permite la empresa",
+                    "Es válido si lo autoriza el convenio"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Las vacaciones son un derecho irrenunciable reconocido legalmente.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Un hijo trabaja ocasionalmente en el negocio familiar conviviendo con los padres. Se considera:",
+                opciones: [
+                    "Relación laboral excluida",
+                    "Relación laboral común",
+                    "Relación laboral especial",
+                    "Relación funcionarial"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Los trabajos familiares (hasta 2º grado) con convivencia se presumen excluidos del ET.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Una persona vende productos para una empresa pero asume el riesgo económico de la operación. Se considera:",
+                opciones: [
+                    "Relación laboral común",
+                    "Relación laboral especial",
+                    "Relación laboral excluida",
+                    "Relación funcional"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Faltaría la nota de 'ajenidad', ya que asume el riesgo, comportándose como un mercantil/autónomo.",
+                    "Incorrecto."
+                ]
+            }
+        ],
+        "Tema 5: Contratos de Trabajo": [
+            {
+                enunciado: "¿Quiénes pueden firmar un contrato de trabajo según el Estatuto de los Trabajadores?",
+                opciones: [
+                    "Mayores de 16 años con permiso paterno",
+                    "Únicamente las personas que tengan 18 años",
+                    "Únicamente las personas que estén emancipadas",
+                    "Extranjeros residentes, únicamente"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! La capacidad de obrar en derecho laboral se adquiere a los 16 años (con permiso hasta los 18, salvo emancipación).",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Leopoldo ha conseguido la nacionalidad española, por lo que decide dejar su puesto de trabajo actual en una empresa que lo tenía contratado sin papeles y con condiciones mucho peores a las que indica el contrato de trabajo. Su jefe actual le avisa que, de no renovar el actual contrato, tendrá que dar aviso a las autoridades de la situación ilegal de la mujer de Leopoldo. Este decide firmar el contrato. ¿Sería dicho contrato válido?",
+                opciones: [
+                    "No, ya que le faltaría una causa válida.",
+                    "No, ya que carece de objeto.",
+                    "No, ya que carece de consentimiento.",
+                    "Sí, ya que Leopoldo venía prestando servicios en la empresa referida."
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Hay coacción/intimidación, lo que vicia el consentimiento, elemento esencial del contrato.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué tipo de contrato puede celebrarse verbalmente?",
+                opciones: [
+                    "Contrato a tiempo parcial.",
+                    "Contrato indefinido ordinario a jornada completa",
+                    "Contrato formativo",
+                    "Ninguno"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Como regla general pueden ser verbales, aunque cualquiera de las partes puede exigir que sea por escrito.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Clara es hija de un bibliotecario. Ha conseguido un trabajo temporal para cubrir una baja de maternidad, por una duración de 16 semanas. Su jefe, que es un poco descuidado no ha formalizado con ella el contrato por escrito. ¿Qué naturaleza tendría dicho contrato?",
+                opciones: [
+                    "Se considera nulo",
+                    "Se presume indefinido",
+                    "Pierde validez legal",
+                    "Ninguno de los anteriores"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! La falta de forma escrita (cuando se exige) hace que se presuma celebrado por tiempo indefinido y a jornada completa, salvo prueba en contrario.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué información debe incluir un contrato de trabajo?",
+                opciones: [
+                    "Duración",
+                    "Retribuciones",
+                    "Convenio colectivo de aplicación",
+                    "Indemnización en caso de despido"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Es información obligatoria para informar al trabajador de sus condiciones.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Un contrato de trabajo, genera:",
+                opciones: [
+                    "Derechos únicamente para el empleador.",
+                    "Obligaciones para el trabajador.",
+                    "Obligaciones mutuas.",
+                    "Ninguna de las anteriores."
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Es un contrato bilateral que genera derechos y deberes para ambas partes.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de los siguientes NO es un elemento necesario para que un contrato se considere válido?",
+                opciones: [
+                    "Consentimiento",
+                    "Objeto",
+                    "Causa",
+                    "Objeción"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Esencial.",
+                    "Incorrecto. Esencial.",
+                    "Incorrecto. Esencial.",
+                    "¡Correcto! Objeción no es un elemento contractual."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de las siguientes NO es una característica del objeto de los contratos?",
+                opciones: [
+                    "Debe ser lícito",
+                    "Deben ser posibles",
+                    "Deben ser determinados",
+                    "Deben ser indeterminados"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! El objeto (la prestación laboral) no puede ser algo abstracto o indeterminado."
+                ]
+            },
+            {
+                enunciado: "Leopolda ha firmado un contrato en la empresa de un amigo para cotizar lo suficiente para cobrar el paro. Sin embargo, no tiene intención de ir a trabajar. ¿Estaríamos ante un contrato válido?",
+                opciones: [
+                    "No, ya que le faltaría una causa válida.",
+                    "No, ya que carecería de objeto.",
+                    "No, ya que carecería de consentimiento.",
+                    "No, ya que no es por escrito."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Sería un contrato simulado. Faltaría la causa real del contrato (el intercambio de trabajo por salario).",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "A Lucía le han contratado para vender bolsitas de marihuana a la gente que pase a la tienda en la que está de dependienta. ¿Estaríamos ante un contrato válido?",
+                opciones: [
+                    "Sí, siempre que ella estuviera de acuerdo",
+                    "No, porque carece de un objeto válido",
+                    "Sí, ya que se dan los tres elementos: Consentimiento, causa y voluntariedad."
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! El objeto del contrato (vender drogas) es ilícito, luego el contrato no es válido.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué define esencialmente a un contrato de trabajo?",
+                opciones: [
+                    "La prestación de servicios voluntarios a cambio de salario",
+                    "La realización de un trabajo ocasional",
+                    "La colaboración entre empresas",
+                    "La cesión de trabajadores"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Prestación voluntaria, ajena, dependiente y retribuida.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuál NO es un elemento esencial del contrato de trabajo?",
+                opciones: [
+                    "Consentimiento",
+                    "Objeto",
+                    "Causa",
+                    "Forma escrita"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! La forma escrita no es esencial con carácter general, solo en modalidades específicas."
+                ]
+            },
+            {
+                enunciado: "El consentimiento en el contrato de trabajo debe ser:",
+                opciones: [
+                    "Presunto y tácito",
+                    "Libre y sin vicios",
+                    "Verbal obligatoriamente",
+                    "Revocable unilateralmente"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Sin error, violencia, intimidación o dolo.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "La causa del contrato de trabajo consiste en:",
+                opciones: [
+                    "La prestación laboral",
+                    "La finalidad económica de la empresa",
+                    "El intercambio de trabajo por salario",
+                    "La duración del contrato"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Es el fin objetivo que persiguen las partes al firmar.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Quién puede actuar como empresario en un contrato de trabajo?",
+                opciones: [
+                    "Solo personas físicas",
+                    "Solo empresas mercantiles",
+                    "Personas físicas, jurídicas o comunidades de bienes",
+                    "Solo autónomos"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! El empresario puede tener múltiples formas jurídicas.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Un contrato verbal es válido cuando:",
+                opciones: [
+                    "Nunca es válido",
+                    "Siempre que dure menos de un año",
+                    "Siempre que dure menos de 6 meses",
+                    "En contratos indefinidos"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! El contrato indefinido a jornada completa es de los pocos que puede ser verbal."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es contenido mínimo obligatorio de un contrato?",
+                opciones: [
+                    "Salario y vacaciones",
+                    "Duración y jornada",
+                    "Datos de las partes y tipo de contenido",
+                    "Todas las anteriores"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Todo ello debe figurar para cumplir con la obligación de informar al trabajador."
+                ]
+            },
+            {
+                enunciado: "¿Qué modalidad contractual es indefinida?",
+                opciones: [
+                    "Contrato por circunstancias de la producción",
+                    "Contrato de sustitución",
+                    "Contrato fijo discontinuo",
+                    "Contrato de relevo"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Es temporal.",
+                    "Incorrecto. Es temporal.",
+                    "¡Correcto! El fijo discontinuo es un contrato indefinido para trabajos intermitentes.",
+                    "Incorrecto. Suele ser temporal."
+                ]
+            },
+            {
+                enunciado: "El contrato fijo discontinuo se utiliza principalmente para:",
+                opciones: [
+                    "Trabajos permanentes continuos",
+                    "Trabajos estacionales o intermitentes",
+                    "Trabajos de sustitución",
+                    "Trabajos formativos"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Para trabajos que se repiten en fechas ciertas o inciertas pero no se prestan todo el año.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "El contrato fijo discontinuo debe formalizarse:",
+                opciones: [
+                    "De forma verbal",
+                    "De forma escrita",
+                    "Solo si dura más de un año",
+                    "Ante la autoridad laboral"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Exige forma escrita por su complejidad.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué contrato se utiliza para incrementos ocasionales e imprevisibles de actividad?",
+                opciones: [
+                    "Contrato de relevo",
+                    "Contrato de sustitución",
+                    "Contrato por circunstancias de la producción",
+                    "Contrato formativo"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Es su finalidad, cubrir picos de demanda imprevistos.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "La duración máxima del contrato por circunstancias imprevisibles es:",
+                opciones: [
+                    "3 meses",
+                    "6 meses ampliables por convenio",
+                    "Hasta 2 años",
+                    "90 días al año"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Máximo 6 meses, ampliable a 1 año si el convenio sectorial lo permite.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué indemnización corresponde al finalizar un contrato temporal por producción?",
+                opciones: [
+                    "No tiene indemnización",
+                    "8 días por año",
+                    "12 días por año trabajado",
+                    "20 días por año trabajado"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! A su término corresponde una indemnización de 12 días por año.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "El contrato por circunstancias previsibles puede celebrarse como máximo:",
+                opciones: [
+                    "60 días al año",
+                    "90 días al año",
+                    "120 días continuados",
+                    "6 meses"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Para situaciones ocasionales y previsibles, máximo 90 días en el año natural.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es una característica del contrato por sustitución?",
+                opciones: [
+                    "Genera indemnización al finalizar",
+                    "Siempre es a tiempo parcial",
+                    "Puede iniciar 15 días antes del comienzo de la sustitución",
+                    "Solo puede durar 6 meses"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Permite un solapamiento de hasta 15 días para que el sustituido forme al nuevo.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "En el contrato de sustitución es obligatorio indicar:",
+                opciones: [
+                    "El salario del sustituido",
+                    "El trabajador sustituido y la causa",
+                    "La duración exacta del contrato",
+                    "El convenio colectivo"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Es requisito formal indispensable identificar a quién sustituye y por qué.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "El contrato de relevo se celebra para:",
+                opciones: [
+                    "Sustituir bajas médicas",
+                    "Cubrir jubilación parcial",
+                    "Incrementos de producción",
+                    "Formación profesional"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Se asocia a otro trabajador de la empresa que reduce su jornada para acceder a la jubilación parcial.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "El trabajador relevista debe ser:",
+                opciones: [
+                    "Trabajador indefinido de la empresa",
+                    "Autónomo colaborador",
+                    "Trabajador sin experiencia, pero con el título habilitante",
+                    "Trabajador en situación de desempleo"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! O un trabajador de la empresa con contrato de duración determinada."
+                ]
+            },
+            {
+                enunciado: "En el contrato de relevo ordinario, la duración mínima es:",
+                opciones: [
+                    "6 meses",
+                    "1 año",
+                    "Hasta jubilación total",
+                    "Sin duración mínima"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Debe durar como mínimo el tiempo que le falte al sustituido para la jubilación total.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué caracteriza al contrato de formación en alternancia?",
+                opciones: [
+                    "Compatibiliza trabajo y formación reglada",
+                    "Solo puede durar 6 meses",
+                    "Exige titulación previa",
+                    "Es siempre a tiempo parcial"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Está pensado para alternar estudios (FP, universidad) con trabajo retribuido relacionado.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "La duración del contrato de formación en alternancia es:",
+                opciones: [
+                    "Entre 6 meses y 1 año",
+                    "Sin límite",
+                    "Máximo 1 año",
+                    "Entre 3 meses y 2 años"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Mínimo 3 meses, máximo 2 años."
+                ]
+            },
+            {
+                enunciado: "La retribución del contrato de formación en alternancia el primer año será como mínimo:",
+                opciones: [
+                    "50% del salario",
+                    "60% del salario fijado en convenio",
+                    "75% del salario mínimo",
+                    "El SMI íntegro"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Mínimo 60% el primer año (y 75% el segundo) proporcional al tiempo de trabajo.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué requisito NO es necesario para el contrato de formación en alternancia?",
+                opciones: [
+                    "Plan formativo individual",
+                    "Formalización escrita",
+                    "Titulación previa",
+                    "Alternancia real trabajo-formación"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Justamente carece de titulación, es para obtenerla.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "El contrato para la obtención de la práctica profesional requiere:",
+                opciones: [
+                    "Estar desempleado",
+                    "Poseer una titulación reciente",
+                    "No haber trabajado nunca",
+                    "Ser menor de 25 años"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Haber obtenido título universitario o FP en los últimos 3 años (o 5 si es persona con discapacidad).",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "La duración del contrato de práctica profesional es:",
+                opciones: [
+                    "Entre 6 meses y 1 año",
+                    "Entre 3 meses y 2 años",
+                    "Siempre 1 año",
+                    "Sin límite"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Mínimo 6 meses, máximo 1 año.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "La retribución del contrato de práctica profesional:",
+                opciones: [
+                    "Puede ser inferior al SMI",
+                    "Es la fijada en convenio y nunca inferior al contrato en alternancia",
+                    "Es siempre el SMI",
+                    "Es libremente pactada"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Lo que fije el convenio sin que en ningún caso pueda ser inferior a la retribución mínima del de alternancia ni al SMI proporcional.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Un contrato a tiempo parcial se caracteriza por:",
+                opciones: [
+                    "Jornada inferior a la de un trabajador comparable a tiempo completo",
+                    "Prohibición de horas complementarias",
+                    "Ser siempre indefinido",
+                    "No poder ser escrito"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Su característica principal es prestar servicios un número de horas inferior a la jornada completa normal.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Las horas complementarias pactadas solo pueden realizarse en:",
+                opciones: [
+                    "No pueden realizarse en ningún caso.",
+                    "Contratos a tiempo parcial indefnidos",
+                    "Todos los contratos",
+                    "Solo contratos formativos"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Requieren contrato a tiempo parcial con jornada no inferior a 10 horas semanales.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Las Empresas de Trabajo Temporal (ETT):",
+                opciones: [
+                    "Ceden trabajadores",
+                    "No aplican convenios colectivos",
+                    "Sustituyen a la empresa usuaria",
+                    "Contratan y ceden trabajadores a empresas usuarias"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Es incompleto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Esa es su actividad legal: contratar a un trabajador para cederlo temporalmente a otra empresa."
+                ]
+            }
+        ],
+        "Tema 7: Modificación, Suspensión y Extinción del Contrato": [
+            {
+                enunciado: "La movilidad funcional es",
+                opciones: [
+                    "Un cambio en tus funciones que se manifiesta en que debes llevar a cabo las de un grupo superior, exclusivamente.",
+                    "Un cambio en tus funciones que se manifiesta en que debes llevar a cabo las de un grupo inferior, exclusivamente.",
+                    "Un cambio en tus funciones que se manifiesta en que debes llevar a cabo las de un grupo equivalente, exclusivamente.",
+                    "Un cambio en tus funciones que se manifiesta en que debes llevar a cabo las de un grupo superior, equivalente o inferior."
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! El empresario puede ordenar cambios de funciones tanto hacia arriba, como hacia abajo o en el mismo nivel."
+                ]
+            },
+            {
+                enunciado: "Lucas ha sido objeto de una movilidad funcional. Le han ordenado que lleve a cabo tareas de una categoría inferior a la que él desempeña. ¿Durante cuánto tiempo podrán mantenerle en esas funciones?",
+                opciones: [
+                    "El tiempo indispensable.",
+                    "El tiempo suficiente.",
+                    "El tiempo que sea necesario a juicio del empresario.",
+                    "El tiempo que permanezca la necesidad."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! La movilidad descendente solo puede durar el tiempo imprescindible y debe estar justificada por necesidades urgentes.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Luis ha estado desempeñando funciones de una categoría superior a la suya y le ha cogido gusto al puesto. Te pregunta si podría quedarse haciendo esas funciones, ya que le gustan más que lo que venía haciendo.",
+                opciones: [
+                    "Sí, siempre que haya permanecido en ese puesto 8 meses en un plazo de 24 meses.",
+                    "Sí, siempre que permanezca en ese puesto 6 meses en un plazo de 24 meses.",
+                    "Sí, siempre que permanezca en ese puesto al menos seis meses, en un plazo de 48 meses.",
+                    "Sí, 20 días por año trabajado con un máximo de 12 mensualidades."
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Si realiza funciones superiores más de 6 meses en un año u 8 en dos años, puede reclamar el ascenso (o la vacante).",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Leopoldo ha sido llamado por el jefe. Tiene una buena noticia para él. Le han concedido un traslado a la provincia de Jaén. Nuestro amigo Leocadio vive en Zaragoza y no tiene ninguna intención de aceptar el cambio. ¿Podría irse de la empresa?",
+                opciones: [
+                    "Sí, con una indemnización de 20 días por cada año trabajado con un máximo de 20 mensualidades.",
+                    "Sí, con una indemnización de 20 días por cada año trabajado con un máximo de 9 mensualidades.",
+                    "Sí, con una indemnización de 33 días por cada año trabajado con un máximo de 20 mensualidades.",
+                    "Sí, con una indemnización de 20 días por cada año trabajado con un máximo de 12 mensualidades."
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Ante un traslado definitivo con cambio de residencia, el trabajador puede extinguir el contrato con indemnización de 20 días/año (máximo 12 meses)."
+                ]
+            },
+            {
+                enunciado: "¿Podría Leopoldo irse directamente del trabajo cuando le den la noticia?",
+                opciones: [
+                    "Sí, siempre que avise con 20 días de antelación al jefe.",
+                    "Sí, siempre que avise con 15 días de antelación al jefe.",
+                    "No, ya que debe acudir primero al juzgado para que su contrato sea resuelto por el juez.",
+                    "No, primero tiene que pegarle una paliza al jefe."
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Si no acepta el traslado y quiere la indemnización, debe extinguir el contrato por esa causa; si impugna el traslado, debe hacerlo por vía judicial.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Si Leopoldo decidiera impugnar la decisión por la que se le quiere trasladar, ¿en qué plazo debería hacerlo?",
+                opciones: [
+                    "20 días",
+                    "15 días",
+                    "10 días",
+                    "5 días"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! El plazo para impugnar traslados (y modificaciones sustanciales) es de 20 días hábiles.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "En la empresa de Luis está habiendo muchos cambios... ¿Cuál de los siguientes NO le daría derecho a poner fin a su contrato de trabajo?",
+                opciones: [
+                    "Jornada de trabajo",
+                    "Régimen de trabajo a turnos",
+                    "Horario",
+                    "Sistema de rendimiento"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Es causa justificativa.",
+                    "Incorrecto. Es causa justificativa.",
+                    "Incorrecto. Es causa justificativa.",
+                    "¡Correcto! El cambio en el sistema de rendimiento no da derecho a extinción indemnizada (solo jornada, horario, turnos, salario, funciones)."
+                ]
+            },
+            {
+                enunciado: "Si Luis decidiera irse de la empresa fruto de las modificaciones sustanciales del contrato de trabajo referidas en la pregunta anterior ¿tendría derecho a alguna indemnización?",
+                opciones: [
+                    "Sí, 20 días por año trabajado con un máximo de 9 mensualidades.",
+                    "Sí, 33 días por año trabajado con un máximo de 24 mensualidades.",
+                    "Sí, 15 días por año trabajado con un máximo de 20 mensualidades.",
+                    "No le corresponde ninguna indemnización."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Por MSCT perjudicial le corresponden 20 días/año con tope de 9 mensualidades.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Luis ha descubierto que su jefe le ha modificado las condiciones sustanciales de su contrato de trabajo para afectar a su dignidad, ya que le tiene manía. ¿Qué indemnización le correspondería en tal caso?",
+                opciones: [
+                    "Ninguna, fastídiate, Luis.",
+                    "50.000 euros",
+                    "270 días de sueldo, en todo caso.",
+                    "33 días por año trabajado con un máximo de 24 mensualidades (o 720 días)"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Si la modificación menoscaba su dignidad, puede solicitar extinción judicial por incumplimiento empresarial (art. 50 ET) con indemnización de despido improcedente."
+                ]
+            },
+            {
+                enunciado: "¿La suspensión del contrato de trabajo implica la extinción del contrato?",
+                opciones: [
+                    "Sí",
+                    "No",
+                    "A veces",
+                    "En ocasiones"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! La suspensión es temporal. Paraliza las obligaciones (trabajar y pagar) pero el contrato sigue vivo.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Señala la respuesta INCORRECTA en relación a la excedencia forzosa por ejercicio de cargo público.",
+                opciones: [
+                    "Su duración puede ser, como máximo, de cuatro años.",
+                    "La antigüedad computa.",
+                    "Se conserva el mismo puesto de trabajo.",
+                    "El trabajador debe reincorporarse en el plazo de un mes desde que finaliza la causa por la que debe permanecer en excedencia forzosa."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Esta afirmación es falsa. La excedencia forzosa por cargo público dura lo que dure el ejercicio del cargo, sin límite de años.",
+                    "Incorrecto. Es verdadera.",
+                    "Incorrecto. Es verdadera.",
+                    "Incorrecto. Es verdadera."
+                ]
+            },
+            {
+                enunciado: "Lupecio se ha ido a Australia con su nueva novia aborigen. Para ello tiene que solicitar una excedencia voluntaria. A los 7 meses rompen su relación porque él no se adapta a la cultura local. Tras unos meses se vuelve a enamorar. Esta vez de una norcoreana. ¿Podría disfrutar Lupecio de una excedencia voluntaria de nuevo?",
+                opciones: [
+                    "Sí, cuando transcurran 3 años desde el final de la anterior excedencia.",
+                    "Sí, cuando transcurran 2 años desde el final de la anterior excedencia.",
+                    "Sí, siempre que sea amor verdadero.",
+                    "Sí, siempre que transcurran cuatro años desde el final de la anterior excedencia."
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Deben pasar al menos 4 años desde el fin de la excedencia voluntaria anterior para poder pedir otra."
+                ]
+            },
+            {
+                enunciado: "Leandro ha tenido un hijo, está muy feliz, aunque duerme menos que un búho. ¿Cuál será el plazo máximo de la excedencia que puede coger?",
+                opciones: [
+                    "1 año",
+                    "2 años",
+                    "3 años",
+                    "4 años"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! La excedencia por cuidado de hijo es como máximo de 3 años desde el nacimiento.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Leandro está preocupado, confunde todos los tipos de excedencias que hay. Señala la respuesta INCORRECTA respecto a la excedencia por cuidado de hijo.",
+                opciones: [
+                    "Puede solicitarla tanto el padre como la madre",
+                    "Durante el primer año se reserva el puesto de trabajo",
+                    "Computa la antigüedad",
+                    "Hasta que no transcurren cuatro años no se puede disfrutar de otra excedencia por cuidado de hijos."
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Es verdadera.",
+                    "Incorrecto. Es verdadera.",
+                    "Incorrecto. Es verdadera.",
+                    "¡Correcto! Esta afirmación es falsa. No hay que esperar 4 años, un nuevo hijo da derecho a una nueva excedencia que pone fin a la que se viniera disfrutando."
+                ]
+            },
+            {
+                enunciado: "Liberto tiene una ferretería desde los 15 años. Ahora, con 95 años ha decidido jubilarse. Sus tres trabajadores se preguntan si les correspondería algún tipo de abono por parte del jefe.",
+                opciones: [
+                    "Sí, un mes de salario.",
+                    "Sí 22 días por año trabajado.",
+                    "Sí, 35 días por año trabajado.",
+                    "Sí, 100 días por año trabajado."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Por extinción del contrato por jubilación, muerte o incapacidad del empresario, corresponde 1 mes de salario.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Liborio tiene un jefe un poco olvidadizo. Lleva varios meses sin cobrar. ¿Tendría derecho a que se pusiera fin a su contrato de trabajo?",
+                opciones: [
+                    "Sí, siempre que haya dejado de cobrar durante tres meses aunque no sean consecutivos.",
+                    "No, ya que únicamente se permite poner fin al contrato de trabajo en caso de retrasos.",
+                    "Sí, siempre que haya dejado de cobrar durante un mes.",
+                    "Sí, siempre que haya dejado de cobrar durante dos meses consecutivos."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! El impago o retraso continuado permite al trabajador solicitar la extinción (jurisprudencialmente se estiman unos 3 meses).",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Laura tiene miedo de quedarse sin ahorros, ya que el jefe ha comenzado a retrasarse en los pagos del salario. En caso de superar el límite de retrasos, ¿Podría Laura poner fin a su contrato de trabajo percibiendo además una indemnización?",
+                opciones: [
+                    "Sí, siempre que lo comunique al jefe con 15 días de antelación.",
+                    "Sí, de 33 días de salario por cada año trabajado con un máximo de 24 mensualidades.",
+                    "Sí, de 20 años de salario.",
+                    "Sí, siempre y cuando se conforme con una indemnización de 12 días por cada año trabajado con un máximo de una anualidad de salario."
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Si extingue por impago (incumplimiento grave del empresario), cobra la indemnización equivalente al despido improcedente.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Tras una discusión con su jefe, Marcos es despedido. Una vez tramitado todo el procedimiento, se acuerda por el juez la improcedencia del despido. ¿Cuál sería el siguiente paso?",
+                opciones: [
+                    "El empresario deberá decidir en un plazo de cinco días, si lo readmite o si le indemniza.",
+                    "El empresario deberá readmitir al trabajador en todo caso.",
+                    "El empresario deberá indemnizar al trabajador en todo caso.",
+                    "El trabajador decidirá, en un plazo de cinco días, si es readmitido o indemnizado."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Declarado improcedente, el empresario elige entre readmisión o indemnización en 5 días (salvo que sea representante sindical).",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Lola es nombrada por su jefe empleada del mes y del año. En la alegría de celebración Lola dice que está embarazada. Todos sonríen menos su jefa. Al día siguiente, la trabajadora recibe una carta de despido por transgresión de la buena fe y pérdida de confianza. ¿Cómo debería calificar el juez ese despido?",
+                opciones: [
+                    "Procedente, con cero euros de indemnización.",
+                    "Improcedente, acordando la readmisión de la trabajadora.",
+                    "Improcedente, acordando indemnizar a la trabajadora a razón de 33 días por año trabajado, con un máximo de 24 mensualidades.",
+                    "Nulo, debiendo ser readmitida la trabajadora, con el abono de los salarios de tramitación."
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! El despido de una trabajadora embarazada sin causa justificada real se califica siempre como nulo (readmisión + salarios) por discriminación."
+                ]
+            },
+            {
+                enunciado: "Construcciones Matías lleva varios trimestres con pérdidas económicas. Por lo que decide despedir a Laureano de forma objetiva. ¿Qué trámite debe llevar a cabo el jefe de D. Laureano?",
+                opciones: [
+                    "Entregarle una carta de despido donde se recojan esas causas y poner a su disposición una indemnización de 20 días por cada año trabajado con un máximo de 12 mensualidades.",
+                    "Dar 15 días de sueldo como compensación por el despido sufrido.",
+                    "Dar 20 días de sueldo por compensación por el despido sufrido.",
+                    "Dar 33 días de sueldo como compensación por los daños morales sufridos."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! En el despido objetivo por causas económicas hay que entregar carta, preavisar con 15 días y abonar simultáneamente 20 días/año.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            }
+        ],
+        "Tema 8: La Seguridad Social": [
+            {
+                enunciado: "Ana es trabajadora por cuenta ajena y ha sufrido un accidente en casa. ¿Qué tipo de contingencia cubre su baja laboral?",
+                opciones: [
+                    "Contingencia profesional",
+                    "Contingencia común",
+                    "Cotización adicional",
+                    "Subsidio asistencial"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Un accidente no laboral (en casa) se considera contingencia común.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué entidad gestiona la recaudación de cuotas de la Seguridad Social en España?",
+                opciones: [
+                    "INSS",
+                    "SEPE",
+                    "IMSERSO",
+                    "Tesorería General de la Seguridad Social"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! La TGSS recauda, el INSS paga pensiones y el SEPE el desempleo."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es el porcentaje de la base reguladora que recibe una persona en Incapacidad Permanente Absoluta?",
+                opciones: [
+                    "0.55",
+                    "0.75",
+                    "1",
+                    "0.5"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Recibe el 100% (1) de la base reguladora.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué principio asegura que todos los ciudadanos tengan acceso al sistema de Seguridad Social?",
+                opciones: [
+                    "Contributividad",
+                    "Equidad",
+                    "Universalidad",
+                    "Intergeneracionalidad"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! El principio de universalidad persigue proteger a toda la población.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Marta reduce su jornada laboral al 50% para cuidar a su hija con cáncer. ¿Qué prestación puede solicitar?",
+                opciones: [
+                    "Prestación por maternidad",
+                    "Prestación por cuidado de menores con enfermedad grave",
+                    "Reducción de jornada por cuidado de familiar dentro del segundo grado",
+                    "Subsidio por nacimiento"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Existe una prestación específica (CUME) que compensa la pérdida de ingresos al reducir jornada por hijo gravemente enfermo.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Si un trabajador sufre un accidente en su puesto de trabajo, ¿qué tipo de contingencia es?",
+                opciones: [
+                    "Contingencia común",
+                    "Contingencia profesional",
+                    "Contingencia familiar",
+                    "Contingencia económica"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Los accidentes de trabajo y enfermedades profesionales son contingencias profesionales.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es el organismo encargado de las prestaciones no contributivas para mayores y dependientes?",
+                opciones: [
+                    "INSS",
+                    "SEPE",
+                    "IMSERSO",
+                    "Mutuas"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! El IMSERSO (y las CCAA) gestionan las pensiones no contributivas.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué régimen cubre a los pescadores y trabajadores marítimos?",
+                opciones: [
+                    "Régimen General",
+                    "RETA",
+                    "Régimen Especial del Mar",
+                    "Régimen de Funcionarios"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Tienen su propio régimen especial por las durezas de su labor.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿En ausencia de regulación del convenio colectivo qué porcentaje de la base reguladora se cobra por Incapacidad Temporal por accidente laboral?",
+                opciones: [
+                    "0.6",
+                    "0.5",
+                    "0.75",
+                    "1"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Por ley se cobra el 75% desde el día siguiente al accidente.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Un trabajador sufre un accidente laboral. ¿Desde cuándo tiene derecho a percibir la prestación?",
+                opciones: [
+                    "Sí, desde el mismo día del accidente de trabajo",
+                    "Sí, desde el día siguiente al accidente de trabajo",
+                    "Sí, desde que acuda al centro hospitalario",
+                    "Sí, a partir del tercer día de haber sufrido el accidente"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Ese día lo paga la empresa íntegro.",
+                    "¡Correcto! La mutua (o INSS) empieza a pagar el 75% desde el día posterior.",
+                    "Incorrecto.",
+                    "Incorrecto. Eso es para contingencias comunes."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de los siguientes colectivos está incluido en el RETA?",
+                opciones: [
+                    "Funcionarios",
+                    "Trabajadores por cuenta ajena",
+                    "Autónomos",
+                    "Personal militar"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! RETA son las siglas de Régimen Especial de Trabajadores Autónomos.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuál será la edad de jubilación en el año 2027?",
+                opciones: [
+                    "60 años",
+                    "65 años",
+                    "66 años",
+                    "67 años"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! En 2027 se alcanza la edad legal ordinaria de 67 años (salvo para quienes tengan largas carreras de cotización)."
+                ]
+            },
+            {
+                enunciado: "¿Qué tipo de prestación es la ayuda que se otorga a una persona con una discapacidad de nacimiento?",
+                opciones: [
+                    "Contributiva",
+                    "No contributiva",
+                    "Profesional",
+                    "Especial"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Al no haber podido cotizar, se le asiste por necesidad, es de tipo no contributivo.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Quién gestiona las prestaciones por desempleo en España?",
+                opciones: [
+                    "INSS",
+                    "SEPE",
+                    "IMSERSO",
+                    "Tesorería General de la Seguridad Social"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! El Servicio Público de Empleo Estatal (SEPE) es el encargado del paro.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Hasta cuándo se puede disfrutar de la pensión de viudedad?",
+                opciones: [
+                    "Hasta que se tengan nietos",
+                    "Hasta que se vuelva a casar",
+                    "Hasta cumplir 65 años",
+                    "Hasta que se jubile"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Como norma general, la pensión se extingue si el beneficiario contrae nuevo matrimonio o pareja de hecho (con excepciones).",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Hasta qué edad puede disfrutar una persona de la pensión por orfandad?",
+                opciones: [
+                    "19 años",
+                    "20 años",
+                    "Hasta que lo necesite",
+                    "25 años, siempre que no esté cursando estudios"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Es hasta los 21, o hasta los 25 años si no trabaja o sus ingresos son inferiores al SMI."
+                ]
+            },
+            {
+                enunciado: "¿Qué prestación otorga un 100% de la base reguladora más complemento por asistencia de otra persona?",
+                opciones: [
+                    "Incapacidad Permanente Total",
+                    "Gran Invalidez",
+                    "Invalidez Parcial",
+                    "Incapacidad Permanente Absoluta"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! La Gran Invalidez requiere la ayuda de un tercero para actos básicos de la vida, y añade un complemento económico a la pensión.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Un autónomo que realiza una actividad profesional y colabora con un familiar sin contrato se incluye en:",
+                opciones: [
+                    "Régimen General",
+                    "RETA",
+                    "Régimen Especial del Mar",
+                    "MUFACE"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Los familiares colaboradores de autónomos van encuadrados en el RETA.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué prestación recibe una persona que no puede realizar ninguna profesión debido a una enfermedad permanente?",
+                opciones: [
+                    "Incapacidad Temporal",
+                    "Incapacidad Permanente Total",
+                    "Incapacidad Permanente Absoluta",
+                    "Subsidio por enfermedad grave"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto. Sería total si afectara solo a SU profesión.",
+                    "¡Correcto! La IPA inhabilita para toda profesión u oficio.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es el requisito mínimo de cotización para acceder a la jubilación ordinaria con 65 años en 2025?",
+                opciones: [
+                    "30 años",
+                    "38 años y 6 meses",
+                    "40 años",
+                    "25 años"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Para poder jubilarte a los 65 en lugar de la edad legal mayor, debes demostrar carreras de cotización muy largas.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Una trabajadora deja de trabajar por riesgo durante la lactancia. ¿Qué duración tiene la prestación?",
+                opciones: [
+                    "Hasta que el hijo tenga 9 meses",
+                    "Hasta que el hijo tenga 12 meses",
+                    "Hasta que el hijo tenga 15 años",
+                    "Hasta que el hijo tenga 18 meses"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! La prestación económica por riesgo durante la lactancia natural cubre hasta que el bebé cumple 9 meses.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es la cuantía de la prestación por nacimiento y cuidado del menor?",
+                opciones: [
+                    "75% de la base reguladora",
+                    "100% de la base reguladora",
+                    "50% de la base reguladora",
+                    "Variable según el caso"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Se cobra el 100% de la base reguladora durante las 16 semanas.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuánto debe haber cotizado una madre de 34 años para acceder a la prestación por nacimiento y cuidado del menor?",
+                opciones: [
+                    "360 días a lo largo de la vida laboral",
+                    "180 días a lo largo de toda su vida laboral",
+                    "90 días en los últimos 7 años",
+                    "No es necesaria cotización previa"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Para mayores de 26 años piden 180 días en los últimos 7 años o 360 días en toda su vida laboral.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Un trabajador en incapacidad temporal por enfermedad común, ¿cuánto percibe el día 19 de su baja?",
+                opciones: [
+                    "60% de la base reguladora (empresa)",
+                    "55% de la base reguladora (INSS o mutua)",
+                    "75% de la base reguladora (INSS o mutua)",
+                    "60% de la base reguladora (INSS o mutua)"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Del día 4 al 20 cobra el 60% (del 4 al 15 paga la empresa, del 16 al 20 paga INSS/Mutua)."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es el porcentaje de pensión por incapacidad permanente total?",
+                opciones: [
+                    "1",
+                    "0.55",
+                    "0.75",
+                    "0.33"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Es el 55% de la base reguladora (puede ser mayor si es 'cualificada' por edad).",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué prestación está dirigida a compensar las interrupciones laborales por cuidado de hijos?",
+                opciones: [
+                    "Prestación por maternidad",
+                    "Complemento para la reducción de la brecha de género",
+                    "Prestación por lactancia",
+                    "Ayuda familiar"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Este complemento en la pensión se da a quien haya visto mermada su carrera (cotizaciones) por tener hijos.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Qué colectivo tiene acceso al régimen de mutualidades como MUFACE ISFAS?",
+                opciones: [
+                    "Autónomos",
+                    "Trabajadores agrarios",
+                    "Funcionarios",
+                    "Empleados del hogar"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Son las mutualidades específicas de los funcionarios civiles y militares.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es la principal fuente de financiación del sistema de Seguridad Social?",
+                opciones: [
+                    "Subvenciones del Estado",
+                    "Cotizaciones sociales",
+                    "Aportaciones sindicales",
+                    "Donaciones privadas"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! El sistema se financia principalmente con lo que cotizan mensualmente empresas y trabajadores.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Cuánto cobrará un trabajador de prestación por desempleo a partir de día 180",
+                opciones: [
+                    "0.5",
+                    "0.8",
+                    "0.6",
+                    "0.75"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! Los primeros 180 días cobra el 70%, a partir del día 181 baja al 60% (novedad legal reciente).",
+                    "Incorrecto."
+                ]
+            }
+        ],
+        "Kahoot: Repaso de Suspensión y Excedencias": [
+            {
+                enunciado: "Señala cuál de los siguientes tipos de suspensión del contrato de trabajo no depende de la voluntad de las partes.",
+                opciones: [
+                    "Huelga",
+                    "Suspensión disciplinaria",
+                    "Excedencias",
+                    "Servicio militar"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Es voluntaria.",
+                    "¡Correcto! Es una imposición unilateral del empresario como castigo.",
+                    "Incorrecto. Es voluntaria.",
+                    "Incorrecto. Ya no es causa habitual en España."
+                ]
+            },
+            {
+                enunciado: "¿Qué duración máxima tiene la excedencia por cuidado de familiares?",
+                opciones: [
+                    "2 años",
+                    "1 año",
+                    "3 años",
+                    "5 años"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Es de máximo 2 años, salvo que el convenio marque más.",
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "¿Durante cuánto tiempo permite la empresa la reincorporación al mismo puesto en la excedencia por cuidado de hijo?",
+                opciones: [
+                    "2 años",
+                    "1 año",
+                    "3 años",
+                    "5 años"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto.",
+                    "¡Correcto! Reserva del mismo puesto durante el primer año (pasado un año la reserva es para puesto similar).",
+                    "Incorrecto.",
+                    "Incorrecto."
+                ]
+            },
+            {
+                enunciado: "Excedencia forzosa: Debe incorporarse en un mes tras la finalización.",
+                opciones: [
+                    "Verdadero",
+                    "Falso"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Tiene el plazo de un mes para solicitar el reingreso.",
+                    "Incorrecto. Es verdadero."
+                ]
+            },
+            {
+                enunciado: "Excedencia voluntaria: La duración será de entre 4 meses y 5 años.",
+                opciones: [
+                    "Verdadero",
+                    "Falso"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Ese es el rango temporal de la excedencia voluntaria genérica en el ET.",
+                    "Incorrecto. Es verdadero."
+                ]
+            },
+            {
+                enunciado: "Entre dos excedencias no pueden transcurrir menos de 4 años.",
+                opciones: [
+                    "Verdadero",
+                    "Falso"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Es necesario que hayan pasado 4 años desde el final de una excedencia voluntaria para pedir otra.",
+                    "Incorrecto. Es verdadero."
+                ]
+            },
+            {
+                enunciado: "Plazo de excedencia por cuidado de hijos máximo 2 años",
+                opciones: [
+                    "Verdadero",
+                    "Falso"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Es falso.",
+                    "¡Correcto! Es falso, el máximo son 3 años."
+                ]
+            },
+            {
+                enunciado: "Cuando termina tu excedencia voluntaria, ¿puedes reincorporarte?",
+                opciones: [
+                    "No, puesto que pierdes tu relación laboral.",
+                    "Sí, aunque no a su puesto de trabajo.",
+                    "Sí, no hay reserva de puesto, pero sí preferencia de ingreso si hay vacante.",
+                    "Sí, a tu mismo puesto de trabajo"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto.",
+                    "Incorrecto.",
+                    "¡Correcto! La excedencia voluntaria solo da un derecho preferente de reingreso en vacantes de igual o similar categoría.",
+                    "Incorrecto. Eso es en otras excedencias."
+                ]
+            }
+        ]
+    }
 
             
             // ==========================================
@@ -3013,7 +6122,7 @@
     </script>
    
     <footer class="footer">
-    © 2026 — Súper Entrenador ASIR · Nicolás Álvarez
+    © 2026 — Test 1º ASIR · Nicolás Álvarez
     </footer>
 
 </body>
