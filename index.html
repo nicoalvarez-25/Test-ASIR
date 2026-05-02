@@ -1739,8 +1739,2018 @@
                         "Incorrecto. Operan a dos niveles arquitectónicos distintos. Las NACLs actúan antes en el flujo de red."
                     ]
                 }
-            ]
-                            
+            ],
+            
+        "Unidad 1: Conceptos Básicos y Modelos de Servicio": [
+            {
+                enunciado: "¿Cuál es la principal diferencia entre un sistema on-premise y la nube?",
+                opciones: [
+                    "Almacenamiento en discos SSD",
+                    "Acceso remoto a recursos",
+                    "Mayor coste inicial",
+                    "Uso exclusivo para grandes empresas"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Ambos sistemas pueden utilizar discos de estado sólido (SSD) para el almacenamiento.",
+                    "¡Correcto! En un modelo on-premise, los servidores están físicamente en las instalaciones de la empresa. En la nube, accedes de forma remota a recursos alojados en los centros de datos del proveedor a través de internet.",
+                    "Incorrecto. Es cierto que el on-premise tiene un mayor coste inicial (CAPEX), pero la definición fundamental que los separa es dónde se alojan y cómo se accede a los recursos.",
+                    "Incorrecto. La nube ha democratizado la tecnología, permitiendo a startups y pequeñas empresas usar la misma infraestructura que las multinacionales."
+                ]
+            },
+            {
+                enunciado: "¿Qué significa “pago por uso” en la nube?",
+                opciones: [
+                    "Que se paga solo lo que se consume",
+                    "Que se paga una cuota fija mensual",
+                    "Que se paga únicamente por almacenamiento",
+                    "Que el servicio es gratuito hasta cierto límite"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! El modelo 'Pay-as-you-go' significa que la facturación se basa exactamente en los recursos consumidos (por ejemplo, horas de cómputo o GB transferidos).",
+                    "Incorrecto. Una cuota fija mensual es típica de modelos de suscripción tradicional, no del modelo puro de pago por uso de la nube.",
+                    "Incorrecto. Se paga por almacenamiento, pero también por poder de cómputo, red, bases de datos y cualquier otro servicio consumido.",
+                    "Incorrecto. Eso describe a los 'Free Tiers' (capas gratuitas), pero el pago por uso aplica al modelo de facturación general."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es una ventaja clave de la nube frente a sistemas propios?",
+                opciones: [
+                    "Mayor control físico",
+                    "Escalabilidad rápida",
+                    "Menos dependencia de internet",
+                    "Necesidad de menos seguridad"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. En la nube pierdes el control físico del hardware, ya que los servidores son del proveedor.",
+                    "¡Correcto! La escalabilidad ágil te permite añadir o quitar recursos (como servidores) en cuestión de minutos para adaptarte a la demanda.",
+                    "Incorrecto. Al contrario, la nube requiere de una conexión constante y fiable a internet para acceder a los recursos.",
+                    "Incorrecto. La seguridad sigue siendo fundamental (modelo de responsabilidad compartida), nunca se necesita 'menos' seguridad."
+                ]
+            },
+            {
+                enunciado: "¿Qué ejemplo explica mejor la diferencia entre nube y on-premise?",
+                opciones: [
+                    "Pendrive frente a disco duro externo",
+                    "Netflix/Spotify frente a DVDs/CDs",
+                    "Instagram frente a Facebook",
+                    "PC de sobremesa frente a portátil"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Ambos son métodos de almacenamiento físico local.",
+                    "¡Correcto! Es la analogía perfecta: con DVDs/CDs posees el hardware y el medio físico (on-premise). Con Netflix/Spotify, consumes el servicio bajo demanda a través de internet sin preocuparte del mantenimiento (nube).",
+                    "Incorrecto. Ambas son aplicaciones alojadas en la nube.",
+                    "Incorrecto. Ambos son dispositivos físicos de usuario final, no representan el concepto de infraestructura como servicio."
+                ]
+            },
+            {
+                enunciado: "¿Por qué Instagram migró a la nube en sus primeros años?",
+                opciones: [
+                    "Para evitar pagar licencias",
+                    "Para no depender de conexiones a internet",
+                    "Para reducir el uso de memoria en móviles",
+                    "Para poder escalar a millones de usuarios"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. En la nube también se pagan licencias de software y uso de servicios.",
+                    "Incorrecto. Una aplicación de redes sociales depende totalmente de internet para funcionar.",
+                    "Incorrecto. El uso de memoria del dispositivo móvil depende de la programación de la app cliente, no de dónde se aloja el backend.",
+                    "¡Correcto! Instagram experimentó un crecimiento explosivo. La nube les permitió escalar su infraestructura en tiempo real para soportar millones de usuarios nuevos sin tener que comprar y montar servidores físicos de urgencia."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es un ejemplo de IaaS?",
+                opciones: [
+                    "Netflix",
+                    "Gmail",
+                    "AWS EC2",
+                    "Shopify"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Netflix es un servicio final para consumidores, un SaaS (Software as a Service).",
+                    "Incorrecto. Gmail es un software de correo listo para usar, es un SaaS.",
+                    "¡Correcto! Amazon EC2 proporciona servidores virtuales (infraestructura base). Es el ejemplo clásico de IaaS (Infraestructura como Servicio).",
+                    "Incorrecto. Shopify es una plataforma de comercio electrónico lista para usar, encaja en el modelo SaaS."
+                ]
+            },
+            {
+                enunciado: "¿Qué caracteriza a PaaS?",
+                opciones: [
+                    "Ofrece solo almacenamiento",
+                    "Brinda entornos de desarrollo listos",
+                    "Es un software cerrado al usuario final",
+                    "Requiere comprar hardware propio"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Un PaaS ofrece mucho más que almacenamiento: cómputo, bases de datos y frameworks.",
+                    "¡Correcto! Plataforma como Servicio (PaaS) proporciona un entorno listo para que los desarrolladores desplieguen sus aplicaciones sin preocuparse por gestionar el sistema operativo o los servidores subyacentes.",
+                    "Incorrecto. Eso describe a SaaS (Software as a Service).",
+                    "Incorrecto. Como todo servicio en la nube, el hardware lo pone el proveedor."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de los siguientes es SaaS?",
+                opciones: [
+                    "Heroku",
+                    "Office 365",
+                    "AWS EC2",
+                    "Vercel"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Heroku es una plataforma para desplegar código, es un ejemplo de PaaS.",
+                    "¡Correcto! Office 365 (Microsoft 365) es un software final completo consumido directamente por el usuario a través de internet, lo que lo convierte en SaaS.",
+                    "Incorrecto. AWS EC2 son servidores virtuales crudos, es IaaS.",
+                    "Incorrecto. Vercel es una plataforma orientada a desarrolladores web, actuando como PaaS."
+                ]
+            },
+            {
+                enunciado: "¿Qué ventaja tiene SaaS frente a IaaS?",
+                opciones: [
+                    "Permite programar a bajo nivel",
+                    "Ofrece infraestructura sin configuración",
+                    "No requiere instalación ni mantenimiento",
+                    "Es más barato siempre"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. SaaS no te deja programar nada del software interno ni gestionar la infraestructura, solo usar la aplicación.",
+                    "Incorrecto. Esa es una ventaja de PaaS o servicios Serverless frente a IaaS crudo.",
+                    "¡Correcto! En SaaS (como Gmail o Dropbox), el usuario final no instala nada en servidores, ni actualiza parches ni mantiene sistemas operativos; el proveedor se encarga de todo.",
+                    "Incorrecto. Dependiendo del volumen de usuarios, las licencias de SaaS empresariales pueden resultar muy costosas."
+                ]
+            }
+        ],
+        "Unidad 2: Infraestructura Global y Servicios Core": [
+            {
+                enunciado: "¿Qué es una región en la nube?",
+                opciones: [
+                    "Un servidor físico en una ciudad",
+                    "Una red privada virtual",
+                    "Un área geográfica con varias zonas de disponibilidad",
+                    "Un sistema de backup automático"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Un solo servidor no compone una región; son recintos inmensos con miles de servidores.",
+                    "Incorrecto. Una red privada virtual (VPC) es un concepto de red lógica, no de infraestructura física.",
+                    "¡Correcto! Una región es una ubicación geográfica específica en el mundo (ej. París, Madrid) que está compuesta por múltiples Zonas de Disponibilidad (centros de datos aislados).",
+                    "Incorrecto. Es una ubicación física, no un servicio de copias de seguridad."
+                ]
+            },
+            {
+                enunciado: "¿Qué función cumplen las zonas de disponibilidad?",
+                opciones: [
+                    "Almacenar copias de seguridad locales",
+                    "Ofrecer redundancia dentro de una región",
+                    "Servir contenido cacheado en ciudades",
+                    "Reducir el precio del servicio"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Aunque puedes guardar backups ahí, su función principal arquitectónica es la alta disponibilidad.",
+                    "¡Correcto! Al estar separadas físicamente por varios kilómetros, si un desastre natural o corte eléctrico tumba una Zona de Disponibilidad, las otras dentro de la misma Región siguen funcionando.",
+                    "Incorrecto. De servir contenido cacheado se encargan los Edge Locations (puntos de presencia).",
+                    "Incorrecto. Duplicar infraestructura en varias zonas de disponibilidad suele aumentar el coste arquitectónico, no reducirlo."
+                ]
+            },
+            {
+                enunciado: "¿Qué es un edge location?",
+                opciones: [
+                    "Un tipo de máquina virtual",
+                    "Una región secundaria de respaldo",
+                    "Un punto de entrega cercano al usuario final",
+                    "Una base de datos distribuida"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Las máquinas virtuales operan dentro de los centros de datos principales.",
+                    "Incorrecto. No son regiones completas, son instalaciones mucho más pequeñas.",
+                    "¡Correcto! Los Edge Locations (ubicaciones de borde) forman las redes de entrega de contenido (CDN). Su objetivo es cachear datos lo más cerca posible de los usuarios finales para reducir la latencia.",
+                    "Incorrecto. Aunque pueden cachear datos, no son sistemas de bases de datos completas."
+                ]
+            },
+            {
+                enunciado: "¿Qué significa 99,9999 % de disponibilidad?",
+                opciones: [
+                    "Que el sistema no puede fallar nunca",
+                    "Que puede fallar solo en caso de desastre natural",
+                    "Que solo permite 31 segundos de caída al año",
+                    "Que el servicio funciona el 90 % del tiempo"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. El 100% de disponibilidad es matemáticamente y físicamente imposible de garantizar a largo plazo.",
+                    "Incorrecto. La disponibilidad es una fórmula matemática de tiempo, no atiende a las causas del fallo.",
+                    "¡Correcto! Los llamados 'seis nueves' equivalen a un tiempo de inactividad máximo permitido de aproximadamente 31,56 segundos a lo largo de todo un año.",
+                    "Incorrecto. Un 90% de disponibilidad equivaldría a más de un mes entero de caída al año."
+                ]
+            },
+            {
+                enunciado: "¿Por qué Spotify usa varias AZs en Europa?",
+                opciones: [
+                    "Para reducir costes",
+                    "Para mejorar la interfaz de usuario",
+                    "Para asegurar continuidad del servicio",
+                    "Para evitar pagar licencias"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Multiplicar la infraestructura en varias zonas incrementa los costes.",
+                    "Incorrecto. La interfaz de la app no tiene relación directa con la arquitectura del backend.",
+                    "¡Correcto! Al distribuir sus servidores en varias Zonas de Disponibilidad (AZs), Spotify asegura alta disponibilidad. Si un centro de datos se cae, la música sigue reproduciéndose desde otro sin que los usuarios lo noten.",
+                    "Incorrecto. Las licencias se pagan independientemente de las AZs utilizadas."
+                ]
+            },
+            {
+                enunciado: "¿Qué categoría incluye máquinas virtuales y serverless?",
+                opciones: [
+                    "Red",
+                    "Cómputo",
+                    "Almacenamiento",
+                    "Seguridad"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. La red gestiona cómo se comunican las cosas, no procesa la información.",
+                    "¡Correcto! La categoría de Cómputo (Compute) es el 'cerebro' de la nube e incluye todo lo que tenga que ver con procesamiento de datos, como servidores (EC2) o funciones sin servidor (Lambda).",
+                    "Incorrecto. El almacenamiento se encarga de guardar los datos, no de procesarlos.",
+                    "Incorrecto. La seguridad gestiona accesos y protección, no capacidad de procesamiento."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es un ejemplo de servicio de almacenamiento en la nube?",
+                opciones: [
+                    "Amazon S3",
+                    "AWS IAM",
+                    "AWS Lambda",
+                    "Amazon Route 53"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Amazon S3 (Simple Storage Service) es el servicio de almacenamiento de objetos por excelencia en la nube de AWS.",
+                    "Incorrecto. IAM es un servicio de seguridad y gestión de identidades.",
+                    "Incorrecto. Lambda es un servicio de Cómputo (serverless).",
+                    "Incorrecto. Route 53 es un servicio de Red (DNS)."
+                ]
+            },
+            {
+                enunciado: "¿Qué categoría se encarga de gestionar la conectividad y distribución de datos?",
+                opciones: [
+                    "Bases de datos",
+                    "IA",
+                    "Red",
+                    "Cómputo"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Almacenan información estructurada.",
+                    "Incorrecto. La Inteligencia Artificial analiza y crea modelos predictivos o generativos.",
+                    "¡Correcto! La categoría de Red (Networking) incluye servicios como VPCs, balanceadores de carga y CDNs, que dirigen y distribuyen el tráfico de datos.",
+                    "Incorrecto. Cómputo se encarga del procesamiento, no del enrutamiento del tráfico."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de los siguientes pertenece a servicios de seguridad en la nube?",
+                opciones: [
+                    "AWS IAM",
+                    "Amazon S3",
+                    "EC2",
+                    "Google BigQuery"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! AWS Identity and Access Management (IAM) es el servicio core de seguridad que controla quién (autenticación) y qué (autorización) puede hacer en la cuenta en la nube.",
+                    "Incorrecto. S3 pertenece a la familia de Almacenamiento.",
+                    "Incorrecto. EC2 pertenece a la familia de Cómputo.",
+                    "Incorrecto. BigQuery es un almacén de datos (Data Warehouse) para analítica de datos."
+                ]
+            },
+            {
+                enunciado: "¿Qué usa TikTok para personalizar su feed de vídeos?",
+                opciones: [
+                    "Un sistema de almacenamiento en la nube",
+                    "Un algoritmo de inteligencia artificial",
+                    "Un servidor de bases de datos relacionales",
+                    "Un sistema de backups automáticos"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. El almacenamiento guarda los vídeos, pero no decide cuáles te gustan.",
+                    "¡Correcto! TikTok aprovecha la inmensa capacidad de la nube para ejecutar algoritmos de Inteligencia Artificial (Machine Learning) que aprenden en tiempo real de tus interacciones para personalizar tu 'For You Page'.",
+                    "Incorrecto. Una base de datos guarda tus likes, pero el análisis de qué mostrarte lo realiza un motor de inteligencia artificial.",
+                    "Incorrecto. Los backups sirven para no perder datos en caso de desastre, no para recomendaciones."
+                ]
+            }
+        ],
+        "Unidad 3: Seguridad, Modelo de Responsabilidad e IAM": [
+            {
+                enunciado: "¿Qué protege AWS en el modelo de responsabilidad compartida?",
+                opciones: [
+                    "Contraseñas de los usuarios",
+                    "Aplicaciones desplegadas",
+                    "Infraestructura física y red",
+                    "Políticas de acceso"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. La gestión de contraseñas es responsabilidad del cliente.",
+                    "Incorrecto. El código y las vulnerabilidades de las apps son responsabilidad del cliente.",
+                    "¡Correcto! AWS es responsable de la seguridad 'DE' la nube, lo que incluye proteger la infraestructura global (hardware, red, centros de datos físicos).",
+                    "Incorrecto. Configurar quién tiene acceso a qué (políticas IAM) es responsabilidad del cliente."
+                ]
+            },
+            {
+                enunciado: "¿De quién depende el cifrado de datos en reposo?",
+                opciones: [
+                    "Solo de AWS",
+                    "Del cliente",
+                    "De ambos",
+                    "No es necesario"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. AWS proporciona las herramientas (como AWS KMS), pero no cifra tus datos por iniciativa propia.",
+                    "¡Correcto! En el modelo de responsabilidad compartida, la seguridad 'EN' la nube (incluyendo cifrar la información sensible) recae 100% sobre el cliente.",
+                    "Incorrecto. La ejecución de la herramienta recae exclusivamente en la decisión del cliente.",
+                    "Incorrecto. El cifrado es una de las prácticas de seguridad más críticas."
+                ]
+            },
+            {
+                enunciado: "¿Qué herramienta ayuda a revisar buenas prácticas de seguridad en AWS?",
+                opciones: [
+                    "S3",
+                    "Route 53",
+                    "CloudFront",
+                    "Trusted Advisor"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. S3 es para almacenamiento de objetos.",
+                    "Incorrecto. Route 53 es el servicio de DNS.",
+                    "Incorrecto. CloudFront es una red de entrega de contenido (CDN).",
+                    "¡Correcto! AWS Trusted Advisor actúa como un consultor automatizado que analiza tu cuenta y te da recomendaciones sobre seguridad, costes, rendimiento y tolerancia a fallos."
+                ]
+            },
+            {
+                enunciado: "Si un usuario deja un bucket S3 público, ¿de quién es la responsabilidad?",
+                opciones: [
+                    "De AWS",
+                    "Del cliente",
+                    "Del proveedor de Internet",
+                    "De nadie"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. AWS configura los buckets S3 como privados por defecto.",
+                    "¡Correcto! Si un bucket se hace público, es porque el cliente ha modificado activamente las políticas de acceso, asumiendo la responsabilidad de esa configuración.",
+                    "Incorrecto. El ISP solo transporta los datos, no gestiona los permisos de la nube.",
+                    "Incorrecto. Siempre hay un responsable (el dueño de la cuenta AWS)."
+                ]
+            },
+            {
+                enunciado: "¿Qué garantiza AWS siempre?",
+                opciones: [
+                    "Cifrado de todos los datos",
+                    "Configuración de permisos IAM",
+                    "Creación de contraseñas seguras",
+                    "Seguridad física de centros de datos"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. El cifrado lo debe habilitar el cliente.",
+                    "Incorrecto. Los permisos los debe definir el administrador de la cuenta (el cliente).",
+                    "Incorrecto. Forzar políticas de contraseñas seguras es trabajo del cliente.",
+                    "¡Correcto! AWS nunca te pedirá que vayas a vigilar sus instalaciones. La seguridad perimetral, eléctrica y física de los servidores es su garantía principal."
+                ]
+            },
+            {
+                enunciado: "¿Qué es un grupo en IAM?",
+                opciones: [
+                    "Un conjunto de usuarios con permisos comunes",
+                    "Una contraseña compartida",
+                    "Una aplicación externa",
+                    "Un acceso temporal"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Los grupos permiten asignar la misma política de permisos a múltiples usuarios a la vez, facilitando la administración (ej. Grupo 'Desarrolladores').",
+                    "Incorrecto. Compartir contraseñas es una pésima práctica de seguridad; cada usuario debe tener la suya.",
+                    "Incorrecto. No tiene que ver con aplicaciones externas.",
+                    "Incorrecto. Los accesos temporales se gestionan mediante Roles, no mediante Grupos."
+                ]
+            },
+            {
+                enunciado: "¿Qué formato tienen las políticas en IAM?",
+                opciones: [
+                    "XML",
+                    "YAML",
+                    "JSON",
+                    "CSV"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. XML se usa en otros contextos antiguos, pero no en IAM.",
+                    "Incorrecto. YAML se usa a menudo para plantillas de CloudFormation, pero no para las políticas directas de IAM.",
+                    "¡Correcto! Todas las políticas de permisos en AWS se escriben en documentos JSON (JavaScript Object Notation), definiendo el Efecto, la Acción y el Recurso.",
+                    "Incorrecto. CSV es para hojas de cálculo o exportar listas de usuarios."
+                ]
+            },
+            {
+                enunciado: "¿Para qué se usan los roles en IAM?",
+                opciones: [
+                    "Para eliminar usuarios",
+                    "Para crear cuentas nuevas",
+                    "Para cifrar datos",
+                    "Para accesos temporales a servicios"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Para administrar usuarios usas políticas de administrador.",
+                    "Incorrecto. Las cuentas se crean desde AWS Organizations o la consola de facturación.",
+                    "Incorrecto. De eso se encarga AWS KMS.",
+                    "¡Correcto! Los roles son identidades que se 'asumen' temporalmente. No tienen contraseña fija. Son ideales para que un servicio (como EC2) acceda a otro (como S3) de forma segura."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es la mejor práctica en IAM?",
+                opciones: [
+                    "Privilegio mínimo",
+                    "Dar permisos administrativos a todos",
+                    "Desactivar roles",
+                    "No usar grupos"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! El 'Principio de Privilegio Mínimo' consiste en dar a un usuario únicamente los permisos exactos que necesita para hacer su trabajo, y nada más.",
+                    "Incorrecto. Es la receta perfecta para un desastre de seguridad.",
+                    "Incorrecto. Los roles son una herramienta excelente de seguridad, deben usarse frecuentemente.",
+                    "Incorrecto. Usar grupos es, de hecho, una buena práctica para organizar los permisos."
+                ]
+            },
+            {
+                enunciado: "¿Qué gestiona IAM principalmente?",
+                opciones: [
+                    "Facturación",
+                    "Almacenamiento",
+                    "Regiones y zonas",
+                    "Identidades y accesos"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. La facturación se lleva desde el Billing Dashboard.",
+                    "Incorrecto. El almacenamiento es trabajo de S3, EBS, etc.",
+                    "Incorrecto. La infraestructura física no se gestiona con IAM.",
+                    "¡Correcto! Identity and Access Management (IAM) responde a las preguntas: ¿Quién eres? (Identidad) y ¿Qué puedes hacer? (Acceso)."
+                ]
+            },
+            {
+                enunciado: "¿Qué significa MFA?",
+                opciones: [
+                    "Multiple File Access",
+                    "Multi-Factor Authentication",
+                    "Managed Function Account",
+                    "Multi-Format Agreement"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. No tiene que ver con archivos.",
+                    "¡Correcto! Multi-Factor Authentication (Autenticación Multifactor). Añade una capa extra de seguridad pidiendo un código (ej. de Google Authenticator) además de la contraseña.",
+                    "Incorrecto. No es un término real de AWS.",
+                    "Incorrecto. No es un término de licencias o acuerdos."
+                ]
+            },
+            {
+                enunciado: "¿Qué herramienta de AWS guarda secretos de forma segura?",
+                opciones: [
+                    "S3",
+                    "CloudFront",
+                    "Secrets Manager",
+                    "Route 53"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. S3 guarda archivos estáticos, no está diseñado para rotar o gestionar credenciales directamente.",
+                    "Incorrecto. CloudFront distribuye contenido web.",
+                    "¡Correcto! AWS Secrets Manager protege las credenciales de bases de datos y contraseñas de APIs, permitiendo incluso rotarlas automáticamente.",
+                    "Incorrecto. Route 53 gestiona dominios web."
+                ]
+            },
+            {
+                enunciado: "¿Por qué se recomienda usar credenciales temporales?",
+                opciones: [
+                    "Son más rápidas",
+                    "Son más baratas",
+                    "Reducen el riesgo si se filtran",
+                    "No necesitan permisos"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. La velocidad de la API de AWS es igual con credenciales fijas que temporales.",
+                    "Incorrecto. El uso de credenciales de IAM es gratuito.",
+                    "¡Correcto! Al caducar rápidamente (ej. en 1 hora), si un hacker consigue robar una credencial temporal, su 'ventana de oportunidad' para hacer daño será ínfima.",
+                    "Incorrecto. Siempre necesitan tener políticas de permisos asociadas para hacer algo."
+                ]
+            },
+            {
+                enunciado: "¿Qué usuario debe tener MFA siempre activado?",
+                opciones: [
+                    "La cuenta root",
+                    "Los desarrolladores",
+                    "Los testers",
+                    "Nadie"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! El usuario 'root' (raíz) tiene poder absoluto e ilimitado sobre toda tu cuenta (incluso para borrarla o gastar miles de euros). Es obligatorio protegerlo con MFA.",
+                    "Incorrecto. Aunque es recomendable para todos, para el Root es crítico e innegociable.",
+                    "Incorrecto. Recomendable, pero no el más crítico.",
+                    "Incorrecto. Es una práctica de seguridad fundamental."
+                ]
+            },
+            {
+                enunciado: "¿Qué servicio registra quién accedió a qué en AWS?",
+                opciones: [
+                    "EC2",
+                    "Route 53",
+                    "CloudTrail",
+                    "IAM Groups"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. EC2 son servidores virtuales.",
+                    "Incorrecto. Route 53 es el DNS.",
+                    "¡Correcto! AWS CloudTrail es la cámara de seguridad de tu cuenta. Registra absolutamente todas las llamadas a la API (quién hizo qué, desde dónde y cuándo).",
+                    "Incorrecto. Los grupos agrupan usuarios, pero no auditan su actividad."
+                ]
+            }
+        ],
+        "Unidad 4: Redes, VPC y Ruteo": [
+            {
+                enunciado: "¿Qué componente permite la conexión directa a Internet en una VPC?",
+                opciones: [
+                    "Route Table",
+                    "NAT Gateway",
+                    "Internet Gateway",
+                    "Security Group"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. La Route Table (Tabla de enrutamiento) dice hacia dónde debe ir el tráfico, pero no hace de 'puerta' hacia internet por sí sola.",
+                    "Incorrecto. El NAT Gateway da salida a internet a las redes privadas, pero él mismo necesita un IGW para funcionar.",
+                    "¡Correcto! El Internet Gateway (IGW) es la puerta física y lógica que anclas a tu VPC para permitir la comunicación bidireccional con el internet público.",
+                    "Incorrecto. Un Security Group es un firewall cortafuegos, no un enrutador hacia internet."
+                ]
+            },
+            {
+                enunciado: "¿Dónde se alojan las bases de datos en una arquitectura segura en AWS?",
+                opciones: [
+                    "Subred pública",
+                    "Subred privada",
+                    "Internet Gateway",
+                    "Route Table"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Exponer una base de datos a internet es un riesgo de seguridad gravísimo.",
+                    "¡Correcto! Las bases de datos y servidores backend se colocan siempre en Subredes Privadas, aisladas de internet, donde solo los servidores internos (ej. una app web en una subred pública) pueden comunicarse con ellas.",
+                    "Incorrecto. El IGW es un componente de red, no un lugar para alojar recursos.",
+                    "Incorrecto. Es un componente de configuración de red."
+                ]
+            },
+            {
+                enunciado: "¿Qué función tiene un NAT Gateway?",
+                opciones: [
+                    "Bloquear tráfico externo",
+                    "Redirigir tráfico interno a Internet sin exponer IP pública",
+                    "Conectar con otras regiones",
+                    "Monitorizar tráfico"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. De bloquear se encargan los Security Groups o las NACLs.",
+                    "¡Correcto! Permite que los servidores aislados en una subred privada salgan a internet (por ejemplo, para descargar actualizaciones) sin que nadie de internet pueda iniciar una conexión hacia ellos.",
+                    "Incorrecto. Para conectar regiones se usa VPC Peering o Transit Gateway.",
+                    "Incorrecto. De eso se encargan los VPC Flow Logs."
+                ]
+            },
+            {
+                enunciado: "¿Qué controla un Security Group?",
+                opciones: [
+                    "El tráfico entrante y saliente por instancia",
+                    "El tráfico por subred",
+                    "Las rutas internas",
+                    "La asignación de IPs"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Funciona como un firewall virtual que se aplica a nivel de recurso individual (como una instancia EC2) permitiendo o denegando el tráfico específico a sus puertos.",
+                    "Incorrecto. El firewall que controla el tráfico a nivel de subred completa se llama Network ACL (NACL).",
+                    "Incorrecto. Las rutas se gestionan en la Route Table.",
+                    "Incorrecto. Las IPs se gestionan en la configuración de la subred y VPC (DHCP)."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es la ventaja principal de usar subredes privadas?",
+                opciones: [
+                    "Aumentar velocidad",
+                    "Mejorar seguridad",
+                    "Reducir costes",
+                    "Compartir direcciones IP"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. No tienen impacto directo en la velocidad de la red.",
+                    "¡Correcto! Al no tener una ruta directa hacia el Internet Gateway, los servidores quedan totalmente invisibles para ataques directos desde el exterior, fortaleciendo inmensamente la seguridad.",
+                    "Incorrecto. No varían el coste por el simple hecho de ser privadas.",
+                    "Incorrecto. Las IPs se gestionan por rangos CIDR y no se comparten de esta manera."
+                ]
+            },
+            {
+                enunciado: "¿Qué función principal cumple Route 53?",
+                opciones: [
+                    "Resolver nombres de dominio",
+                    "Almacenar datos",
+                    "Monitorizar instancias",
+                    "Crear subredes"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Amazon Route 53 es el servicio DNS de AWS. Traduce nombres fáciles de recordar para humanos (ej. www.amazon.com) a direcciones IP numéricas que entienden los ordenadores.",
+                    "Incorrecto. Eso es S3 o EBS.",
+                    "Incorrecto. Eso es trabajo de Amazon CloudWatch.",
+                    "Incorrecto. Eso se hace dentro del servicio Amazon VPC."
+                ]
+            },
+            {
+                enunciado: "¿Qué servicio distribuye tráfico entre instancias?",
+                opciones: [
+                    "NAT Gateway",
+                    "Elastic Load Balancer",
+                    "CloudWatch",
+                    "S3"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Sirve para dar salida a internet a redes privadas.",
+                    "¡Correcto! El Elastic Load Balancer (ELB) recibe el tráfico de los usuarios y lo reparte equitativamente entre varios servidores (EC2) para que ninguno se sature.",
+                    "Incorrecto. CloudWatch monitoriza métricas y alarmas.",
+                    "Incorrecto. S3 almacena archivos estáticos."
+                ]
+            },
+            {
+                enunciado: "¿Qué tipo de ruteo dirige al usuario a la región más cercana?",
+                opciones: [
+                    "Latency routing",
+                    "Weighted routing",
+                    "Failover routing",
+                    "Simple routing"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! El ruteo por latencia evalúa qué servidor global responderá más rápido al usuario y le manda allí, reduciendo enormemente los tiempos de carga (ideal para apps internacionales).",
+                    "Incorrecto. Envía tráfico según porcentajes matemáticos definidos (ej. 80% aquí, 20% allá).",
+                    "Incorrecto. Se usa para mandar el tráfico a un servidor de emergencia solo si el principal se cae.",
+                    "Incorrecto. Es el más básico, devuelve una o varias IPs sin lógicas de distancia."
+                ]
+            },
+            {
+                enunciado: "¿Qué ocurre si un endpoint falla y hay failover configurado?",
+                opciones: [
+                    "La aplicación se detiene",
+                    "Se borra el registro DNS",
+                    "Se lanza un nuevo servidor automáticamente",
+                    "Route 53 redirige el tráfico a un endpoint saludable"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Precisamente el failover existe para evitar eso.",
+                    "Incorrecto. Los registros DNS no se borran, cambian su enrutamiento lógico temporalmente.",
+                    "Incorrecto. Lanzar servidores nuevos es tarea del 'Auto Scaling Group', no del DNS.",
+                    "¡Correcto! Route 53 detecta la caída mediante sus 'Health Checks' y automáticamente desvía a los usuarios hacia el servidor de respaldo (pasivo) que esté sano."
+                ]
+            },
+            {
+                enunciado: "¿Por qué combinar DNS y balanceadores?",
+                opciones: [
+                    "Para reducir costes",
+                    "Para ocultar IPs",
+                    "Para alta disponibilidad y rendimiento global",
+                    "Para almacenar datos"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Añadir estos servicios, de hecho, suma costes a la arquitectura.",
+                    "Incorrecto. Aunque el balanceador oculta las IPs de las EC2 internas, no es el motivo principal arquitectónico.",
+                    "¡Correcto! Es el 'Combo Maestro' en Cloud. Route 53 (DNS) decide a qué parte del mundo mandar al usuario rápidamente, y el ELB en esa región reparte el trabajo para que ningún servidor se caiga, garantizando un servicio a prueba de balas.",
+                    "Incorrecto. Ninguno de los dos servicios sirve para almacenar datos."
+                ]
+            }
+        ],
+
+        "Unidad 5: Cómputo (EC2, Contenedores y Serverless)": [
+            {
+                enunciado: "¿Qué servicio permite crear servidores virtuales en AWS?",
+                opciones: [
+                    "EC2",
+                    "S3",
+                    "Lambda",
+                    "DynamoDB"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Amazon EC2 (Elastic Compute Cloud) es el servicio de infraestructura (IaaS) que te permite alquilar y configurar servidores virtuales a medida.",
+                    "Incorrecto. Amazon S3 es un servicio de almacenamiento de objetos, no de cómputo.",
+                    "Incorrecto. Lambda procesa código, pero sin que tú gestiones ni crees servidores virtuales (es serverless).",
+                    "Incorrecto. DynamoDB es un servicio de base de datos NoSQL."
+                ]
+            },
+            {
+                enunciado: "¿Qué tipo de escalado consiste en aumentar el tamaño de una instancia?",
+                opciones: [
+                    "Escalado horizontal",
+                    "Escalado automático",
+                    "Escalado manual",
+                    "Escalado vertical"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. El escalado horizontal (Scale-out) consiste en añadir más servidores, no en hacer uno más grande.",
+                    "Incorrecto. El escalado automático define 'cómo' se hace (sin intervención), no 'qué' se hace con la instancia.",
+                    "Incorrecto. Indica si lo hace un humano o un sistema, no la arquitectura del escalado.",
+                    "¡Correcto! El escalado vertical (Scale-up) significa apagar tu servidor y ponerle un procesador más potente o más memoria RAM (ej. pasar de una t2.micro a una t2.large)."
+                ]
+            },
+            {
+                enunciado: "¿Qué ventaja tiene usar Auto Scaling en EC2?",
+                opciones: [
+                    "Aumenta el coste fijo",
+                    "Ajusta los recursos según la demanda",
+                    "Desactiva el balanceador de carga",
+                    "Duplica los servidores manualmente"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Al contrario, ayuda a reducir costes al apagar servidores cuando no se necesitan.",
+                    "¡Correcto! Auto Scaling enciende servidores automáticamente cuando hay mucho tráfico y los apaga cuando baja, optimizando el rendimiento y la factura.",
+                    "Incorrecto. De hecho, trabaja de la mano con el balanceador de carga para registrar los nuevos servidores.",
+                    "Incorrecto. Es un proceso automático, no requiere intervención manual."
+                ]
+            },
+            {
+                enunciado: "¿Qué tipo de instancia usarías para pruebas o bajo tráfico?",
+                opciones: [
+                    "m5.xlarge",
+                    "p4d.24xlarge",
+                    "t2.large",
+                    "t2.micro"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. La familia M es de propósito general, y un tamaño 'xlarge' es potente y costoso para pruebas simples.",
+                    "Incorrecto. ¡Cuidado con la factura! La familia P4 son bestias con múltiples GPUs diseñadas para Inteligencia Artificial y Machine Learning.",
+                    "Incorrecto. Es más grande y costosa de lo necesario para unas simples pruebas.",
+                    "¡Correcto! Las t2.micro (o t3.micro) son instancias pequeñitas, muy baratas y además entran dentro de la Capa Gratuita (Free Tier) de AWS, ideales para entornos de desarrollo."
+                ]
+            },
+            {
+                enunciado: "¿Qué herramienta te ayuda a monitorear el rendimiento de EC2?",
+                opciones: [
+                    "S3 Explorer",
+                    "Route 53",
+                    "CloudWatch",
+                    "Lambda Console"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. S3 sirve para ver archivos guardados.",
+                    "Incorrecto. Route 53 gestiona dominios web (DNS).",
+                    "¡Correcto! Amazon CloudWatch es el vigilante de AWS. Recoge métricas como el uso de CPU, red o disco de tus EC2 y te permite crear alarmas.",
+                    "Incorrecto. La consola de Lambda solo sirve para monitorizar funciones serverless."
+                ]
+            },
+            {
+                enunciado: "¿Qué herramienta crea y ejecuta contenedores?",
+                opciones: [
+                    "CloudFront",
+                    "Docker",
+                    "EC2",
+                    "Lambda"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Es una red de entrega de contenido (CDN).",
+                    "¡Correcto! Docker es la plataforma estándar de la industria que permite empaquetar una aplicación y todas sus dependencias en un 'contenedor' aislado.",
+                    "Incorrecto. EC2 son máquinas virtuales completas con sistema operativo pesado, no contenedores.",
+                    "Incorrecto. Lambda ejecuta funciones crudas de código, no contenedores tradicionales."
+                ]
+            },
+            {
+                enunciado: "¿Qué servicio de AWS orquesta contenedores Docker?",
+                opciones: [
+                    "ECS",
+                    "Route 53",
+                    "CloudWatch",
+                    "S3"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Amazon ECS (Elastic Container Service) es el orquestador nativo de AWS que se encarga de encender, apagar y gestionar el ciclo de vida de tus contenedores Docker.",
+                    "Incorrecto. Gestiona nombres de dominio.",
+                    "Incorrecto. Monitoriza recursos.",
+                    "Incorrecto. Almacena archivos."
+                ]
+            },
+            {
+                enunciado: "¿Qué ventaja principal tienen los contenedores?",
+                opciones: [
+                    "Son más lentos que las VMs",
+                    "Mayor consumo de recursos",
+                    "Portabilidad y consistencia",
+                    "Requieren hardware físico"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Al no cargar un sistema operativo completo, arrancan en segundos, mucho más rápido que las VMs.",
+                    "Incorrecto. Consumen muchísima menos memoria y CPU que una máquina virtual tradicional.",
+                    "¡Correcto! Al llevar todas sus librerías empaquetadas, un contenedor funciona exactamente igual en el portátil del desarrollador, en un servidor de pruebas y en la nube en producción.",
+                    "Incorrecto. Funcionan virtualizados sobre cualquier hardware."
+                ]
+            },
+            {
+                enunciado: "¿Qué servicio usa Kubernetes en AWS?",
+                opciones: [
+                    "Lambda",
+                    "CloudTrail",
+                    "ECS",
+                    "EKS"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Lambda es serverless.",
+                    "Incorrecto. CloudTrail es para auditoría de seguridad.",
+                    "Incorrecto. ECS es el orquestador propietario de AWS, no usa el estándar Kubernetes.",
+                    "¡Correcto! Amazon EKS (Elastic Kubernetes Service) es el servicio gestionado para desplegar clústeres usando el popular motor open-source Kubernetes."
+                ]
+            },
+            {
+                enunciado: "¿Qué almacena Docker Hub?",
+                opciones: [
+                    "Logs de AWS",
+                    "Imágenes de contenedores",
+                    "Bases de datos",
+                    "Instancias EC2"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Los logs de AWS van a CloudWatch.",
+                    "¡Correcto! Docker Hub es un registro público (como una 'App Store' para desarrolladores) donde se suben y descargan las 'imágenes' base para crear contenedores.",
+                    "Incorrecto. No almacena datos vivos estructurados.",
+                    "Incorrecto. Las instancias de AWS se guardan como AMIs en AWS, no en Docker Hub."
+                ]
+            },
+            {
+                enunciado: "¿Qué hace AWS Lambda?",
+                opciones: [
+                    "Ejecuta código sin servidores",
+                    "Almacena objetos",
+                    "Gestiona bases de datos",
+                    "Proporciona instancias virtuales"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Es el principal servicio Serverless (FaaS) de AWS. Subes tu código y Lambda se encarga de ejecutarlo cuando ocurre un evento, sin que tú configures ningún servidor subyacente.",
+                    "Incorrecto. Ese es el trabajo de S3.",
+                    "Incorrecto. Ese es el trabajo de RDS o DynamoDB.",
+                    "Incorrecto. Ese es el trabajo de EC2."
+                ]
+            },
+            {
+                enunciado: "¿Cuándo se cobra en Lambda?",
+                opciones: [
+                    "Por mes",
+                    "Por servidor activo",
+                    "Por ejecución y tiempo de cómputo",
+                    "Por almacenamiento"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. No hay cuotas fijas mensuales.",
+                    "Incorrecto. No hay servidores activos fijos, no pagas nada si tu código no se está usando.",
+                    "¡Correcto! En Lambda solo pagas por el número de veces que se ejecuta tu código y por los milisegundos exactos que tarda en terminar.",
+                    "Incorrecto. Solo almacenas el peso del código (que es ínfimo y gratuito), pagas por su ejecución."
+                ]
+            },
+            {
+                enunciado: "¿Qué servicio se usa para exponer funciones Lambda como APIs?",
+                opciones: [
+                    "DynamoDB",
+                    "API Gateway",
+                    "S3",
+                    "CloudTrail"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Es una base de datos.",
+                    "¡Correcto! Amazon API Gateway actúa como la 'puerta principal'. Recibe las peticiones HTTP de internet (por ejemplo, desde una app móvil) y las redirige a tu código en Lambda.",
+                    "Incorrecto. S3 sirve archivos estáticos.",
+                    "Incorrecto. Es un servicio de auditoría."
+                ]
+            },
+            {
+                enunciado: "¿Qué ventaja principal ofrece serverless?",
+                opciones: [
+                    "Control total del hardware",
+                    "Costes fijos altos",
+                    "Lento tiempo de despliegue",
+                    "Escalado automático y sin mantenimiento"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Pierdes todo el control sobre el servidor y el hardware.",
+                    "Incorrecto. Al revés, cambias costes fijos por costes totalmente variables (pago por uso real).",
+                    "Incorrecto. El despliegue de una función serverless es rapidísimo.",
+                    "¡Correcto! Te olvidas de actualizar sistemas operativos o parchear seguridad. Además, si llegan miles de peticiones de golpe, AWS multiplica la función automáticamente al instante."
+                ]
+            },
+            {
+                enunciado: "¿Qué herramienta permite depurar funciones Lambda?",
+                opciones: [
+                    "ECS",
+                    "Route 53",
+                    "Aurora",
+                    "CloudWatch Logs"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Es para contenedores.",
+                    "Incorrecto. Es para DNS.",
+                    "Incorrecto. Es una base de datos relacional.",
+                    "¡Correcto! Toda la salida de texto (los 'print' o 'console.log') y los mensajes de error que genera tu código en Lambda se guardan y analizan directamente en CloudWatch Logs."
+                ]
+            }
+        ],
+        "Unidad 6: Almacenamiento y Backup": [
+            {
+                enunciado: "¿Qué servicio de AWS almacena objetos como imágenes o vídeos?",
+                opciones: [
+                    "S3",
+                    "EBS",
+                    "EFS",
+                    "Glacier"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Amazon S3 es el estándar de oro para guardar datos no estructurados (archivos, fotos, vídeos, documentos) dentro de 'buckets'.",
+                    "Incorrecto. EBS es un disco duro puro para encajar en un servidor.",
+                    "Incorrecto. EFS es un sistema de archivos de red para compartir entre servidores.",
+                    "Incorrecto. Glacier es para guardar datos que no vas a mirar casi nunca (archivado frío)."
+                ]
+            },
+            {
+                enunciado: "¿Qué servicio está vinculado directamente a una instancia EC2?",
+                opciones: [
+                    "S3",
+                    "EBS",
+                    "CloudFront",
+                    "EFS"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. S3 se accede por internet vía API, no va enchufado al servidor.",
+                    "¡Correcto! Elastic Block Store (EBS) equivale al disco duro físico 'C:' o 'D:' que le enchufas a tu máquina virtual (EC2) para instalarle el sistema operativo y programas.",
+                    "Incorrecto. Es una CDN.",
+                    "Incorrecto. EFS se puede conectar a muchas EC2, pero no está íntimamente vinculado al hardware de una sola como su disco base."
+                ]
+            },
+            {
+                enunciado: "¿Cuál permite acceso simultáneo desde múltiples servidores?",
+                opciones: [
+                    "EBS",
+                    "S3",
+                    "EFS",
+                    "Glacier"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Como norma general, un disco EBS solo puede estar pinchado en un servidor EC2 a la vez.",
+                    "Incorrecto. S3 se lee por HTTP, no se monta como una carpeta local compartida en el sistema.",
+                    "¡Correcto! Elastic File System (EFS) es un disco de red compartido. Puedes montar la misma carpeta en 10 servidores Linux a la vez y todos verán y editarán los mismos archivos en tiempo real.",
+                    "Incorrecto. Glacier no permite acceso en tiempo real."
+                ]
+            },
+            {
+                enunciado: "¿Qué afirmación describe mejor a S3?",
+                opciones: [
+                    "Es un sistema de ficheros compartido.",
+                    "Se monta como un disco local.",
+                    "Solo se usa para bases de datos.",
+                    "Es almacenamiento de objetos con URLs públicas o privadas."
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Eso describe a EFS.",
+                    "Incorrecto. Eso describe a EBS.",
+                    "Incorrecto. S3 almacena archivos, no tablas relacionales vivas.",
+                    "¡Correcto! En S3 no hay carpetas reales, hay 'objetos' planos, y cada archivo tiene una dirección web (URL) para acceder a él según los permisos configurados."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de estos servicios es ideal para bases de datos empresariales?",
+                opciones: [
+                    "S3",
+                    "EBS",
+                    "EFS",
+                    "Glacier"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. S3 es muy lento para las lecturas/escrituras frenéticas que requiere una base de datos.",
+                    "¡Correcto! Los discos EBS (especialmente los de discos SSD provisionados) ofrecen la velocidad brutal y la baja latencia (alojamiento en bloque) que exige un motor de base de datos pesado instalado en una EC2.",
+                    "Incorrecto. EFS tiene demasiada latencia de red para ser eficiente como motor primario de base de datos.",
+                    "Incorrecto. Glacier tarda horas en dejarte leer la información."
+                ]
+            },
+            {
+                enunciado: "¿Qué servicio AWS se usa para archivado de datos a largo plazo?",
+                opciones: [
+                    "S3 Glacier",
+                    "EBS",
+                    "DynamoDB",
+                    "Lambda"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Amazon S3 Glacier está diseñado para 'congelar' archivos que debes guardar por ley durante años, ofreciendo un precio ridículamente bajo a cambio de un acceso lento.",
+                    "Incorrecto. EBS es muy caro para guardar archivos que no usas.",
+                    "Incorrecto. Es una base de datos muy rápida, nada que ver con archivado frío.",
+                    "Incorrecto. Es un servicio de ejecución de código."
+                ]
+            },
+            {
+                enunciado: "¿Qué característica distingue al backup del archivado?",
+                opciones: [
+                    "El backup se usa para recuperación rápida.",
+                    "El archivado se usa para datos activos.",
+                    "El backup es más barato.",
+                    "No requieren gestión."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Un Backup (copia de seguridad) está pensado para rescatarte rápidamente si hoy se rompe un servidor. El archivado es retención pasiva de datos antiguos que ya no usas.",
+                    "Incorrecto. El archivado se usa precisamente para datos INACTIVOS.",
+                    "Incorrecto. El archivado en servicios como Glacier es muchísimo más barato que mantener copias de seguridad activas.",
+                    "Incorrecto. Ambos requieren políticas de ciclo de vida."
+                ]
+            },
+            {
+                enunciado: "¿Qué herramienta centraliza copias de seguridad en AWS?",
+                opciones: [
+                    "AWS Backup",
+                    "CloudFormation",
+                    "CloudWatch",
+                    "Route 53"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! AWS Backup te permite crear políticas centrales y automatizar copias de seguridad de tus EC2, bases de datos RDS, discos EBS y más, todo desde un solo panel.",
+                    "Incorrecto. Es para desplegar infraestructura mediante código.",
+                    "Incorrecto. Es para monitorización.",
+                    "Incorrecto. Es para red (DNS)."
+                ]
+            },
+            {
+                enunciado: "¿Qué opción describe la política 3-2-1 de backup?",
+                opciones: [
+                    "3 backups diarios, 2 semanales, 1 mensual.",
+                    "3 buckets, 2 Glacier, 1 EFS.",
+                    "3 copias, 2 formatos, 1 ubicación externa.",
+                    "3 versiones, 2 buckets, 1 archivo."
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Eso es una política de retención de calendario.",
+                    "Incorrecto. No tiene que ver con herramientas específicas de AWS.",
+                    "¡Correcto! La regla de oro de la informática: Mantén **3** copias de tus datos, en al menos **2** soportes/formatos diferentes, y guarda **1** copia fuera de tus instalaciones (en la nube o en otro edificio).",
+                    "Incorrecto. Mezcla conceptos."
+                ]
+            },
+            {
+                enunciado: "¿Qué afirmación es correcta sobre Glacier?",
+                opciones: [
+                    "Es un servicio de cómputo.",
+                    "Está diseñado para almacenamiento de bajo coste y poco acceso.",
+                    "Ofrece acceso instantáneo.",
+                    "Solo almacena bases de datos."
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Es un servicio de la familia de Storage.",
+                    "¡Correcto! La clave de S3 Glacier es que cuesta poquísimos céntimos por Gigabyte, asumiendo que rara vez solicitarás ver esos archivos.",
+                    "Incorrecto. Si pides un archivo de la clase 'Glacier Deep Archive', AWS puede tardar hasta 12 horas en prepararlo para que lo descargues.",
+                    "Incorrecto. Almacena cualquier tipo de archivo plano o comprimido."
+                ]
+            }
+        ],
+
+        "Unidad 7: Bases de Datos (RDS y DynamoDB)": [
+            {
+                enunciado: "¿Qué tipo de servicio es Amazon RDS?",
+                opciones: [
+                    "Base de datos relacional gestionada.",
+                    "Servicio de almacenamiento de objetos.",
+                    "Motor NoSQL.",
+                    "Herramienta de monitoreo."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! RDS (Relational Database Service) te permite configurar, operar y escalar bases de datos relacionales (SQL) en la nube de forma sencilla.",
+                    "Incorrecto. El almacenamiento de objetos corresponde a Amazon S3.",
+                    "Incorrecto. El motor NoSQL principal de AWS es Amazon DynamoDB.",
+                    "Incorrecto. Las herramientas de monitoreo corresponden a servicios como Amazon CloudWatch."
+                ]
+            },
+            {
+                enunciado: "¿Qué ventaja ofrece RDS frente a una base on-premise?",
+                opciones: [
+                    "Control total sobre el hardware.",
+                    "Mantenimiento y backups automatizados.",
+                    "Requiere administración manual.",
+                    "No permite escalado."
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. En la nube pierdes el control sobre el hardware físico.",
+                    "¡Correcto! AWS se encarga de las tareas tediosas de administración como aprovisionamiento de hardware, configuración, aplicación de parches y copias de seguridad (backups).",
+                    "Incorrecto. Precisamente reduce la administración manual frente al modelo tradicional.",
+                    "Incorrecto. RDS permite escalar recursos de cómputo y almacenamiento fácilmente."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de los siguientes motores está soportado por RDS?",
+                opciones: [
+                    "DynamoDB",
+                    "MongoDB",
+                    "MySQL",
+                    "Redis"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. DynamoDB es un servicio independiente de base de datos NoSQL.",
+                    "Incorrecto. MongoDB es NoSQL (AWS ofrece DocumentDB para compatibilidad con Mongo).",
+                    "¡Correcto! RDS soporta motores relacionales clásicos: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server y Amazon Aurora.",
+                    "Incorrecto. Redis es una base de datos en memoria (soportada por Amazon ElastiCache)."
+                ]
+            },
+            {
+                enunciado: "¿Qué característica ofrece la opción Multi-AZ?",
+                opciones: [
+                    "Alta disponibilidad mediante réplicas.",
+                    "Aumenta el tamaño de tablas.",
+                    "Cifrado de datos en tránsito.",
+                    "Copias de seguridad locales."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Los despliegues Multi-AZ (Múltiples Zonas de Disponibilidad) mantienen una réplica síncrona en espera en otro centro de datos para asegurar el servicio en caso de fallo de infraestructura.",
+                    "Incorrecto. El tamaño de la tabla depende del almacenamiento aprovisionado, no de Multi-AZ.",
+                    "Incorrecto. El cifrado es una característica de seguridad, independiente de la disponibilidad.",
+                    "Incorrecto. Las copias de seguridad se gestionan de forma independiente y se guardan en S3, no localmente."
+                ]
+            },
+            {
+                enunciado: "¿Qué herramienta ayuda a migrar bases de datos a RDS?",
+                opciones: [
+                    "AWS DMS",
+                    "CloudFront",
+                    "EBS",
+                    "Route 53"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! AWS Database Migration Service (DMS) te permite migrar bases de datos hacia AWS de forma rápida y segura, manteniendo la base de datos de origen operativa durante la migración.",
+                    "Incorrecto. CloudFront es una CDN para entrega web.",
+                    "Incorrecto. EBS son los discos duros para instancias EC2.",
+                    "Incorrecto. Route 53 es un servicio DNS."
+                ]
+            },
+            {
+                enunciado: "¿Qué tipo de base de datos es DynamoDB?",
+                opciones: [
+                    "NoSQL gestionada.",
+                    "Relacional.",
+                    "Temporal.",
+                    "Distribuida localmente."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Amazon DynamoDB es una base de datos de clave-valor y documentos (NoSQL) totalmente gestionada que ofrece un rendimiento ultrarrápido.",
+                    "Incorrecto. Las bases relacionales se gestionan con RDS.",
+                    "Incorrecto. Aunque guarda datos, no se clasifica como una 'base de datos temporal'.",
+                    "Incorrecto. DynamoDB opera a nivel global en la nube, no es un servicio local."
+                ]
+            },
+            {
+                enunciado: "¿Qué ventaja ofrece DynamoDB?",
+                opciones: [
+                    "Alta latencia y bajo coste.",
+                    "Escalado automático y velocidad en milisegundos.",
+                    "Estructura de tablas fijas.",
+                    "Solo sirve para archivos grandes."
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Todo lo contrario, ofrece latencia extremadamente baja.",
+                    "¡Correcto! Está diseñada para manejar millones de peticiones por segundo sin despeinarse, ofreciendo latencias de un solo dígito de milisegundo a cualquier escala.",
+                    "Incorrecto. Al ser NoSQL, su esquema es flexible, no fijo.",
+                    "Incorrecto. Se usa para datos estructurados pequeños (clave-valor), los archivos grandes van a S3."
+                ]
+            },
+            {
+                enunciado: "¿Qué componente permite registrar cambios en DynamoDB?",
+                opciones: [
+                    "API Gateway",
+                    "AWS Backup",
+                    "DynamoDB Streams",
+                    "RDS Logs"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. API Gateway es para crear y publicar APIs.",
+                    "Incorrecto. AWS Backup es para copias de seguridad estáticas.",
+                    "¡Correcto! DynamoDB Streams captura una secuencia temporal de las modificaciones de los elementos en una tabla, permitiendo disparar eventos (ej. invocar una función Lambda al instante).",
+                    "Incorrecto. RDS Logs son registros de bases relacionales."
+                ]
+            },
+            {
+                enunciado: "¿Qué lenguaje permite consultar DynamoDB con sintaxis similar a SQL?",
+                opciones: [
+                    "BashQL",
+                    "MongoQL",
+                    "PartiQL",
+                    "QueryDB"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Lenguaje inventado.",
+                    "Incorrecto. Lenguaje inventado.",
+                    "¡Correcto! PartiQL es un lenguaje de consultas compatible con SQL que facilita a los desarrolladores tradicionales hacer operaciones en tablas de DynamoDB.",
+                    "Incorrecto. Lenguaje inventado."
+                ]
+            },
+            {
+                enunciado: "¿Cuándo conviene usar DynamoDB en lugar de RDS?",
+                opciones: [
+                    "Cuando los datos son dinámicos y no estructurados.",
+                    "Cuando se necesitan relaciones complejas.",
+                    "Cuando hay pocos usuarios.",
+                    "Cuando se usa ERP."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Las bases de datos NoSQL como DynamoDB brillan cuando el esquema de datos puede cambiar frecuentemente y no requiere tablas rígidamente estructuradas.",
+                    "Incorrecto. Para relaciones complejas (JOINs) es mucho mejor el modelo relacional (RDS).",
+                    "Incorrecto. DynamoDB está pensado especialmente para escalas masivas.",
+                    "Incorrecto. Los ERPs tradicionales suelen exigir bases de datos relacionales clásicas (Oracle, SQL Server)."
+                ]
+            }
+        ],
+        "Unidad 8: Buenas prácticas arquitectónicas": [
+            {
+                enunciado: "¿Cuántos pilares tiene el AWS Well-Architected Framework?",
+                opciones: [
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Son más.",
+                    "Incorrecto. Son más.",
+                    "Incorrecto. Originalmente eran 5, pero se añadió uno más recientemente.",
+                    "¡Correcto! Actualmente cuenta con 6 pilares: Excelencia operativa, Seguridad, Fiabilidad, Rendimiento, Optimización de costes y Sostenibilidad."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de los siguientes NO es un pilar del Framework?",
+                opciones: [
+                    "Fiabilidad",
+                    "Marketing digital",
+                    "Optimización de costes",
+                    "Seguridad"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. La Fiabilidad (Reliability) sí es un pilar crítico.",
+                    "¡Correcto! El Marketing Digital no guarda ninguna relación con el diseño arquitectónico de sistemas informáticos en la nube.",
+                    "Incorrecto. La Optimización de costes sí es un pilar.",
+                    "Incorrecto. La Seguridad sí es un pilar fundamental."
+                ]
+            },
+            {
+                enunciado: "¿Qué pilar se centra en la automatización y mejora continua?",
+                opciones: [
+                    "Coste",
+                    "Excelencia operativa",
+                    "Rendimiento",
+                    "Seguridad"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Ese pilar busca eliminar gastos innecesarios.",
+                    "¡Correcto! La Excelencia Operativa abarca la capacidad de ejecutar y monitorizar sistemas, además de mejorar continuamente los procesos (automatización, DevOps).",
+                    "Incorrecto. Ese pilar busca usar los recursos de cómputo de manera eficiente.",
+                    "Incorrecto. Ese pilar busca proteger la información y los sistemas."
+                ]
+            },
+            {
+                enunciado: "¿Qué herramienta de AWS permite aplicar el Framework?",
+                opciones: [
+                    "CloudTrail",
+                    "Lambda Console",
+                    "Route 53",
+                    "Well-Architected Tool"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Es un servicio de auditoría de actividad.",
+                    "Incorrecto. Es el panel de control de funciones serverless.",
+                    "Incorrecto. Es el servicio DNS.",
+                    "¡Correcto! AWS Well-Architected Tool es un servicio gratuito que te guía mediante un cuestionario para revisar la arquitectura de tus cargas de trabajo contra las mejores prácticas."
+                ]
+            },
+            {
+                enunciado: "¿Qué significa la sostenibilidad en el contexto del Framework?",
+                opciones: [
+                    "Mantener servidores activos constantemente.",
+                    "Reducir impacto ambiental mediante eficiencia.",
+                    "Aumentar el consumo de CPU.",
+                    "Duplicar instancias EC2."
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Mantener servidores activos cuando no se usan perjudica la sostenibilidad.",
+                    "¡Correcto! Se trata de minimizar el impacto medioambiental, reduciendo el consumo de energía y maximizando la eficiencia de los recursos provisionados.",
+                    "Incorrecto. Un alto consumo no eficiente es perjudicial.",
+                    "Incorrecto. Duplicar instancias sin necesidad empeora la huella de carbono."
+                ]
+            },
+            {
+                enunciado: "¿Qué busca la alta disponibilidad?",
+                opciones: [
+                    "Aumentar la latencia.",
+                    "Desactivar instancias inactivas.",
+                    "Minimizar el tiempo de inactividad.",
+                    "Reducir costes de hardware."
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Se busca reducir la latencia.",
+                    "Incorrecto. Eso lo busca la optimización de costes y el auto escalado.",
+                    "¡Correcto! High Availability (HA) busca garantizar que un sistema operativo y accesible sin interrupciones, minimizando los cortes de servicio.",
+                    "Incorrecto. De hecho, alcanzar alta disponibilidad a menudo requiere invertir más en recursos redundantes."
+                ]
+            },
+            {
+                enunciado: "¿Qué servicio distribuye tráfico automáticamente?",
+                opciones: [
+                    "CloudFront",
+                    "Elastic Load Balancer",
+                    "Lambda",
+                    "S3"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. CloudFront distribuye contenido cacheado a nivel global, pero no balancea tráfico entre servidores de forma primaria.",
+                    "¡Correcto! Elastic Load Balancing (ELB) distribuye automáticamente el tráfico de aplicaciones entrante a través de múltiples destinos, como instancias EC2.",
+                    "Incorrecto. Lambda ejecuta código en respuesta a eventos.",
+                    "Incorrecto. S3 almacena archivos estáticos."
+                ]
+            },
+            {
+                enunciado: "¿Qué significa “Multi-AZ”?",
+                opciones: [
+                    "Copia de datos local.",
+                    "Múltiples usuarios por zona.",
+                    "Recursos replicados en varias zonas de disponibilidad.",
+                    "Varias regiones activas."
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Implica copias geográficamente separadas, no puramente locales.",
+                    "Incorrecto. No hace referencia a la cantidad de usuarios.",
+                    "¡Correcto! Significa distribuir infraestructura o replicar bases de datos a través de varias Availability Zones dentro de una misma Región para tolerancia a fallos.",
+                    "Incorrecto. Si abarca varias regiones se denomina 'Multi-Region'."
+                ]
+            },
+            {
+                enunciado: "¿Qué herramienta verifica la salud de los recursos?",
+                opciones: [
+                    "Route 53 Health Checks",
+                    "AWS Backup",
+                    "EC2 Dashboard",
+                    "CloudTrail"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Las comprobaciones de estado de Amazon Route 53 vigilan el estado y el rendimiento de las aplicaciones web y servidores, permitiendo redirigir el tráfico si algo falla.",
+                    "Incorrecto. Sirve para gestionar copias de seguridad.",
+                    "Incorrecto. Es un panel de gestión, no un comprobador de estado de red.",
+                    "Incorrecto. Audita la actividad de la cuenta (API calls)."
+                ]
+            },
+            {
+                enunciado: "¿Qué relación tienen alta disponibilidad y redundancia?",
+                opciones: [
+                    "La redundancia permite la alta disponibilidad.",
+                    "No están relacionadas.",
+                    "Son conceptos opuestos.",
+                    "Una elimina la otra."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! La redundancia (tener componentes duplicados listos para asumir la carga) es el mecanismo técnico clave para lograr la Alta Disponibilidad de un sistema.",
+                    "Incorrecto. Están íntimamente ligadas.",
+                    "Incorrecto. Van de la mano.",
+                    "Incorrecto. Se complementan."
+                ]
+            },
+            {
+                enunciado: "¿Qué caracteriza la escalabilidad horizontal?",
+                opciones: [
+                    "Cambiar sistema operativo",
+                    "Añadir más servidores",
+                    "Aumentar RAM",
+                    "Migrar regiones"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. El sistema operativo no influye en la arquitectura de escalabilidad.",
+                    "¡Correcto! Escalar horizontalmente (Scale-out) significa añadir más instancias (más máquinas) para repartir el trabajo, en vez de hacer una máquina más potente.",
+                    "Incorrecto. Aumentar RAM o CPU es Escalabilidad Vertical (Scale-up).",
+                    "Incorrecto. Migrar regiones es un tema de despliegue global o Disaster Recovery."
+                ]
+            },
+            {
+                enunciado: "¿Qué herramienta identifica gastos excesivos?",
+                opciones: [
+                    "CloudTrail",
+                    "Cost Explorer",
+                    "IAM",
+                    "Route 53"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Es para auditoría de acciones de usuarios.",
+                    "¡Correcto! AWS Cost Explorer cuenta con una interfaz que permite visualizar, comprender y administrar el uso y los costes de AWS a lo largo del tiempo.",
+                    "Incorrecto. Gestiona accesos y permisos.",
+                    "Incorrecto. Es un servicio de DNS."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es un error común que ocurre sin optimización?",
+                opciones: [
+                    "DNS lento",
+                    "Exceso de logs",
+                    "Overprovisioning",
+                    "Poca latencia"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. La velocidad de DNS no tiene que ver con la optimización de servidores.",
+                    "Incorrecto. Los logs en exceso gastan espacio, pero no es el error principal arquitectónico.",
+                    "¡Correcto! El sobreaprovisionamiento (Overprovisioning) es mantener servidores mucho más grandes y potentes de lo necesario, desperdiciando dinero constantemente.",
+                    "Incorrecto. La baja latencia es de hecho algo deseable."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de las siguientes es una métrica típica utilizada para escalar?",
+                opciones: [
+                    "CPU",
+                    "Idioma",
+                    "Ruta DNS",
+                    "Zona"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! El uso promedio de CPU de los servidores es la métrica más habitual para decirle al Auto Scaling que encienda más máquinas (ej. cuando la CPU pasa del 75%).",
+                    "Incorrecto. Es un dato del usuario, no métrica de rendimiento.",
+                    "Incorrecto. Es un dato de red.",
+                    "Incorrecto. Es un dato de ubicación física."
+                ]
+            },
+            {
+                enunciado: "¿Qué reduce recursos cuando baja la demanda?",
+                opciones: [
+                    "MFA",
+                    "Auto Scaling",
+                    "EBS",
+                    "SNS"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. MFA es Multi-Factor Authentication (Seguridad).",
+                    "¡Correcto! AWS Auto Scaling no solo crece (Scale-out) cuando hay picos de demanda, sino que reduce la infraestructura (Scale-in) apagando servidores cuando no hacen falta para ahorrar.",
+                    "Incorrecto. EBS son volúmenes de almacenamiento.",
+                    "Incorrecto. SNS es el servicio de notificaciones por mensaje."
+                ]
+            },
+            {
+                enunciado: "¿Qué mide el RTO?",
+                opciones: [
+                    "Tamaño de base de datos",
+                    "Tiempo máximo para recuperar un servicio",
+                    "Cantidad de usuarios",
+                    "Coste mensual"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. No es una métrica de volumen.",
+                    "¡Correcto! El Recovery Time Objective (RTO) es una métrica empresarial vital que dicta cuánto tiempo puede estar un sistema caído antes de que el negocio sufra consecuencias inaceptables.",
+                    "Incorrecto. No mide carga de usuarios.",
+                    "Incorrecto. Es una métrica de tiempo, no financiera."
+                ]
+            },
+            {
+                enunciado: "¿Qué aporta Multi-AZ?",
+                opciones: [
+                    "Alta disponibilidad en una región",
+                    "Copias manuales",
+                    "Menor latencia global",
+                    "Nuevos lenguajes"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Multi-AZ blinda tu arquitectura contra la caída de un centro de datos entero, asegurando que tu sistema siga funcionando sin salir de la misma Región AWS.",
+                    "Incorrecto. Facilita la redundancia automática, no manual.",
+                    "Incorrecto. La menor latencia global se consigue con Multi-Region o CloudFront (CDN).",
+                    "Incorrecto. No afecta a la capa de programación de la aplicación."
+                ]
+            },
+            {
+                enunciado: "¿Por qué es útil el versionado en S3?",
+                opciones: [
+                    "Cambia permisos",
+                    "Recupera versiones antiguas",
+                    "Reduce latencia",
+                    "Encripta buckets"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Los permisos se cambian con IAM o Bucket Policies.",
+                    "¡Correcto! Al activar el versionado, si sobrescribes o borras accidentalmente un archivo vital en S3, AWS conserva la versión anterior para que puedas deshacer el desastre.",
+                    "Incorrecto. No influye en la velocidad de acceso.",
+                    "Incorrecto. El cifrado lo gestiona KMS o el cifrado del servidor (SSE)."
+                ]
+            },
+            {
+                enunciado: "¿Cuál de las siguientes opciones es una herramienta para realizar copias de seguridad en AWS?",
+                opciones: [
+                    "AWS Backup",
+                    "IAM",
+                    "SNS",
+                    "VPC"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! AWS Backup es el servicio totalmente gestionado que centraliza y automatiza la protección de datos en todos los servicios de AWS.",
+                    "Incorrecto. IAM gestiona seguridad y accesos.",
+                    "Incorrecto. SNS envía notificaciones push/email.",
+                    "Incorrecto. VPC gestiona las redes privadas virtuales."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es la estrategia más resiliente?",
+                opciones: [
+                    "Multi-usuario",
+                    "Multi-AZ",
+                    "Multi-cuenta",
+                    "Multi-Región"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. No es un modelo arquitectónico de recuperación ante desastres.",
+                    "Incorrecto. Muy buena para fallos locales, pero vulnerable si un desastre natural destruye una región geográfica completa.",
+                    "Incorrecto. Ayuda con la seguridad lógica, pero no es una estrategia de continuidad física.",
+                    "¡Correcto! Distribuir tu sistema en Múltiples Regiones (ej. Europa y EEUU simultáneamente) es el máximo nivel de Disaster Recovery, salvando tu app incluso si un país entero pierde conexión."
+                ]
+            }
+        ],
+
+            "Unidad 9: Escalabilidad y Monitorización": [
+            {
+                enunciado: "¿Qué servicio distribuye tráfico entre varias instancias EC2?",
+                opciones: [
+                    "Elastic Load Balancer",
+                    "CloudFront",
+                    "S3",
+                    "Route 53"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Elastic Load Balancing (ELB) actúa como un guardia de tráfico, repartiendo las peticiones entrantes entre varios servidores para que ninguno se sature.",
+                    "Incorrecto. CloudFront es una red de entrega de contenido (CDN) para acelerar la carga web.",
+                    "Incorrecto. S3 es para almacenar archivos.",
+                    "Incorrecto. Route 53 es un servicio DNS que traduce dominios a IPs."
+                ]
+            },
+            {
+                enunciado: "¿Qué función tiene Auto Scaling?",
+                opciones: [
+                    "Almacenar datos.",
+                    "Ajustar el número de instancias según la demanda.",
+                    "Cifrar conexiones.",
+                    "Generar logs."
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. De esto se encargan EBS o S3.",
+                    "¡Correcto! AWS Auto Scaling añade servidores automáticamente si hay picos de tráfico y los elimina cuando la demanda baja para ahorrar costes.",
+                    "Incorrecto. El cifrado se gestiona mediante certificados ACM o KMS.",
+                    "Incorrecto. La generación de registros la hace CloudWatch o CloudTrail."
+                ]
+            },
+            {
+                enunciado: "¿Qué métrica suele usarse para activar Auto Scaling?",
+                opciones: [
+                    "Fecha de creación",
+                    "Nombre del bucket",
+                    "Número de usuarios registrados",
+                    "Uso de CPU"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Es un dato estático que no indica la carga del sistema.",
+                    "Incorrecto. No tiene relación con el rendimiento de los servidores.",
+                    "Incorrecto. Aunque el tráfico afecta, Auto Scaling se basa en métricas de hardware, no en la base de datos de usuarios.",
+                    "¡Correcto! El porcentaje de uso de CPU es la métrica más habitual (por ejemplo, encender otro servidor si la CPU media supera el 70%)."
+                ]
+            },
+            {
+                enunciado: "¿Qué sucede si una instancia falla en un grupo balanceado?",
+                opciones: [
+                    "El tráfico se redirige automáticamente a otra.",
+                    "Se apaga todo el sistema.",
+                    "Los usuarios pierden conexión.",
+                    "Se reinicia el balanceador."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! El balanceador hace 'comprobaciones de estado' constantemente. Si detecta que un servidor ha caído, deja de enviarle tráfico y lo manda a los servidores sanos.",
+                    "Incorrecto. Justamente el balanceador existe para evitar que el sistema entero caiga.",
+                    "Incorrecto. El diseño busca que la caída sea transparente para el usuario final.",
+                    "Incorrecto. El balanceador sigue funcionando de forma independiente a los servidores que tenga detrás."
+                ]
+            },
+            {
+                enunciado: "¿Qué tipo de balanceador se usa para tráfico HTTP/HTTPS?",
+                opciones: [
+                    "Application Load Balancer",
+                    "Classic Load Balancer",
+                    "Global Accelerator",
+                    "Network Load Balancer"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! El Application Load Balancer (ALB) opera en la capa 7 del modelo OSI y es el ideal para enrutar el tráfico web avanzado (HTTP y HTTPS).",
+                    "Incorrecto. Es una generación antigua que AWS ya no recomienda para arquitecturas nuevas.",
+                    "Incorrecto. Es un servicio de red global para mejorar el rendimiento, no un balanceador local.",
+                    "Incorrecto. El NLB opera en la capa 4 (TCP/UDP) y se usa para tráfico que requiere latencias ultra bajas y no depende de HTTP."
+                ]
+            },
+            {
+                enunciado: "¿Qué servicio permite monitorear recursos de AWS en tiempo real?",
+                opciones: [
+                    "CloudTrail",
+                    "CloudWatch",
+                    "IAM",
+                    "S3"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. CloudTrail es para auditar seguridad (quién hizo qué en tu cuenta).",
+                    "¡Correcto! Amazon CloudWatch recopila datos de monitoreo y funcionamiento en forma de registros, métricas y eventos en tiempo real.",
+                    "Incorrecto. IAM gestiona usuarios y permisos.",
+                    "Incorrecto. S3 almacena archivos estáticos."
+                ]
+            },
+            {
+                enunciado: "¿Qué métrica suele usarse para medir carga de servidor?",
+                opciones: [
+                    "CPUUtilization",
+                    "DiskType",
+                    "IAMRole",
+                    "RouteTraffic"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! CPUUtilization es el nombre exacto de la métrica nativa en CloudWatch que indica el porcentaje de procesador que está consumiendo una instancia EC2.",
+                    "Incorrecto. El tipo de disco es una configuración de hardware, no una métrica en vivo.",
+                    "Incorrecto. El rol de IAM define permisos, no rendimiento.",
+                    "Incorrecto. No es una métrica estándar de carga de EC2."
+                ]
+            },
+            {
+                enunciado: "¿Qué servicio se usa para enviar alertas de CloudWatch?",
+                opciones: [
+                    "SNS",
+                    "EC2",
+                    "S3",
+                    "VPC"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! Amazon Simple Notification Service (SNS) se integra con las alarmas de CloudWatch para enviarte correos electrónicos, SMS o notificaciones push si algo va mal.",
+                    "Incorrecto. EC2 es el servicio de servidores.",
+                    "Incorrecto. S3 es almacenamiento.",
+                    "Incorrecto. VPC es el servicio de redes privadas."
+                ]
+            },
+            {
+                enunciado: "¿Qué acción puede activar una alarma de CloudWatch?",
+                opciones: [
+                    "Apagar todo el sistema.",
+                    "Cambiar de región.",
+                    "Escalar instancias con Auto Scaling.",
+                    "Reiniciar Route 53."
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. No se utiliza para acciones tan destructivas globales.",
+                    "Incorrecto. El cambio de región es una acción manual de arquitectura.",
+                    "¡Correcto! Una alarma (ej. 'Tráfico alto') puede disparar una política de Auto Scaling para que añada automáticamente más servidores a tu arquitectura.",
+                    "Incorrecto. Route 53 es un servicio global DNS gestionado, no se 'reinicia' por alarmas."
+                ]
+            },
+            {
+                enunciado: "¿Qué componente permite visualizar métricas en paneles?",
+                opciones: [
+                    "CloudTrail",
+                    "CloudWatch Dashboards",
+                    "RDS Logs",
+                    "S3 Console"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Es un registro en texto plano de actividad API.",
+                    "¡Correcto! Los Dashboards (paneles) de CloudWatch permiten crear vistas personalizadas con gráficas atractivas para monitorizar tus recursos de un vistazo.",
+                    "Incorrecto. Son archivos de texto de las bases de datos.",
+                    "Incorrecto. Es el administrador de archivos."
+                ]
+            }
+        ],
+        "Unidad 10: Modelo de Precios y Gestión de Costes": [
+            {
+                enunciado: "¿Cuál es el principio del modelo de precios de AWS?",
+                opciones: [
+                    "Pago por uso",
+                    "Cuota mensual fija",
+                    "Licencia perpetua",
+                    "Pago por adelantado"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! La filosofía fundamental del cloud es el modelo de 'Pay-as-you-go', donde solo facturas por los recursos exactos que consumes.",
+                    "Incorrecto. A diferencia de los hostings tradicionales, en cloud los costes son variables.",
+                    "Incorrecto. Las licencias perpetuas son propias del modelo de software tradicional on-premise.",
+                    "Incorrecto. Aunque hay planes opcionales que lo permiten para ahorrar, no es el principio básico ni obligatorio."
+                ]
+            },
+            {
+                enunciado: "¿Qué ventaja ofrece la facturación consolidada?",
+                opciones: [
+                    "Pagar por separado cada cuenta.",
+                    "Agrupar costes y obtener descuentos por volumen.",
+                    "Limitar el uso de recursos.",
+                    "Reducir el tráfico en red."
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. Precisamente hace lo contrario: unifica los pagos de varias cuentas.",
+                    "¡Correcto! A través de AWS Organizations, puedes juntar el uso de todas las cuentas de tu empresa en una sola factura, lo que te ayuda a alcanzar antes los umbrales de descuento por volumen que ofrece AWS.",
+                    "Incorrecto. Para limitar recursos se usan políticas de IAM o SCPs, no la factura.",
+                    "Incorrecto. No tiene impacto técnico en la arquitectura de red."
+                ]
+            },
+            {
+                enunciado: "¿Qué herramienta sirve para estimar costes antes de desplegar un servicio?",
+                opciones: [
+                    "AWS Pricing Calculator",
+                    "CloudWatch",
+                    "IAM",
+                    "Route 53"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! La Calculadora de Precios de AWS es una herramienta web que te permite crear una arquitectura teórica y ver cuánto te costaría al mes antes de gastar un céntimo.",
+                    "Incorrecto. Monitoriza el rendimiento de recursos ya creados.",
+                    "Incorrecto. Gestiona accesos y permisos.",
+                    "Incorrecto. Gestiona dominios DNS."
+                ]
+            },
+            {
+                enunciado: "¿Qué recomendación ayuda a reducir costes innecesarios?",
+                opciones: [
+                    "Apagar servicios no utilizados.",
+                    "Mantener instancias activas todo el tiempo.",
+                    "Usar siempre instancias grandes.",
+                    "Duplicar zonas de disponibilidad."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! En AWS pagas por segundo. Apagar los servidores de desarrollo por la noche y los fines de semana es una de las mayores fuentes de ahorro.",
+                    "Incorrecto. Si no tienen tráfico, estarías tirando dinero.",
+                    "Incorrecto. El sobreaprovisionamiento dispara las facturas. Debes usar el tamaño justo (Right-sizing).",
+                    "Incorrecto. Aunque mejora la disponibilidad, aumenta considerablemente la factura."
+                ]
+            },
+            {
+                enunciado: "¿Qué tipo de plan ofrece ahorro a largo plazo con compromiso de uso?",
+                opciones: [
+                    "Free Tier",
+                    "Pay-as-you-go",
+                    "Savings Plans",
+                    "Spot Instances"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Es la capa gratuita introductoria para cuentas nuevas.",
+                    "Incorrecto. Es el modelo estándar sin compromisos pero con precios normales.",
+                    "¡Correcto! Los Savings Plans (y las Instancias Reservadas) ofrecen descuentos gigantescos a cambio de comprometerse a pagar un nivel de uso constante durante 1 o 3 años.",
+                    "Incorrecto. Las Instancias Spot son muy baratas pero te las pueden quitar en cualquier momento; no son un plan de compromiso a largo plazo."
+                ]
+            },
+            {
+                enunciado: "¿Qué herramienta permite crear presupuestos y alertas en AWS?",
+                opciones: [
+                    "AWS Budgets",
+                    "CloudWatch",
+                    "IAM",
+                    "Route 53"
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! AWS Budgets te permite definir límites de gasto mensuales. Si se pronostica que vas a superar ese límite, te envía un aviso automático.",
+                    "Incorrecto. CloudWatch vigila el hardware y las aplicaciones, no la factura financiera.",
+                    "Incorrecto. IAM gestiona la seguridad.",
+                    "Incorrecto. Route 53 es para resolución de nombres web."
+                ]
+            },
+            {
+                enunciado: "¿Qué hace AWS cuando superas tu presupuesto?",
+                opciones: [
+                    "Detiene todos los servicios automáticamente.",
+                    "Envía una alerta al usuario.",
+                    "Duplica los recursos activos.",
+                    "Reinicia la cuenta."
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. AWS NUNCA detiene tus servidores por temas de presupuesto por defecto, ya que un apagón en una app en producción podría ser catastrófico para tu negocio.",
+                    "¡Correcto! Su función principal es avisarte (por email o SMS) para que tú decidas qué quieres apagar o escalar a la baja.",
+                    "Incorrecto. No haría más que empeorar el problema económico.",
+                    "Incorrecto. El reinicio de la cuenta no es una acción que realice el sistema financiero."
+                ]
+            },
+            {
+                enunciado: "¿Qué servicio permite analizar el gasto histórico y tendencias?",
+                opciones: [
+                    "CloudTrail",
+                    "RDS",
+                    "SNS",
+                    "Cost Explorer"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. Audita seguridad y llamadas a la API.",
+                    "Incorrecto. Es el servicio de bases de datos.",
+                    "Incorrecto. Es el servicio de notificaciones.",
+                    "¡Correcto! AWS Cost Explorer es una interfaz gráfica completísima donde puedes desglosar tu factura, ver en qué servicio gastas más y analizar tendencias futuras."
+                ]
+            },
+            {
+                enunciado: "¿Cuál es una práctica recomendable de control de costes?",
+                opciones: [
+                    "Mantener instancias siempre activas.",
+                    "No revisar la factura hasta fin de mes.",
+                    "Configurar alertas al 80% y 100% del gasto.",
+                    "Desactivar las notificaciones."
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Genera gastos innecesarios si no hay demanda.",
+                    "Incorrecto. La revisión constante previene sustos por picos de tráfico imprevistos.",
+                    "¡Correcto! Configurar alarmas escalonadas (por ejemplo, que te avise cuando lleves el 80% del presupuesto consumido) te da margen de maniobra antes de pasarte de tu límite.",
+                    "Incorrecto. Las notificaciones son tu principal línea de defensa financiera."
+                ]
+            },
+            {
+                enunciado: "¿Qué mensaje clave resume la gestión de costes en AWS?",
+                opciones: [
+                    "Usa instancias grandes para prevenir problemas.",
+                    "Nunca revises tu presupuesto.",
+                    "No dejes servicios encendidos.",
+                    "“Paga siempre por adelantado.”"
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Eso es sobreaprovisionamiento y es tirar el dinero.",
+                    "Incorrecto. La vigilancia proactiva es fundamental.",
+                    "¡Correcto! La regla de oro del Cloud: Lo que está encendido, cuesta dinero. Apaga (o destruye) cualquier máquina, entorno de prueba o base de datos que ya no estés usando.",
+                    "Incorrecto. El pago adelantado es opcional, el modelo principal es pagar solo por lo usado."
+                ]
+            }
+        ],
+        "Unidad 11: Arquitectura Serverless y Microservicios": [
+            {
+                enunciado: "¿Qué servicio AWS ejecuta funciones bajo demanda sin servidores?",
+                opciones: [
+                    "RDS",
+                    "EC2",
+                    "CloudFront",
+                    "AWS Lambda"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. RDS gestiona bases de datos relacionales, requiere elegir el tamaño del servidor subyacente.",
+                    "Incorrecto. EC2 proporciona servidores virtuales completos que debes mantener y parchear.",
+                    "Incorrecto. CloudFront es una CDN para caché global.",
+                    "¡Correcto! AWS Lambda es la estrella del mundo Serverless. Subes tu código, y Lambda lo ejecuta solo cuando se le llama, escalando automáticamente y cobrando solo por milisegundos de uso."
+                ]
+            },
+            {
+                enunciado: "¿Qué componente recibe las peticiones HTTP y las dirige a las funciones Lambda?",
+                opciones: [
+                    "S3",
+                    "API Gateway",
+                    "CloudWatch",
+                    "Route 53"
+                ],
+                correcta: 1,
+                feedback: [
+                    "Incorrecto. S3 sirve para alojar archivos estáticos o la interfaz (frontend) de tu web.",
+                    "¡Correcto! Amazon API Gateway crea 'puertas' web (APIs REST o HTTP) que recogen las peticiones de los usuarios y disparan el código almacenado en tus funciones Lambda.",
+                    "Incorrecto. Es un servicio de monitorización.",
+                    "Incorrecto. Es un servicio DNS."
+                ]
+            },
+            {
+                enunciado: "¿Qué caracteriza una arquitectura de microservicios?",
+                opciones: [
+                    "Cada componente es independiente y escalable.",
+                    "Todos los servicios están en un solo bloque.",
+                    "Solo usa bases relacionales.",
+                    "Requiere un único servidor físico."
+                ],
+                correcta: 0,
+                feedback: [
+                    "¡Correcto! En los microservicios, una aplicación grande se divide en pequeñas piezas independientes (ej. el carrito, el catálogo, los usuarios). Si el catálogo recibe muchas visitas, se escala solo esa pieza sin afectar al resto.",
+                    "Incorrecto. Ese es el modelo de arquitectura Monolítica tradicional.",
+                    "Incorrecto. De hecho, los microservicios promueven usar la base de datos más adecuada para cada pequeña pieza (mezclando SQL y NoSQL).",
+                    "Incorrecto. Se ejecutan distribuidos por la nube."
+                ]
+            },
+            {
+                enunciado: "¿Qué ventaja tiene una arquitectura serverless frente a una tradicional?",
+                opciones: [
+                    "Coste fijo mensual.",
+                    "Control manual de servidores.",
+                    "Escalado automático y pago por ejecución.",
+                    "Requiere más mantenimiento."
+                ],
+                correcta: 2,
+                feedback: [
+                    "Incorrecto. Tradicional suele tener coste fijo; serverless es 100% variable.",
+                    "Incorrecto. En serverless pierdes la capacidad de entrar al sistema operativo del servidor.",
+                    "¡Correcto! AWS se encarga de multiplicar los recursos si hay un millón de usuarios de golpe, y si no hay ninguno, el coste cae a cero euros.",
+                    "Incorrecto. Elimina por completo las tareas de mantenimiento de sistemas operativos."
+                ]
+            },
+            {
+                enunciado: "¿Qué servicio se usa para almacenar datos dinámicos de usuarios?",
+                opciones: [
+                    "S3",
+                    "EC2",
+                    "Aurora",
+                    "DynamoDB"
+                ],
+                correcta: 3,
+                feedback: [
+                    "Incorrecto. S3 no es una base de datos para almacenar perfiles dinámicos con consultas ultrarrápidas, es para archivos masivos.",
+                    "Incorrecto. EC2 son servidores de procesamiento.",
+                    "Incorrecto. Aurora es relacional (SQL) y potente, pero requiere aprovisionamiento inicial y definir tablas estrictas.",
+                    "¡Correcto! DynamoDB es el complemento perfecto para Lambda en arquitecturas Serverless. Es NoSQL, responde en milisegundos y escala automáticamente para guardar datos rápidos y variables."
+                ]
+            }
+        ]
+   
         },
             "Redes": {
                 "Bloque 1: Fundamentos OSI, Capa Física y Ethernet": [
