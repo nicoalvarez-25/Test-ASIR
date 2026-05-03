@@ -8541,14 +8541,22 @@
                 feedbackBox.className = "feedback feedback-incorrect show";
             }
 
+            // ... (resto de tu código de checkAnswer por arriba) ...
+
             feedbackHTML += `<ul class="feedback-list">`;
             q.opciones.forEach((texto, i) => {
                 let icono = (i === q.correcta) ? "✅" : "❌";
                 let tuEleccion = (i === selectedIndex) ? " <em>(Tu respuesta)</em>" : "";
                 
+                let textoSeguro = texto.replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+                
+                let feedbackOriginal = q.feedback[i] || ""; 
+                let feedbackSeguro = feedbackOriginal.replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+                
+                // 3. Metemos las dos variables seguras en el HTML
                 feedbackHTML += `<li>
-                    <div class="feedback-title">${icono} ${texto} <span style="font-weight: normal; opacity: 0.8;">${tuEleccion}</span></div>
-                    <div class="feedback-desc">${q.feedback[i]}</div>
+                    <div class="feedback-title">${icono} ${textoSeguro} <span style="font-weight: normal; opacity: 0.8;">${tuEleccion}</span></div>
+                    <div class="feedback-desc">${feedbackSeguro}</div>
                 </li>`;
             });
             feedbackHTML += `</ul>`;
