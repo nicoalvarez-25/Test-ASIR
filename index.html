@@ -619,6 +619,332 @@
                         feedback: ["Las dobles barras solo comentan una línea.", "Ese es el formato para comentar en HTML.", "¡Sí! Todo lo que haya entre /* y */ será ignorado por el navegador.", "Ese formato se usa en Markdown para poner negritas."]
                     }
                     // 🔽 MANTÉN AQUÍ TUS PREGUNTAS DE MARCAS 🔽
+                ],
+                "Test repaso clase: HTML, CSS, XML y JS": [
+                   {
+                        enunciado: "¿Qué etiqueta indica el idioma principal del documento HTML?",
+                        opciones: ["<lang>", "<meta lang=\"...\">", "<html lang=\"...\">", "<body lang=\"...\">"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. No existe la etiqueta <lang> en HTML5.", "Incorrecto. El idioma principal no se define con un meta tag.", "¡Correcto! El atributo 'lang' se coloca en la etiqueta raíz <html> para que los navegadores y lectores de pantalla conozcan el idioma de toda la página.", "Incorrecto. Aunque el body puede tenerlo, la buena práctica y el estándar indican ponerlo en el <html>."]
+                    },
+                    {
+                        enunciado: "¿Qué etiqueta se usa para enlazar un archivo CSS externo?",
+                        opciones: ["<link>", "<script>", "<meta>", "<cite>"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Se usa <link rel=\"stylesheet\" href=\"...\"> dentro del <head>.", "Incorrecto. <script> se usa para enlazar o escribir código JavaScript.", "Incorrecto. <meta> define metadatos como el charset o el viewport.", "Incorrecto. <cite> se usa para citar el título de una obra."]
+                    },
+                    {
+                        enunciado: "¿Qué atributo es obligatorio en la etiqueta <img> para accesibilidad?",
+                        opciones: ["title", "alt", "caption", "srcset"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. 'title' muestra un tooltip al pasar el ratón, pero no es obligatorio.", "¡Correcto! 'alt' (texto alternativo) es vital para lectores de pantalla y por si la imagen no carga.", "Incorrecto. No existe como atributo (existe <figcaption> como etiqueta).", "Incorrecto. Sirve para cargar imágenes responsive, pero no es obligatorio para la accesibilidad básica."]
+                    },
+                    {
+                        enunciado: "¿Qué etiqueta representa un contenido independiente que podría distribuirse por separado (por ejemplo, un post)?",
+                        opciones: ["<section>", "<article>", "<aside>", "<div>"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Una section agrupa contenido temático, pero no implica que sea distribuible por sí solo.", "¡Correcto! Es ideal para entradas de blog, noticias o comentarios de foros, ya que tienen sentido por sí mismos.", "Incorrecto. Es para contenido secundario o tangencial (barras laterales).", "Incorrecto. Es un contenedor genérico sin ningún valor semántico."]
+                    },
+                    {
+                        enunciado: "¿Qué etiqueta se usa para crear un salto de línea?",
+                        opciones: ["<hr>", "<br>", "<line>", "<lb>"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. <hr> (horizontal rule) crea una línea separadora temática.", "¡Correcto! <br> (break) rompe la línea de texto de forma manual.", "Incorrecto. No existe en HTML estándar (es de SVG).", "Incorrecto. No existe en HTML."]
+                    },
+                    {
+                        enunciado: "¿Qué atributo de <a> indica la URL de destino?",
+                        opciones: ["ref", "src", "href", "link"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. No es un atributo válido para enlaces.", "Incorrecto. 'src' (source) se usa en imágenes o scripts para indicar el origen del archivo a cargar.", "¡Correcto! 'href' (Hypertext REFerence) indica la ruta a la que nos llevará el enlace al hacer clic.", "Incorrecto. 'link' es una etiqueta, no un atributo de <a>."]
+                    },
+                    {
+                        enunciado: "¿Qué etiqueta agrupa opciones dentro de un <select> en categorías?",
+                        opciones: ["<option-group>", "<group>", "<optgroup>", "<fieldset>"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. No existe esta etiqueta.", "Incorrecto. No es válido en HTML.", "¡Correcto! Agrupa visualmente los <option> en un menú desplegable, poniéndoles un título general no seleccionable.", "Incorrecto. <fieldset> agrupa campos completos de formulario, no opciones dentro de un desplegable."]
+                    },
+                    {
+                        enunciado: "En formularios, ¿qué atributo evita que un campo se edite pero sí se envíe?",
+                        opciones: ["disabled", "readonly", "hidden", "locked"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Si usas 'disabled', el usuario no puede editarlo, pero sus datos tampoco se enviarán al servidor.", "¡Correcto! Con 'readonly' el campo es de solo lectura, pero su valor sí viaja al hacer el submit del formulario.", "Incorrecto. Oculta el campo visualmente.", "Incorrecto. No es un atributo estándar de HTML."]
+                    },
+                    {
+                        enunciado: "¿Qué etiqueta define el encabezado de una tabla?",
+                        opciones: ["<thead>", "<head>", "<th>", "<header>"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! <thead> agrupa la fila o filas de cabeceras de la tabla entera.", "Incorrecto. <head> es la cabecera del documento HTML, no de una tabla.", "Incorrecto. <th> define una sola celda de cabecera, pero la etiqueta que engloba toda la zona superior es thead.", "Incorrecto. <header> es un contenedor semántico para la cabecera de la web."]
+                    },
+                    {
+                        enunciado: "¿Qué etiqueta se usa para texto con énfasis semántico (importancia) por defecto en cursiva?",
+                        opciones: ["<b>", "<strong>", "<i>", "<em>"],
+                        correcta: 3,
+                        feedback: ["Incorrecto. <b> pone negrita visual pero no aporta énfasis semántico para buscadores ni lectores de pantalla.", "Incorrecto. <strong> aporta fuerte importancia semántica, pero su estilo por defecto es en NEGRITA, no en cursiva.", "Incorrecto. <i> pone cursiva visual pero sin peso semántico real.", "¡Correcto! <em> (Emphasis) aporta importancia semántica y los navegadores lo renderizan en cursiva por defecto."]
+                    },
+                    {
+                        enunciado: "En Grid, ¿qué propiedad define el número y tamaño de columnas?",
+                        opciones: ["grid-columns", "grid-template-columns", "columns-template", "grid-column-size"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. No es una propiedad válida de CSS Grid.", "¡Correcto! Define explícitamente cuántas columnas habrá y qué anchura tendrá cada una.", "Incorrecto. No existe.", "Incorrecto. No existe."]
+                    },
+                    {
+                        enunciado: "¿Qué función permite repetir columnas de forma compacta en Grid?",
+                        opciones: ["repeat()", "clone()", "loop()", "range()"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Permite escribir, por ejemplo, 'repeat(3, 1fr)' en lugar de '1fr 1fr 1fr'.", "Incorrecto. No es una función CSS.", "Incorrecto. Es un concepto de programación, no de CSS.", "Incorrecto. No existe en CSS."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad en Flexbox alinea elementos en el eje principal?",
+                        opciones: ["align-items", "justify-content", "align-content", "place-items"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. align-items centra o mueve los elementos en el eje secundario (transversal).", "¡Correcto! Justify-content distribuye los elementos a lo largo del eje principal (horizontal por defecto).", "Incorrecto. Se usa cuando hay múltiples líneas con flex-wrap.", "Incorrecto. Es un atajo pensado principalmente para Grid."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad en Flexbox permite que los elementos salten de línea?",
+                        opciones: ["flex-flow: column;", "flex-wrap: wrap;", "flex-break: auto;", "wrap: flex;"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Esto cambia el eje principal a vertical, pero no permite el salto de línea por sí solo si se desbordan.", "¡Correcto! Permite que los hijos salten a una nueva línea inferior si se quedan sin espacio a lo ancho.", "Incorrecto. No existe.", "Incorrecto. No existe."]
+                    },
+                    {
+                        enunciado: "¿Qué valor de align-items centra en el eje transversal?",
+                        opciones: ["center", "middle", "baseline", "space-between"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Coloca el elemento en la mitad exacta del eje secundario.", "Incorrecto. 'middle' se usa en la propiedad vertical-align o en tablas, no en Flexbox.", "Incorrecto. Los alinea basándose en la línea base del texto de cada elemento.", "Incorrecto. Es un valor exclusivo de justify-content, no de align-items."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad abreviada combina flex-direction y flex-wrap?",
+                        opciones: ["flex", "flexbox", "flex-flow", "flow-flex"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. 'flex' abrevia flex-grow, flex-shrink y flex-basis aplicándose a los hijos, no al contenedor.", "Incorrecto. No es una propiedad válida.", "¡Correcto! Con flex-flow puedes poner, por ejemplo, 'row wrap' en una sola línea.", "Incorrecto. No existe."]
+                    },
+                    {
+                        enunciado: "¿Qué selector usamos en CSS para dar estilo a un enlace mientras lo estamos pulsando?",
+                        opciones: ["a:active", "a:hover", "a:huver", "a:visited"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Actúa en el momento exacto en el que mantienes el clic del ratón pulsado sobre el enlace.", "Incorrecto. Es el estado cuando pasas el ratón por encima (sin llegar a pulsar).", "Incorrecto. Está mal escrito.", "Incorrecto. Es el estado que toma cuando ya has entrado a esa web en el pasado."]
+                    },
+                    {
+                        enunciado: "¿Qué valor de font-variant pone el texto en versalitas?",
+                        opciones: ["capitalize", "uppercase", "lowercase", "small-caps"],
+                        correcta: 3,
+                        feedback: ["Incorrecto. Es un valor de text-transform (primera letra de cada palabra en mayúscula).", "Incorrecto. Es un valor de text-transform (todo forzado a mayúscula).", "Incorrecto. Es un valor de text-transform (todo en minúscula).", "¡Correcto! 'small-caps' hace que las letras minúsculas se rendericen con el aspecto de mayúsculas pequeñas."]
+                    },
+                    {
+                        enunciado: "¿Qué valor de text-transform pone el texto en versalitas?",
+                        opciones: ["capitalize", "uppercase", "lowercase", "inherit"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Pone solo la primera letra en mayúscula.", "¡Correcto! (Ojo, estrictamente las versalitas se hacen con 'font-variant: small-caps'. Text-transform solo tiene 'uppercase' que lo convierte TODO a mayúsculas puras, pero a nivel de opciones dadas es la respuesta esperada).", "Incorrecto. Pone todo en minúsculas.", "Incorrecto. Hereda el comportamiento de su elemento padre."]
+                    },
+                    {
+                        enunciado: "¿Qué valor de visibilidad (display,visibility) oculta un elemento en vista y espacio?",
+                        opciones: ["none (display: none)", "hidden (visibility: hidden)", "collapse", "invisible"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Desaparece por completo del DOM visual. No se ve y no se siente, ya que los demás elementos ocupan su hueco.", "Incorrecto. Desaparece visualmente (es como un cristal transparente), pero su hueco en blanco sigue ocupando espacio en la pantalla.", "Incorrecto. Se usa principalmente para ocultar filas/columnas concretas en tablas.", "Incorrecto. Esta propiedad/valor no existe en CSS estándar."]
+                    },
+                    {
+                        enunciado: "¿Qué atributo es necesario mantener idéntico para crear radio buttons enlazados?",
+                        opciones: ["id", "name", "for", "label"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. El ID debe ser estrictamente único para cada elemento de la página.", "¡Correcto! Si varios 'input type=radio' tienen exactamente el mismo 'name', el navegador sabrá que forman parte del mismo grupo y solo te dejará marcar uno de ellos.", "Incorrecto. 'for' va en la etiqueta <label> para enlazarla con el ID de un input.", "Incorrecto. Label es una etiqueta en sí misma, no un atributo del input."]
+                    },
+                    {
+                        enunciado: "¿Qué declaración suele ir al inicio de un documento XML?",
+                        opciones: ["<!DOCTYPE xml>", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>", "<xml version=\"1.0\">", "<?xml html=\"true\"?>"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Esto no es válido para declarar un XML.", "¡Correcto! Es el prólogo obligatorio que define la versión de XML y el tipo de codificación de caracteres.", "Incorrecto. Faltan los signos de interrogación '?' de la cabecera de procesamiento.", "Incorrecto. La sintaxis y el atributo html='true' son inventados."]
+                    },
+                    {
+                        enunciado: "En XML, ¿qué caracteriza a las etiquetas respecto a mayúsculas/minúsculas?",
+                        opciones: ["No importa (no es sensible)", "Solo importa en atributos", "Es sensible (case-sensitive)", "Solo depende del navegador"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Eso pasa en HTML, pero el estándar XML es mucho más estricto.", "Incorrecto. Importa de forma absoluta tanto en etiquetas como en atributos.", "¡Correcto! El XML diferencia estrictamente las mayúsculas. Una etiqueta abierta como <Nombre> no se puede cerrar con </nombre>.", "Incorrecto. Es una regla universal del estándar del W3C."]
+                    },
+                    {
+                        enunciado: "En DTD, para definir un elemento se utiliza:",
+                        opciones: ["<!TAG ...>", "<!ELEMENT ...>", "<!NODE ...>", "<!DEFINE ...>"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. No existe esa palabra reservada.", "¡Correcto! Se usa para establecer qué contenido y reglas tiene una etiqueta. Ejemplo: <!ELEMENT persona (nombre, edad)>", "Incorrecto. No es válido.", "Incorrecto. No existe en DTD."]
+                    },
+                    {
+                        enunciado: "En XSLT, ¿qué etiqueta aplica plantillas a nodos seleccionados?",
+                        opciones: ["<xsl:apply-templates>", "<xsl:template-match>", "<xsl:value-of>", "<xsl:for>"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Le dice al procesador que continúe y procese a los hijos del nodo actual usando las plantillas (templates) definidas.", "Incorrecto. No existe esa etiqueta.", "Incorrecto. Se usa para extraer e imprimir el valor de texto de un nodo.", "Incorrecto. Sería xsl:for-each."]
+                    },
+                    {
+                        enunciado: "¿Qué clase de boostrap centra horizontalmente un elemento tipo bloque con ancho definido?",
+                        opciones: [".text-center", ".mx-auto", ".center-block", ".align-center"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Esto centra el texto y el contenido en línea de dentro del contenedor, pero no centra el bloque en sí.", "¡Correcto! Margin-X-Auto reparte los márgenes izquierdo y derecho de forma automática, centrando físicamente el bloque entero.", "Incorrecto. Era la clase utilizada en versiones antiguas como Bootstrap 3.", "Incorrecto. No es una clase de Bootstrap."]
+                    },
+                    {
+                        enunciado: "¿Qué clase de Bootstrap se usa para crear una fila de la rejilla?",
+                        opciones: [".col", ".grid", ".row", ".container-row"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Define las columnas (los hijos directos de la fila).", "Incorrecto. No es la clase estándar para la rejilla base.", "¡Correcto! Es el contenedor obligatorio para agrupar y aplicar flexbox a las columnas (.col) que metas dentro de él.", "Incorrecto. No existe."]
+                    },
+                    {
+                        enunciado: "¿Qué etiqueta se usa para definir la navegación principal de una página?",
+                        opciones: ["<navigate>", "<nav>", "<menu>", "<header>"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. No existe.", "¡Correcto! Es la etiqueta semántica por excelencia para agrupar los bloques de enlaces de navegación.", "Incorrecto. Se usa para crear menús de comandos (y está obsoleto en muchos contextos).", "Incorrecto. Es la cabecera completa, que suele incluir al <nav> en su interior, pero no es la navegación pura en sí misma."]
+                    },
+                    {
+                        enunciado: "¿Qué atributo de <script> permite que el script se cargue sin bloquear el parseo y se ejecute al terminar de descargar?",
+                        opciones: ["async", "defer", "preload", "module"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. 'async' descarga en paralelo, pero bloquea el renderizado HTML en el instante exacto en el que termina de bajar para ejecutarse.", "¡Correcto! 'defer' carga en segundo plano y espera pacientemente a que se dibuje TODO el HTML para ejecutarse, respetando el orden.", "Incorrecto. Es un atributo de etiqueta <link>.", "Incorrecto. Declara que el script usa el sistema de importación de módulos ES6."]
+                    },
+                    {
+                        enunciado: "¿Qué etiqueta se usa para insertar un vídeo en HTML5?",
+                        opciones: ["<media>", "<video>", "<movie>", "<iframe>"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. No existe en HTML.", "¡Correcto! Te permite cargar el archivo de vídeo nativo (MP4, WebM) y añadirle controles fácilmente.", "Incorrecto. No existe.", "Incorrecto. ¡Cuidado! Aunque usamos iframe constantemente para incrustar vídeos externos de YouTube, la etiqueta HTML5 nativa real para tus vídeos es <video>."]
+                    },
+                    {
+                        enunciado: "¿Qué atributo en un <input> obliga a que el usuario rellene el campo antes de enviar el formulario?",
+                        opciones: ["validate", "required", "mustfill", "checked"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. No existe.", "¡Correcto! El navegador bloqueará el envío y mostrará un bocadillo de advertencia si el campo está vacío.", "Incorrecto. No existe.", "Incorrecto. Esto se usa en checkboxes o radio buttons para que vengan pre-marcados por defecto."]
+                    },
+                    {
+                        enunciado: "¿Qué etiqueta indica una sección de contenido tangencial (barra lateral, notas, publicidad)?",
+                        opciones: ["<aside>", "<section>", "<article>", "<summary>"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Contiene información que está relacionada con el texto principal pero que podría eliminarse sin perder el hilo de la web.", "Incorrecto. Agrupa contenido general.", "Incorrecto. Es para contenido independiente completo.", "Incorrecto. Es el título/resumen de un elemento desplegable <details>."]
+                    },
+                    {
+                        enunciado: "¿Qué tipo de <input> está pensado para seleccionar un correo electrónico con validación básica?",
+                        opciones: ["type=\"mail\"", "type=\"email\"", "type=\"text-email\"", "type=\"correo\""],
+                        correcta: 1,
+                        feedback: ["Incorrecto. No es un tipo estándar.", "¡Correcto! Fuerza al navegador móvil a mostrar la '@' en el teclado automáticamente y valida que el texto incluya formato 'usuario@dominio.com'.", "Incorrecto. No existe.", "Incorrecto. No existe."]
+                    },
+                    {
+                        enunciado: "¿Qué etiqueta se usa para indicar el contenido principal único del documento?",
+                        opciones: ["<main>", "<content>", "<primary>", "<body>"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Engloba lo verdaderamente importante de la página, excluyendo menús, pies y barras laterales (solo debe haber un <main> visible por documento).", "Incorrecto. No existe en HTML5 estándar.", "Incorrecto. No existe.", "Incorrecto. El <body> contiene ABSOLUTAMENTE todo lo visual en tu web, incluyendo menús y footers."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad cambia el color del texto?\n\nFormatos de color CSS: red,blue... , #ffffff, rgb(245,6,0). Por defecto debemos usar HEX.",
+                        opciones: ["font-color", "text-color", "color", "foreground"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Parece lógico por su sintaxis, pero en CSS no existe.", "Incorrecto. No existe.", "¡Correcto! Es una herencia curiosa de las primeras versiones de CSS, se llamó simplemente 'color'.", "Incorrecto. No es una propiedad válida."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad controla la transparencia de un elemento (y sus hijos)?",
+                        opciones: ["opacity", "alpha", "visibility", "transparent"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Va de 0 (invisible) a 1 (100% visible). Afecta a toda la caja, incluyendo su color de fondo y al texto que haya dentro.", "Incorrecto. Alpha es un canal específico en formatos de color como rgba(), no una propiedad aislada.", "Incorrecto. Visibility oculta el elemento de golpe (hidden), no crea transparencia gradual.", "Incorrecto. Es un valor que se le puede dar a una propiedad, pero no es la propiedad en sí."]
+                    },
+                    {
+                        enunciado: "¿Qué selector selecciona un elemento con id “caja”?",
+                        opciones: [".caja", "#caja", "caja", "*caja"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. El punto (.) selecciona clases.", "¡Correcto! La almohadilla (#) es el selector estricto y universal en CSS para IDs únicos.", "Incorrecto. Eso seleccionaría una etiqueta HTML entera llamada <caja> que no existe.", "Incorrecto. Sintaxis inválida."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad añade sombra a una caja (elemento)?",
+                        opciones: ["text-shadow", "box-shadow", "shadow-box", "border-shadow"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Eso aplica sombra única y exclusivamente a las letras del texto.", "¡Correcto! Genera volumen en divs, botones, imágenes y contenedores.", "Incorrecto. Está al revés.", "Incorrecto. No existe."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad define el tamaño de la fuente?",
+                        opciones: ["font-style", "font-size", "text-size", "width"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Define si es normal, italic (cursiva) u oblique.", "¡Correcto! Dicta cómo de grandes son las letras (en px, em, rem...).", "Incorrecto. No existe.", "Incorrecto. Define la anchura física del contenedor, no de las letras."]
+                    },
+                    {
+                        enunciado: "¿Qué valor de box-sizing hace que el width incluya padding y border?",
+                        opciones: ["content-box", "padding-box", "border-box", "inside-box"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Es el valor por defecto: el padding suma tamaño y deforma tu caja por fuera de tu width.", "Incorrecto. Uso muy marginal/obsoleto.", "¡Correcto! Es la regla mágica de CSS: si le dices que mida 100px, medirá 100px reales, absorbiendo los bordes y rellenos hacia dentro sin deformarse.", "Incorrecto. No existe."]
+                    },
+                    {
+                        enunciado: "¿Qué pseudo-clase selecciona un elemento cuando ha sido visitado (en enlaces)?",
+                        opciones: ["a:hover", "a:visited", "a:active", "a:focus"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Hover es cuando el ratón pasa por encima sin hacer clic.", "¡Correcto! Cambia el estilo (como el clásico color morado de los links de Google) para indicar al usuario que ya entró a esa web.", "Incorrecto. Es el momento de la pulsación del clic.", "Incorrecto. Es cuando navegas con el teclado y seleccionas el enlace con el tabulador."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad se usa para redondear las esquinas?",
+                        opciones: ["corner-radius", "border-round", "border-radius", "radius-border"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. No existe.", "Incorrecto. No existe.", "¡Correcto! Puedes darle un valor en píxeles. Curiosidad: si le aplicas 'border-radius: 50%' a un div cuadrado, lo conviertes en un círculo perfecto.", "Incorrecto. No existe."]
+                    },
+                    {
+                        enunciado: "En XML, ¿qué significa que los nombres son “case-sensitive”?",
+                        opciones: ["Que los atributos van siempre en mayúsculas", "Que no importa si usas mayúsculas o minúsculas", "Que <Alumno> y <alumno> son distintos", "Que solo afecta a los valores de atributos"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. No es una norma de XML.", "Incorrecto. Eso sería ser 'case-insensitive' (como HTML).", "¡Correcto! El XML diferencia estrictamente las mayúsculas, por lo que si abres con <Alumno> (mayúscula), el XML dará error fatal si lo intentas cerrar con </alumno> (minúscula).", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "¿Cuál es una etiqueta XML correcta?",
+                        opciones: ["<1curso>", "<_curso>", "<-curso>", "<.curso>"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Empezar por un número viola las estrictas normas de sintaxis de XML.", "¡Correcto! Las etiquetas XML solo pueden comenzar con letras o por el carácter guion bajo (_).", "Incorrecto. No puede empezar por un guion medio.", "Incorrecto. No puede empezar por punto."]
+                    },
+                    {
+                        enunciado: "En DTD, ¿cómo se define que un elemento alumno contiene texto (#PCDATA)?",
+                        opciones: ["<!ELEMENT alumno (#PCDATA)>", "<!ELEMENT alumno (TEXT)>", "<!ELEMENT alumno (CDATA)>", "<!ELEMENT alumno (#TEXT)>"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! #PCDATA significa 'Parsed Character Data' (texto puro normal analizado y procesado por el parser del navegador).", "Incorrecto. TEXT no es la palabra reservada en DTD.", "Incorrecto. CDATA se usa, pero para bloques de datos que quieres que el parser ignore (no se declara así dentro del ELEMENT).", "Incorrecto. No existe."]
+                    },
+                    {
+                        enunciado: "En XSLT, ¿qué etiqueta se usa para recorrer un conjunto de nodos seleccionados?",
+                        opciones: ["<xsl:loop>", "<xsl:for-each>", "<xsl:repeat>", "<xsl:each>"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. No existe en XSLT.", "¡Correcto! Funciona como un bucle de programación tradicional para imprimir listas, tablas o datos repetitivos de tu archivo XML.", "Incorrecto. No existe.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "En XPath/XSLT, ¿cómo se selecciona un atributo llamado id?",
+                        opciones: ["id", "#id", "@id", "::id"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Eso seleccionaría una etiqueta hija llamada <id>.", "Incorrecto. La almohadilla es para seleccionar por ID en CSS.", "¡Correcto! El símbolo de arroba '@' es el prefijo estricto en el lenguaje XPath para avisar de que quieres acceder al atributo de una etiqueta y no a su contenido.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "¿Cómo se escribe un comentario de una línea en JavaScript?",
+                        opciones: ["<!-- comentario -->", "# comentario", "// comentario", "** comentario **", "/* texto */"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Este es el formato de comentarios de HTML.", "Incorrecto. Este formato es típico de lenguajes como Python o Bash.", "¡Correcto! Las dobles barras (//) anulan el código hacia la derecha de esa línea.", "Incorrecto. Eso se usa para negritas en formato Markdown.", "Incorrecto. Ojo, sirve como comentario, pero es la estructura estricta para bloques de múltiples líneas, no para una sola línea rápida."]
+                    },
+                    {
+                        enunciado: "¿Qué muestra typeof \"hola\"?",
+                        opciones: ["text", "string", "String", "char"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. 'text' no es un tipo primitivo reconocido en JS.", "¡Correcto! Las cadenas de texto puro se identifican como el tipo primitivo 'string' siempre en minúscula.", "Incorrecto. Con mayúscula haría referencia al objeto envoltorio, pero typeof devuelve primitivos en minúscula.", "Incorrecto. JavaScript no diferencia entre letras sueltas (char) y cadenas completas; todo es string."]
+                    },
+                    {
+                        enunciado: "¿Qué método convierte un texto a número entero?",
+                        opciones: ["NumberInt()", "parseInt()", "toInteger()", "int()"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. No existe.", "¡Correcto! Analiza una cadena de texto y devuelve el primer número entero puro que encuentra (ej. parseInt('5px') devuelve el número 5).", "Incorrecto. No es una función nativa de JavaScript.", "Incorrecto. Sería el formato en lenguajes como Python o C."]
+                    },
+                    {
+                        enunciado: "¿Qué operador compara valor y tipo (comparación estricta)?",
+                        opciones: ["==", "=", "===", "!="],
+                        correcta: 2,
+                        feedback: ["Incorrecto. El doble igual (==) compara el valor, pero fuerza una conversión de tipos (Ej: 2 == '2' da true).", "Incorrecto. Un solo igual sirve para ASIGNAR un valor a una variable (let x = 5).", "¡Correcto! Compara que el valor sea igual Y que el tipo de dato sea idéntico. Es el método más seguro. (Ej: 2 === '2' da false porque uno es Number y otro String).", "Incorrecto. Significa 'diferente de'."]
+                    },
+                    {
+                        enunciado: "¿Qué imprime console.log(2 + \"2\")?",
+                        opciones: ["4", "\"22\"", "NaN", "2+2"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Daría 4 única y exclusivamente si ambos valores fueran números puros.", "¡Correcto! El símbolo de suma (+) en JS sirve tanto para sumar como para concatenar textos. Al ver que uno de los valores es texto, convierte el número a texto y los junta.", "Incorrecto. JavaScript prefiere concatenar antes que dar error o NaN.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "¿Qué imprime console.log(2 - \"2\")?",
+                        opciones: ["2", "\"22\"", "NaN", "0"],
+                        correcta: 3,
+                        feedback: ["Incorrecto.", "Incorrecto. Para restar no se pueden concatenar palabras.", "Incorrecto. Saldría NaN (Not a Number) si intentas restar letras reales como 'hola' que no esconden un número.", "¡Correcto! Como el operador de resta (-) no sirve de nada para los textos, JavaScript asume de forma inteligente que tu intención es matemática y convierte el '2' de texto a número forzosamente para hacer la resta."]
+                    },
+                    {
+                        enunciado: "2-\"2\"==null+null",
+                        opciones: ["true", "false", "undefined", "null"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Es una de las famosas locuras de JavaScript: Por un lado, 2 - '2' da el número 0. Por otro lado, un valor null que intenta sumarse a otro null se evalúa matemáticamente como un 0. Finalmente, 0 == 0 da 'true'.", "Incorrecto.", "Incorrecto.", "Incorrecto."]
+                    }
                 ]
             },
             "Fundamentos de Hardware (FH)": {
