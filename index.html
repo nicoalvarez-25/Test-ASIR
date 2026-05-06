@@ -1347,7 +1347,7 @@
                     {enunciado:"¿Qué diferencias hay entre utilizar Amazon RDS y utilizar EC2 con una base de datos?", opciones:["En RDS solo puedes usar motores SQL Server, y en EC2 solo MySQL o Linux.","RDS es un servicio administrado (AWS hace backups, parches y failovers por ti). En EC2 tú gestionas el motor de BBDD desde cero.","RDS es un servidor físico de hierro dedicado para ti solo; EC2 es una partición virtual compartida.","No hay ninguna diferencia tecnológica, solo es una cuestión de métodos de pago en la factura."], correcta:1, feedback:["Incorrecto. RDS soporta muchísimos motores (Aurora, Postgres, MySQL, MariaDB, Oracle, SQLServer).","¡Correcto! RDS te quita el trabajo 'aburrido' y repetitivo de DBA para que tú solo te centres en optimizar consultas.","Incorrecto. Ambos utilizan máquinas virtuales por debajo.","Incorrecto. En EC2 tendrías que levantar el servidor a las 3 AM si se cae el proceso de MySQL; en RDS, AWS lo levanta por ti."]},
                     {enunciado:"¿Qué ventajas tiene la configuración de Amazon RDS MultiAZ?", opciones:["Duplica el rendimiento de lectura de tu base de datos, permitiendo muchísimos SELECTs simultáneos.","Hace que la base de datos sea accesible desde América y Europa simultáneamente con 0 milisegundos de latencia.","Proporciona Alta Disponibilidad y Failover automático. Crea una réplica oculta sincrónica en otra AZ y salta a ella si la principal muere.","Reduce tu factura de AWS a la mitad al aprovechar discos magnéticos más baratos en zonas sin uso."], correcta:2, feedback:["Incorrecto. Para escalar la lectura se usan las 'Read Replicas'. El standby de Multi-AZ no se puede leer, está oculto.","Incorrecto. Multi-AZ funciona dentro de la MISMA región, cruzando edificios (AZs), no continentes.","¡Correcto! Si hay un desastre de hardware, AWS cambia la ruta DNS a la base secundaria en menos de 60 segundos y tu app ni se entera.","Incorrecto. ¡Al contrario! Te cuesta el doble, porque tienes dos máquinas físicas encendidas 24/7 (una principal y un clon)."]}
                 ],
-                
+
                 "Bloque general": [
                                 
                 {
@@ -4081,7 +4081,7 @@
                 
                 "Bloque 2: Direccionamiento IP (IPv4 e IPv6)": [
                     {
-                    enunciado: "¿Cuál es una dirección IPv4 privada clase A?[cite: 1]",
+                    enunciado: "¿Cuál es una dirección IPv4 privada clase A?",
                     opciones: ["172.31.0.0/16", "192.168.0.0/24", "10.0.0.0/8", "169.254.0.0/16"],
                     correcta: 2,
                     feedback: [
@@ -4092,7 +4092,7 @@
                     ]
                 },
                 {
-                    enunciado: "¿Cuál es la dirección de loopback en IPv4?[cite: 1]",
+                    enunciado: "¿Cuál es la dirección de loopback en IPv4?",
                     opciones: ["0.0.0.0", "255.255.255.255", "127.0.0.1", "224.0.0.1"],
                     correcta: 2,
                     feedback: [
@@ -4103,7 +4103,7 @@
                     ]
                 },
                 {
-                    enunciado: "¿Qué clase IPv4 tiene máscara por defecto 255.255.0.0?[cite: 1]",
+                    enunciado: "¿Qué clase IPv4 tiene máscara por defecto 255.255.0.0?",
                     opciones: ["Clase A", "Clase B", "Clase C", "Clase D"],
                     correcta: 1,
                     feedback: [
@@ -4114,7 +4114,7 @@
                     ]
                 },
                 {
-                    enunciado: "¿Qué significa 0.0.0.0 en una tabla de rutas?[cite: 1]",
+                    enunciado: "¿Qué significa 0.0.0.0 en una tabla de rutas?",
                     opciones: ["Broadcast limitado", "Ruta por defecto", "Loopback", "Multicast"],
                     correcta: 1,
                     feedback: [
@@ -4125,7 +4125,7 @@
                     ]
                 },
                 {
-                    enunciado: "¿Cuál es el rango de red privada clase B?[cite: 1]",
+                    enunciado: "¿Cuál es el rango de red privada clase B?",
                     opciones: ["172.16.0.0 – 172.31.255.255", "10.0.0.0 – 10.255.255.255", "192.168.0.0 – 192.168.255.255", "100.64.0.0 – 100.127.255.255"],
                     correcta: 0,
                     feedback: [
@@ -4136,7 +4136,7 @@
                     ]
                 },
                 {
-                    enunciado: "¿Qué máscara por defecto corresponde a una red clase C?[cite: 1]",
+                    enunciado: "¿Qué máscara por defecto corresponde a una red clase C?",
                     opciones: ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.128"],
                     correcta: 2,
                     feedback: [
@@ -4147,7 +4147,7 @@
                     ]
                 },
                 {
-                    enunciado: "La dirección de broadcast de una subred se obtiene:[cite: 1]",
+                    enunciado: "La dirección de broadcast de una subred se obtiene:",
                     opciones: ["AND IP con máscara", "OR IP con inverso (NOT) de la máscara", "XOR IP con máscara", "Sumando 1 a la IP de red"],
                     correcta: 1,
                     feedback: [
@@ -4158,7 +4158,7 @@
                     ]
                 },
                 {
-                    enunciado: "¿Qué dirección IPv4 identifica ‘broadcast dirigido’ a una subred dada?[cite: 1]",
+                    enunciado: "¿Qué dirección IPv4 identifica ‘broadcast dirigido’ a una subred dada?",
                     opciones: ["La de todos 1 en la parte host de esa subred", "255.255.255.255", "0.0.0.0", "127.255.255.255"],
                     correcta: 0,
                     feedback: [
@@ -4169,7 +4169,7 @@
                     ]
                 },
                 {
-                    enunciado: "La dirección 255.255.255.255 es:[cite: 1]",
+                    enunciado: "La dirección 255.255.255.255 es:",
                     opciones: ["Broadcast dirigido", "Broadcast limitado", "Loopback", "Multicast"],
                     correcta: 1,
                     feedback: [
@@ -4180,7 +4180,7 @@
                     ]
                 },
                 {
-                    enunciado: "Las direcciones IPv4 de clase D se reservan para:[cite: 1]",
+                    enunciado: "Las direcciones IPv4 de clase D se reservan para:",
                     opciones: ["Multicast", "Anycast", "Loopback", "Privadas"],
                     correcta: 0,
                     feedback: [
@@ -4191,7 +4191,7 @@
                     ]
                 },
                 {
-                    enunciado: "En IPv4, el campo TTL indica:[cite: 1]",
+                    enunciado: "En IPv4, el campo TTL indica:",
                     opciones: ["Control de congestión", "Número de saltos máximo", "Prioridad de paquete", "Tamaño de ventana"],
                     correcta: 1,
                     feedback: [
@@ -4202,7 +4202,7 @@
                     ]
                 },
                 {
-                    enunciado: "¿Cuál es la forma abreviada correcta y más compacta de la dirección IPv6 2001:0db8:0000:0000:0000:00a0:0000:1c20?[cite: 1]",
+                    enunciado: "¿Cuál es la forma abreviada correcta y más compacta de la dirección IPv6 2001:0db8:0000:0000:0000:00a0:0000:1c20?",
                     opciones: ["2001:db8:0:0:a0:0:0:1c20", "2001:db8::0a0::1c20", "2001:db8::a0:0:1c20", "2001::db8:a0::1c20"],
                     correcta: 2,
                     feedback: [
@@ -4213,7 +4213,7 @@
                     ]
                 },
                 {
-                    enunciado: "En IPv6, ¿qué notación permite abreviar ceros consecutivos una única vez?[cite: 1]",
+                    enunciado: "En IPv6, ¿qué notación permite abreviar ceros consecutivos una única vez?",
                     opciones: [":0:", "::", ":00:", ":ffff:"],
                     correcta: 1,
                     feedback: [
@@ -4224,7 +4224,7 @@
                     ]
                 },
                 {
-                    enunciado: "En IPv6, ¿cuál es correcta sobre la compresión ‘::’?[cite: 1]",
+                    enunciado: "En IPv6, ¿cuál es correcta sobre la compresión ‘::’?",
                     opciones: ["Se puede usar múltiples veces en una misma dirección", "Solo puede usarse una vez por dirección", "Solo en direcciones multicast", "Sustituye cualquier hexadecimal no cero"],
                     correcta: 1,
                     feedback: [
@@ -4235,7 +4235,7 @@
                     ]
                 },
                 {
-                    enunciado: "¿Qué prefijo identifica direcciones unicast globales en IPv6?[cite: 1]",
+                    enunciado: "¿Qué prefijo identifica direcciones unicast globales en IPv6?",
                     opciones: ["fc00::/7", "fe80::/10", "ff00::/8", "2000::/3"],
                     correcta: 3,
                     feedback: [
@@ -4246,7 +4246,7 @@
                     ]
                 },
                 {
-                    enunciado: "¿Qué tipo de dirección IPv6 es fe80::/10?[cite: 1]",
+                    enunciado: "¿Qué tipo de dirección IPv6 es fe80::/10?",
                     opciones: ["Unicast global", "Multicast", "Link-local (local de enlace)", "Unique local (local único)"],
                     correcta: 2,
                     feedback: [
@@ -4257,7 +4257,7 @@
                     ]
                 },
                 {
-                    enunciado: "En IPv6, ::1 es la dirección:[cite: 1]",
+                    enunciado: "En IPv6, ::1 es la dirección:",
                     opciones: ["Link-local", "Loopback", "Multicast", "Anycast"],
                     correcta: 1,
                     feedback: [
@@ -4268,7 +4268,7 @@
                     ]
                 },
                 {
-                    enunciado: "En IPv6, ¿qué tipo de dirección envía al ‘mejor’ receptor desde el punto de vista topológico?[cite: 1]",
+                    enunciado: "En IPv6, ¿qué tipo de dirección envía al ‘mejor’ receptor desde el punto de vista topológico?",
                     opciones: ["Unicast", "Anycast", "Multicast", "Broadcast"],
                     correcta: 1,
                     feedback: [
@@ -4279,7 +4279,7 @@
                     ]
                 },
                 {
-                    enunciado: "¿Cuál es el tipo de dirección IPv6 destinada a múltiples receptores específicos?[cite: 1]",
+                    enunciado: "¿Cuál es el tipo de dirección IPv6 destinada a múltiples receptores específicos?",
                     opciones: ["Anycast", "Multicast", "Unicast", "Broadcast"],
                     correcta: 1,
                     feedback: [
@@ -4290,7 +4290,7 @@
                     ]
                 },
                 {
-                    enunciado: "¿Cuál es el MTU mínimo requerido por IPv6?[cite: 1]",
+                    enunciado: "¿Cuál es el MTU mínimo requerido por IPv6?",
                     opciones: ["576", "1280", "1500", "9000"],
                     correcta: 1,
                     feedback: [
@@ -4301,7 +4301,7 @@
                     ]
                 },
                 {
-                    enunciado: "SLAAC permite obtener:[cite: 1]",
+                    enunciado: "SLAAC permite obtener:",
                     opciones: ["Solo DNS", "IP, prefijo y gateway a partir de RA", "Solo gateway", "Solo prefijo"],
                     correcta: 1,
                     feedback: [
@@ -4312,7 +4312,7 @@
                     ]
                 },
                 {
-                    enunciado: "En IPv6 RA, el flag 'M' indica:[cite: 1]",
+                    enunciado: "En IPv6 RA, el flag 'M' indica:",
                     opciones: ["Usar DHCPv6 para todo (managed)", "No hay IPv6", "Usar SLAAC exclusivamente", "Gateway no disponible"],
                     correcta: 0,
                     feedback: [
@@ -8389,7 +8389,197 @@
                     "Incorrecto. Eso es en otras excedencias."
                 ]
             }
-        ]
+        ],
+
+        "Test Semana Santa": [
+                    {
+                        enunciado: "¿Qué decisión refleja mejor una correcta actuación preventiva?",
+                        opciones: ["Comprar equipos de protección individual para los trabajadores", "Reducir el número de empleados en determinadas áreas", "Eliminar o reducir el riesgo desde su origen en el proceso", "Aplicar sanciones cuando se incumplen las normas"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Los EPIs son la última barrera de defensa, no la principal actuación preventiva.", "Incorrecto. Reducir la plantilla no previene el riesgo, solo expone a menos personas al mismo.", "¡Correcto! El principio básico de la acción preventiva es combatir y eliminar los riesgos en su origen.", "Incorrecto. Las sanciones son medidas disciplinarias, no medidas técnicas preventivas."]
+                    },
+                    {
+                        enunciado: "¿Qué elemento es clave para prevenir riesgos de forma eficaz?",
+                        opciones: ["La imposición de sanciones disciplinarias a los trabajadores", "La formación e información adecuada en materia preventiva", "El control externo mediante inspecciones periódicas", "La reducción del número de trabajadores en la empresa"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Lo disciplinario no es la clave de una prevención proactiva y eficaz.", "¡Correcto! Un trabajador informado y formado sabe cómo protegerse y cómo actuar de forma segura en su puesto.", "Incorrecto. Las inspecciones ayudan, pero el pilar interno preventivo diario es la formación del personal.", "Incorrecto. Disminuir el personal no reduce la peligrosidad del proceso ni previene riesgos."]
+                    },
+                    {
+                        enunciado: "¿Cuál es el primer paso en la gestión de un riesgo laboral?",
+                        opciones: ["Eliminar el riesgo mediante medidas técnicas inmediatas", "Evaluar el riesgo teniendo en cuenta su gravedad", "Identificar el peligro que puede generar un riesgo laboral", "Formar a los trabajadores sobre el riesgo detectado"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. La eliminación técnica se realiza tras el análisis.", "Incorrecto. No puedes evaluar un riesgo sin antes saber que existe el peligro.", "¡Correcto! Para poder gestionar un riesgo, primero hay que detectar e identificar qué peligro lo origina.", "Incorrecto. La formación se da sobre los riesgos que ya han sido identificados y evaluados."]
+                    },
+                    {
+                        enunciado: "¿Qué medida preventiva es más eficaz según los principios generales?",
+                        opciones: ["El uso de equipos de protección individual por parte del trabajador", "La formación específica en prevención de riesgos laborales", "La eliminación del riesgo directamente en su origen", "La señalización del riesgo en el lugar de trabajo"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. El EPI es el último recurso (protección individual) cuando no se puede eliminar el riesgo.", "Incorrecto. Es un pilar básico, pero no elimina físicamente la existencia del peligro.", "¡Correcto! Si se elimina el riesgo en el origen (ej. sustituir una máquina ruidosa), el entorno se vuelve completamente seguro.", "Incorrecto. Señalizar advierte, pero el riesgo sigue estando presente para el trabajador."]
+                    },
+                    {
+                        enunciado: "¿Qué técnica preventiva busca evitar accidentes de trabajo?",
+                        opciones: ["La higiene industrial relacionada con agentes químicos", "La ergonomía centrada en la adaptación del puesto", "La seguridad en el trabajo enfocada a evitar accidentes", "La psicosociología aplicada al entorno laboral"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. La higiene industrial previene enfermedades profesionales a largo plazo, no accidentes repentinos.", "Incorrecto. La ergonomía previene fatiga y trastornos musculoesqueléticos adaptando el puesto al trabajador.", "¡Correcto! Es la disciplina técnica específica que combate los accidentes de trabajo directos y repentinos.", "Incorrecto. La psicosociología previene el estrés, mobbing, acoso o burnout."]
+                    },
+                    {
+                        enunciado: "¿Qué elemento forma parte de la evaluación de riesgos?",
+                        opciones: ["El salario del trabajador en función del puesto", "La probabilidad y la gravedad del daño potencial", "La antigüedad del trabajador en la empresa", "El tipo de contrato firmado"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. El salario no influye en la peligrosidad física del puesto de trabajo.", "¡Correcto! El riesgo se evalúa estimando matemáticamente la probabilidad de que ocurra el daño y su severidad.", "Incorrecto. La antigüedad no altera la evaluación técnica del riesgo inminente del puesto.", "Incorrecto. El tipo contractual no cambia las condiciones materiales de seguridad y salud."]
+                    },
+                    {
+                        enunciado: "¿Qué característica define una relación laboral frente a otras?",
+                        opciones: ["La existencia de un contrato por escrito firmado entre las partes, en todo caso", "La prestación de servicios bajo dependencia y ajenidad", "La duración indefinida del vínculo laboral", "La percepción de una retribución mensual"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Hay contratos laborales que, por ley, pueden ser verbales.", "¡Correcto! Trabajar para otro (ajenidad) y bajo la dirección u órdenes de otro (dependencia) son las claves de la relación laboral.", "Incorrecto. Existen muchas relaciones laborales de carácter temporal.", "Incorrecto. Puede cobrarse por horas, semanas o por obra, no tiene por qué ser mensual."]
+                    },
+                    {
+                        enunciado: "¿Qué implica la ajenidad en una relación laboral?",
+                        opciones: ["El trabajador asume los riesgos de la actividad", "El trabajador participa en los beneficios empresariales", "El empresario asume los riesgos y resultados de la actividad", "El trabajador decide la organización del trabajo"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Eso definiría el trabajo por cuenta propia (autónomo).", "Incorrecto. El trabajador percibe un salario fijo garantizado, los beneficios son del empresario.", "¡Correcto! Los frutos del trabajo y el riesgo económico pertenecen al empresario, que asume si la empresa gana o pierde.", "Incorrecto. Eso vulneraría el principio de dependencia (dirección del empresario)."]
+                    },
+                    {
+                        enunciado: "¿Qué ocurre si una actividad se realiza por amistad o buena voluntad?",
+                        opciones: ["Se genera una relación laboral temporal", "Se considera una relación laboral especial", "No se considera relación laboral en sentido jurídico", "Se aplica automáticamente el convenio colectivo"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Faltan los requisitos de ajenidad y remuneración.", "Incorrecto. Las relaciones especiales están tasadas por ley (artistas, deportistas, etc.).", "¡Correcto! Los trabajos a título de amistad, benevolencia o buena vecindad están expresamente excluidos del Estatuto de los Trabajadores.", "Incorrecto. Al no ser relación laboral, no aplica el derecho laboral ni los convenios."]
+                    },
+                    {
+                        enunciado: "Cuál no es un elemento esencial del contrato?",
+                        opciones: ["Causa", "Objeto", "Consentimiento", "Condición"],
+                        correcta: 3,
+                        feedback: ["Incorrecto. La causa (el porqué y para qué legal) es obligatoria.", "Incorrecto. El objeto (el servicio que se va a prestar) es obligatorio y debe ser lícito.", "Incorrecto. El consentimiento (la voluntad mutua de firmar libremente) es obligatorio.", "¡Correcto! Un contrato puede tener condiciones o no, pero el consentimiento, objeto y causa son los 3 elementos esenciales obligatorios."]
+                    },
+                    {
+                        enunciado: "¿Qué edad mínima general permite trabajar?",
+                        opciones: ["14 años", "15 años", "16 años", "18 años"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Es ilegal trabajar a los 14 años en España (salvo espectáculos públicos autorizados).", "Incorrecto. Sigue siendo edad escolar obligatoria.", "¡Correcto! En España, la edad mínima legal general para trabajar es de 16 años (con permiso paterno hasta los 18).", "Incorrecto. A los 18 tienes capacidad plena e independiente, pero puedes trabajar desde los 16."]
+                    },
+                    {
+                        enunciado: "¿Qué norma regula la relación laboral en España?",
+                        opciones: ["Código Civil de los Trabajadores", "Ley de Seguridad Social de los Trabajadores", "Estatuto de los Trabajadores", "Ley de Prevención de los Trabajadores"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. El Código Civil regula relaciones entre particulares, y no tiene ese nombre.", "Incorrecto. Las leyes de la Seguridad Social regulan prestaciones, pensiones y cotizaciones.", "¡Correcto! El Real Decreto Legislativo 2/2015 que aprueba el texto refundido de la Ley del Estatuto de los Trabajadores es la norma laboral básica.", "Incorrecto. Regula exclusivamente el ámbito de la salud y seguridad, pero no la relación laboral contractual."]
+                    },
+                    {
+                        enunciado: "¿Qué percepciones económicas percibe una madre que disfruta de una excedencia por cuidado de hijo?",
+                        opciones: ["0 euros", "100% de su base reguladora", "60% de su base reguladora", "70% de su base reguladora"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Durante una excedencia el contrato queda suspendido: desaparece la obligación de trabajar y también la de pagar el salario.", "Incorrecto. Eso ocurre durante la baja/permiso por nacimiento (antigua maternidad), no en la excedencia.", "Incorrecto. No hay prestación económica en la excedencia.", "Incorrecto. No hay prestación económica en la excedencia."]
+                    },
+                    {
+                        enunciado: "¿Qué indemnización recibirá Matías en caso de despido improcedente?",
+                        opciones: ["20 días por año trabajado con un máximo de 24 mensualidades con salarios de tramitación", "El abono exclusivo de salarios de indemnización", "El abono exclusivo de salarios de tramitación", "33 días por año trabajado con un máximo de 24 mensualidades"],
+                        correcta: 3,
+                        feedback: ["Incorrecto. 20 días es la indemnización para despidos objetivos o despidos colectivos (ERE).", "Incorrecto.", "Incorrecto. Los salarios de tramitación desaparecieron casi por completo para los improcedentes generales tras la reforma laboral.", "¡Correcto! Es la indemnización actual legal fijada para el despido improcedente para contratos firmados a partir de febrero de 2012."]
+                    },
+                    {
+                        enunciado: "¿Qué diferencia una relación laboral de una actividad por cuenta propia?",
+                        opciones: ["El nivel de formación requerido para el puesto", "La existencia de dependencia y organización empresarial", "El tipo de contrato firmado entre las partes", "La duración de la prestación del servicio"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. La formación puede ser idéntica para un informático asalariado que para uno freelance.", "¡Correcto! Por cuenta propia eres tu propio jefe; en la relación laboral estás bajo el poder de dirección de otra persona (dependencia).", "Incorrecto. El nombre del contrato no altera la naturaleza real del trabajo realizado.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "¿Qué implica que la causa del contrato sea ilícita?",
+                        opciones: ["El contrato sigue siendo válido si hay consentimiento", "El contrato puede ejecutarse parcialmente", "El contrato es inválido por falta de legalidad en su finalidad", "El contrato se convierte en temporal automáticamente"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Si la causa es ilegal, el consentimiento no sirve de nada.", "Incorrecto.", "¡Correcto! Si la finalidad o causa del contrato va contra la ley, la moral o el orden público (ej. contrabando), el contrato es nulo de pleno derecho.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "¿Qué diferencia hay entre traslado y desplazamiento?",
+                        opciones: ["No existe diferencia", "El traslado implica cambio definitivo de residencia", "El desplazamiento es siempre permanente", "El traslado es temporal"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Jurídicamente son figuras de movilidad geográfica muy distintas.", "¡Correcto! El traslado exige cambio de residencia definitivo (o más de 12 meses en un periodo de 3 años). El desplazamiento es meramente temporal.", "Incorrecto. Es al revés, el desplazamiento es temporal.", "Incorrecto. El traslado es el que tiene carácter definitivo."]
+                    },
+                    {
+                        enunciado: "¿Qué elemento forma parte de los devengos en una nómina?",
+                        opciones: ["Las cotizaciones a la Seguridad Social del trabajador", "Las deducciones por impuestos aplicables", "Las percepciones salariales y complementos que recibe el trabajador", "Las retenciones fiscales obligatorias"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Son deducciones (se restan del sueldo bruto).", "Incorrecto. Eso es lo que se resta (deducciones).", "¡Correcto! Los devengos son todas las cantidades que suman a favor del trabajador (salario base, horas extra, complementos) antes de quitar impuestos.", "Incorrecto. Las retenciones de IRPF son deducciones."]
+                    },
+                    {
+                        enunciado: "¿Qué organismo español es responsable de la seguridad y salud laboral?",
+                        opciones: ["La Organización Mundial de la Salud", "La Agencia Europea de Seguridad y Salud", "El Instituto Nacional de Seguridad y Salud en el Trabajo", "La Inspección de Trabajo"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Es un organismo mundial genérico de salud, no español.", "Incorrecto. Es de ámbito europeo.", "¡Correcto! El INSST es el órgano científico-técnico nacional especializado en el análisis y prevención de riesgos laborales.", "Incorrecto. La Inspección vigila y sanciona, pero el órgano técnico preventivo de referencia es el INSST."]
+                    },
+                    {
+                        enunciado: "¿Qué deben hacer los trabajadores ante un riesgo grave e inminente?",
+                        opciones: ["Esperar instrucciones del supervisor", "Continuar trabajando para cumplir objetivos", "Interrumpir la actividad y abandonar el lugar de trabajo", "Informar al sindicato y seguir trabajando"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. La inminencia exige actuar de inmediato para proteger la vida, no se debe esperar.", "Incorrecto. Eso pone en riesgo la vida del trabajador y vulnera la ley.", "¡Correcto! El trabajador tiene el derecho legal a paralizar su actividad y abandonar el puesto para ponerse a salvo sin ser sancionado por ello.", "Incorrecto. Debes informar a superiores o representantes, pero nunca seguir trabajando bajo peligro extremo."]
+                    },
+                    {
+                        enunciado: "¿Cuál NO es una medida de protección colectiva?",
+                        opciones: ["Barreras de seguridad", "Sistemas de ventilación localizada", "Gafas de seguridad", "Botones de parada de emergencia"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Las barreras protegen a todos en la zona (es protección colectiva).", "Incorrecto. La ventilación protege el ambiente para todos los operarios (es colectiva).", "¡Correcto! Las gafas son un Equipo de Protección Individual (EPI), ya que se llevan puestas y solo protegen a ese individuo concreto.", "Incorrecto. Los botones detienen la máquina protegiendo a cualquiera que esté cerca (es colectiva)."]
+                    },
+                    {
+                        enunciado: "¿Cuál es la función del comité de seguridad y salud?",
+                        opciones: ["Toma de decisiones ejecutivas", "Asesoramiento y consulta", "Aplicación directa de normas", "Formación obligatoria de empleados"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. No ejecuta, propone a la dirección.", "¡Correcto! Es el órgano paritario y colegiado destinado a la participación y consulta regular de las actuaciones de la empresa en materia preventiva.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "En una empresa de 501 a 1000 trabajadores, ¿delegados de prevención?",
+                        opciones: ["2", "3", "4", "5"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Son 2 delegados para empresas de 50 a 100 trabajadores.", "Incorrecto. Son 3 delegados para empresas de 101 a 500.", "¡Correcto! La escala de la Ley de PRL establece exactamente 4 delegados para el tramo de 501 a 1000 trabajadores.", "Incorrecto. Son 5 delegados a partir de 1001 a 2000 trabajadores."]
+                    },
+                    {
+                        enunciado: "¿Qué se debe hacer primero ante un accidentado?",
+                        opciones: ["Llamar a emergencias", "Administrar primeros auxilios", "Asegurar la seguridad de la zona", "Trasladar al herido"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Es el paso 'Avisar', que es el segundo en la conducta PAS.", "Incorrecto. Es el paso 'Socorrer', el último en la conducta PAS.", "¡Correcto! Siguiendo el protocolo PAS (Proteger, Avisar, Socorrer), lo primero es Proteger la zona para evitar nuevos accidentes.", "Incorrecto. Nunca se debe trasladar a un herido en un coche particular o sin inmovilización, salvo peligro extremo inminente."]
+                    },
+                    {
+                        enunciado: "¿En qué caso es clave la maniobra de Heimlich?",
+                        opciones: ["Quemaduras leves", "Fracturas óseas", "Atragantamiento severo", "Hemorragias internas"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! Se utiliza aplicando compresiones abdominales para ayudar a expulsar un objeto que está obstruyendo las vías respiratorias.", "Incorrecto. Para hemorragias se usan otras técnicas como la presión directa."]
+                    },
+                    {
+                        enunciado: "¿Cuál es el orden jerárquico correcto de normas laborales?",
+                        opciones: ["Convenio, leyes, Constitución, contratos", "Contratos, convenio, leyes, Constitución", "Leyes, convenio, contratos, Constitución", "Constitución, leyes, normas con rango de ley, convenio, contrato, usos"],
+                        correcta: 3,
+                        feedback: ["Incorrecto. Las leyes estatales y la Constitución están por encima del convenio colectivo.", "Incorrecto. El orden está totalmente invertido.", "Incorrecto. La Constitución siempre es la norma suprema, no la última.", "¡Correcto! Refleja perfectamente la pirámide de Kelsen y la jerarquía normativa aplicable en el derecho del trabajo."]
+                    },
+                    {
+                        enunciado: "¿Qué es el SMAC?",
+                        opciones: ["Un tribunal laboral", "Un sindicato", "Un servicio de mediación, arbitraje y conciliación", "Una organización empresarial"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Es un organismo administrativo, no tiene capacidad judicial (jueces).", "Incorrecto.", "¡Correcto! Es el Servicio de Mediación, Arbitraje y Conciliación, paso administrativo previo y obligatorio para intentar un acuerdo antes de ir a juicio laboral.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "El principio de irrenunciabilidad de derechos impide que los trabajadores:",
+                        opciones: ["Negocien sus salarios", "Renuncien a derechos básicos salvo por escrito", "Renuncien a derechos básicos aunque lo hagan por escrito", "Formen sindicatos"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Sí se puede negociar al alza.", "Incorrecto. Ni siquiera firmándolo en un papel notarial sería válido.", "¡Correcto! Cualquier pacto donde un trabajador renuncie a sus vacaciones, salario mínimo o descansos es nulo de pleno derecho.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "El principio de norma más favorable indica que se aplica:",
+                        opciones: ["La norma más reciente", "La norma más antigua", "La norma más compleja", "La norma más beneficiosa para el trabajador"],
+                        correcta: 3,
+                        feedback: ["Incorrecto. En derecho laboral, la novedad de la norma no siempre prevalece si hay conflicto de mínimos.", "Incorrecto.", "Incorrecto.", "¡Correcto! Si dos normas en vigor regulan el mismo aspecto, se aplicará en su totalidad aquella que resulte mejor para las condiciones del trabajador."]
+                    },
+                    {
+                        enunciado: "¿Qué papel tienen los contratos en la jerarquía normativa?",
+                        opciones: ["Establecen la remuneración mínima", "Sustituyen las leyes salvo mejora", "No pueden fijar condiciones inferiores a ley o convenio", "Son irrelevantes"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. La remuneración mínima la fija la Ley (SMI) o el Convenio Colectivo.", "Incorrecto. No sustituyen leyes de rango superior.", "¡Correcto! El contrato individual solo sirve para mejorar lo que dicta la Ley y el Convenio (Principio de norma mínima), nunca para empeorarlo.", "Incorrecto. Regulan las condiciones específicas voluntarias de las partes."]
+                    },
+                    {
+                        enunciado: "Un funcionario que accede con estudios universitarios pertenece al grupo:",
+                        opciones: ["A", "B", "C", "D"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! El Grupo A (dividido en A1 y A2) en la administración pública está reservado exclusivamente para quienes poseen titulación universitaria de Grado.", "Incorrecto. El grupo B se exige título de Técnico Superior (FP).", "Incorrecto. El grupo C es para Bachiller (C1) o título de ESO (C2).", "Incorrecto. El grupo D (y E) históricamente agrupa a los de sin titulación/estudios primarios."]
+                    }
+                ]
+            }
     }
 
             
@@ -8402,7 +8592,7 @@
                 // Cogemos desde la pregunta 27 hasta el final de la lista
                 "Bloque 2: IPv4 e IPv6": adaptarPreguntas(preguntasRedesBruto.slice(27))
             } */
-        };
+    
 
         // ==============================================================
         // LÓGICA DE LA APLICACIÓN (Mantenemos tu lógica intacta)
