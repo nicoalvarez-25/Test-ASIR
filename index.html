@@ -945,6 +945,152 @@
                         correcta: 0,
                         feedback: ["¡Correcto! Es una de las famosas locuras de JavaScript: Por un lado, 2 - '2' da el número 0. Por otro lado, un valor null que intenta sumarse a otro null se evalúa matemáticamente como un 0. Finalmente, 0 == 0 da 'true'.", "Incorrecto.", "Incorrecto.", "Incorrecto."]
                     }
+                ],
+                "Test repaso rápido (Mix)": [
+                    {
+                        enunciado: "¿Dónde se coloca la etiqueta <meta charset=\"UTF-8\">?",
+                        opciones: ["Dentro de <body>", "Dentro de <footer>", "Dentro de <main>", "Dentro de <head>"],
+                        correcta: 3,
+                        feedback: ["Incorrecto. El <body> contiene lo que el usuario ve, no los metadatos.", "Incorrecto. El <footer> es para el pie de página visual.", "Incorrecto. El <main> es para el contenido principal visual.", "¡Correcto! Todos los metadatos, incluyendo la codificación de caracteres, deben ir en la cabecera (<head>) para que el navegador sepa cómo leer el documento antes de renderizarlo."]
+                    },
+                    {
+                        enunciado: "¿Qué hace la etiqueta <em> en HTML?",
+                        opciones: ["Subraya el texto", "Cambia el color", "Elimina el texto", "Aplica énfasis semántico e itálico"],
+                        correcta: 3,
+                        feedback: ["Incorrecto. Para subrayar se usaba <u> (aunque hoy se hace con CSS).", "Incorrecto. Los colores se cambian con CSS.", "Incorrecto. Para texto eliminado (tachado) se usa <del>.", "¡Correcto! Aporta importancia al texto (Emphasis) y el navegador lo muestra en cursiva por defecto."]
+                    },
+                    {
+                        enunciado: "¿Qué etiqueta define un elemento de lista?",
+                        opciones: ["<ul>", "<li>", "<ol>", "<dl>"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. <ul> define el contenedor de la lista desordenada entera, no el elemento individual.", "¡Correcto! <li> (List Item) define cada uno de los puntos o elementos dentro de una lista.", "Incorrecto. <ol> define el contenedor de una lista ordenada.", "Incorrecto. <dl> es para listas de definición."]
+                    },
+                    {
+                        enunciado: "¿Cuál etiqueta define una tabla en HTML?",
+                        opciones: ["<table>", "<td>", "<tr>", "<th>"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Es el contenedor principal que engloba toda la estructura de la tabla.", "Incorrecto. <td> define una celda de datos individual.", "Incorrecto. <tr> define una fila (Table Row).", "Incorrecto. <th> define una celda de cabecera (Table Header)."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad CSS cambia el color del texto?",
+                        opciones: ["background-color", "text-style", "color", "font-color"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Cambia el color de fondo de la caja, no el de las letras.", "Incorrecto. Esta propiedad no existe.", "¡Correcto! Es la propiedad estándar en CSS para cambiar el color de la tipografía.", "Incorrecto. Parece muy lógica, pero en CSS no existe 'font-color'."]
+                    },
+                    {
+                        enunciado: "¿Dónde se recomienda colocar el enlace a un CSS externo?",
+                        opciones: ["En <head>", "En <body>", "Al final del HTML", "Dentro de <footer>"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Debe ir en el <head> para que el navegador cargue los estilos antes de dibujar la página, evitando que se vea un HTML feo sin formato por un segundo.", "Incorrecto. No es una buena práctica ponerlo aquí.", "Incorrecto. Ponerlo al final haría que la web cargue los textos sin estilo y de un pantallazo se apliquen después (efecto FOUC).", "Incorrecto. No debe ir en el pie."]
+                    },
+                    {
+                        enunciado: "¿Qué selector selecciona elementos por clase?",
+                        opciones: ["#clase", ".clase", "clase", "*clase"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. La almohadilla selecciona por atributo 'id'.", "¡Correcto! El punto (.) es el prefijo para seleccionar clases en CSS.", "Incorrecto. Eso seleccionaría una etiqueta HTML que se llame <clase>.", "Incorrecto. El asterisco es el selector universal, no se usa así."]
+                    },
+                    {
+                        enunciado: "¿Qué hace el selector div > p?",
+                        opciones: ["Selecciona cualquier <p>", "Selecciona <div> dentro de <p>", "Selecciona todos los descendientes", "Selecciona hijos directos <p> de <div>"],
+                        correcta: 3,
+                        feedback: ["Incorrecto. Selecciona solo los que cumplan la condición.", "Incorrecto. El orden es de padre a hijo, no al revés.", "Incorrecto. Para todos los descendientes (hijos, nietos, etc.) se usa solo un espacio ('div p').", "¡Correcto! El símbolo '>' fuerza a que el <p> sea hijo directo de nivel 1 del <div> (no afectaría a un <p> que esté dentro de una lista dentro de ese div)."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad cambia la alineación del texto?",
+                        opciones: ["text-align", "align-content", "justify-items", "text-style"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Permite centrar, justificar o alinear a izquierda/derecha el texto.", "Incorrecto. Se usa en Flexbox/Grid para alinear líneas completas de cajas.", "Incorrecto. Es para Grid.", "Incorrecto. No existe."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad controla el margen exterior?",
+                        opciones: ["padding", "margin", "border", "gap"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Padding es el relleno interior (entre el borde y el contenido).", "¡Correcto! Margin empuja los elementos vecinos hacia afuera, creando espacio exterior.", "Incorrecto. Es la línea límite de la caja.", "Incorrecto. Gap es para crear huecos entre elementos de Flexbox o Grid, pero no es el margen general de la caja."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad cambia el grosor de la fuente?",
+                        opciones: ["font-size", "font-family", "font-weight", "text-style"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Cambia el tamaño (altura) de las letras.", "Incorrecto. Cambia el tipo de letra (Arial, Times...).", "¡Correcto! Controla si la fuente es más fina, normal o en negrita (bold).", "Incorrecto. No existe."]
+                    },
+                    {
+                        enunciado: "¿Qué valor de position permite mover un elemento respecto a su posición original?",
+                        opciones: ["relative", "absolute", "fixed", "sticky"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! 'position: relative' te permite usar top/left para desplazar el elemento desde donde debería haber estado, sin afectar al resto.", "Incorrecto. Se mueve respecto a su ancestro posicionado más cercano.", "Incorrecto. Se queda fijo respecto a la ventana del navegador.", "Incorrecto. Hace que el elemento se pegue al hacer scroll."]
+                    },
+                    {
+                        enunciado: "¿Qué valor de display coloca elementos en línea?",
+                        opciones: ["inline", "block", "flex", "grid"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! 'inline' hace que los elementos se pongan uno al lado del otro, ocupando solo su ancho natural (como el texto o los enlaces).", "Incorrecto. 'block' los pone uno debajo de otro, ocupando el 100% del ancho.", "Incorrecto. Genera un contenedor flexible.", "Incorrecto. Genera una cuadrícula."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad se usa para centrar contenido en Flexbox horizontalmente?",
+                        opciones: ["align-items", "justify-content", "flex-align", "align-content"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Por defecto (row), 'align-items' centra en vertical (eje secundario).", "¡Correcto! Por defecto (en flex-direction: row), 'justify-content' actúa sobre el eje principal horizontal.", "Incorrecto. No existe.", "Incorrecto. Alinea múltiples líneas en el eje secundario."]
+                    },
+                    {
+                        enunciado: "¿Qué propiedad define columnas en un grid?",
+                        opciones: ["grid-template-columns", "grid-columns", "grid-layout", "column-template"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Permite definir cuántas columnas habrá y qué tamaño tendrá cada una.", "Incorrecto. No es una propiedad válida de inicialización.", "Incorrecto. No existe.", "Incorrecto. No existe."]
+                    },
+                    {
+                        enunciado: "¿Qué ocurre con display: none?",
+                        opciones: ["Oculta pero deja espacio", "Cambia tamaño", "Desaparece visualmente", "Oculta y elimina el espacio"],
+                        correcta: 3,
+                        feedback: ["Incorrecto. Eso es lo que hace 'visibility: hidden'.", "Incorrecto.", "Incorrecto. Desaparece visualmente, pero la clave es que no deja hueco.", "¡Correcto! El elemento desaparece por completo del flujo visual y los demás elementos se reordenan ocupando su hueco."]
+                    },
+                    {
+                        enunciado: "¿Qué devuelve typeof [] en JavaScript?",
+                        opciones: ["array", "list", "object", "undefined"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Podría parecerlo, pero 'array' no es un tipo primitivo que devuelva typeof.", "Incorrecto. No existe en JS como tipo.", "¡Correcto! En JavaScript los arrays (arreglos) son técnicamente un tipo especial de 'object'.", "Incorrecto. El array está definido y existe."]
+                    },
+                    {
+                        enunciado: "¿Qué resultado da \"3\" * 2 en JavaScript?",
+                        opciones: ["\"32\"", "6", "NaN", "\"6\""],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Eso pasaría si estuvieras sumando (+), ya que concatenaría.", "¡Correcto! Como el operador de multiplicar (*) no sirve para texto, JS asume que quieres hacer matemáticas y convierte el string '3' a número.", "Incorrecto. Daría NaN si multiplicaras 'hola' * 2.", "Incorrecto. El resultado final se convierte en un número real, no en string."]
+                    },
+                    {
+                        enunciado: "¿Qué palabra clave declara constante?",
+                        opciones: ["var", "let", "const", "static"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Declara una variable clásica, cuyo valor sí puede cambiar.", "Incorrecto. Declara una variable de bloque, pero puede cambiar su valor.", "¡Correcto! Declara un valor que no puede ser reasignado en el futuro.", "Incorrecto. Se usa en clases orientadas a objetos, pero no para declarar constantes genéricas."]
+                    },
+                    {
+                        enunciado: "¿Qué método imprime en consola?",
+                        opciones: ["print()", "console.log()", "echo()", "log.console()"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. En JS, print() abre la ventana de imprimir el documento (impresora física).", "¡Correcto! Es la función nativa para escribir mensajes de depuración en la consola del navegador.", "Incorrecto. Es de lenguajes como PHP o Bash.", "Incorrecto. Está al revés."]
+                    },
+                    {
+                        enunciado: "¿Cómo se selecciona un atributo en XPath?",
+                        opciones: ["#", ".", "//", "@"],
+                        correcta: 3,
+                        feedback: ["Incorrecto. Eso es para IDs en CSS.", "Incorrecto. Se refiere al nodo actual.", "Incorrecto. Sirve para saltar a cualquier descendiente sin importar la profundidad.", "¡Correcto! La arroba es la sintaxis estricta en XPath para referenciar atributos (ej: @id o @class)."]
+                    },
+                    {
+                        enunciado: "¿Qué es XML bien formado?",
+                        opciones: ["Con estilos CSS", "Con JavaScript", "Etiquetas bien cerradas", "Con atributos obligatorios"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. El XML guarda datos, no necesita estilos para ser válido.", "Incorrecto. No necesita JS.", "¡Correcto! Para estar 'bien formado' debe cumplir las reglas sintácticas estrictas: tener un único nodo raíz y que todas las etiquetas que se abran se cierren correctamente.", "Incorrecto. Los atributos no son obligatorios siempre."]
+                    },
+                    {
+                        enunciado: "¿Qué hace <xsl:for-each>?",
+                        opciones: ["Crea variables", "Itera nodos", "Muestra texto", "Ordena datos"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Para variables se usa <xsl:variable>.", "¡Correcto! Actúa como un bucle, repitiendo una acción por cada nodo que coincida con la búsqueda XPath.", "Incorrecto. Para mostrar texto se usaría <xsl:value-of>.", "Incorrecto. Para ordenar se usaría <xsl:sort> dentro del bucle."]
+                    },
+                    {
+                        enunciado: "¿Qué clase Bootstrap crea filas?",
+                        opciones: [".row", ".container", ".col", ".grid"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Es la clase obligatoria que sirve de envoltorio flexbox para agrupar las columnas horizontales.", "Incorrecto. Crea el margen principal que envuelve todo el contenido.", "Incorrecto. Define las columnas dentro de la fila.", "Incorrecto. No es la clase base del sistema de cuadrícula de Bootstrap."]
+                    }
                 ]
             },
             "Fundamentos de Hardware (FH)": {
