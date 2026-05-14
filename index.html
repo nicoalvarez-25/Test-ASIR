@@ -4263,6 +4263,17 @@
                     ]
                 },
                 {
+                    "enunciado": "¿Qué estándar de PoE permite ~30W por puerto?",
+                    "opciones": ["802.3af", "802.3at (PoE+)", "802.3bt Tipo 3", "802.3bt Tipo 4"],
+                    "correcta": 1,
+                    "feedback": [
+                    "Incorrecto. Es el PoE original (802.3af), que da un máximo de 15.4W.",
+                    "¡Sí! PoE+ (802.3at) entrega hasta 30W, lo cual es vital para alimentar cámaras motorizadas (PTZ) o puntos de acceso Wi-Fi 6 modernos.",
+                    "Falso. Permite hasta 60W.",
+                    "Incorrecto. Permite hasta 100W."
+                    ]
+                },
+                {
                     enunciado: "En el modelo TCP/IP, ¿en qué capa se ubican TCP y UDP?",
                     opciones: ["Acceso a la red", "Internet", "Transporte", "Aplicación"],
                     correcta: 2,
@@ -4564,6 +4575,17 @@
                     ]
                 },
                 {
+                    "enunciado": "Comando que habilita el routing IPv6 en un switch L3 Cisco:",
+                    "opciones": ["ipv6 unicast-routing", "ip routing", "router ipv6", "ipv6 enable"],
+                    "correcta": 0,
+                    "feedback": [
+                    "¡Sí! Al igual que con IPv4, el enrutamiento IPv6 viene apagado. Debes usar este comando global (ipv6 unicast-routing) para que el equipo empiece a mover paquetes v6.",
+                    "Incorrecto. Eso solo enciende el enrutamiento para IPv4.",
+                    "Falso. Sintaxis no válida.",
+                    "Incorrecto. Habilita IPv6 en una interfaz concreta, pero no activa el motor de enrutamiento del equipo."
+                    ]
+                },
+                {
                     enunciado: "¿Cuál es la dirección de loopback en IPv4?",
                     opciones: ["0.0.0.0", "255.255.255.255", "127.0.0.1", "224.0.0.1"],
                     correcta: 2,
@@ -4846,24 +4868,24 @@
                         correcta: 1, 
                         feedback: ["Incorrecto. Eso es enrutamiento tradicional que gasta muchos puertos físicos.", "¡Sí! Divide una interfaz física en subinterfaces lógicas y asigna 802.1Q a cada una.", "Falso. STP debe seguir funcionando.", "Incorrecto. NAT no es necesario aquí."]
                     },
-                    {
+                    /* {
                         enunciado: "En 802.1Q, ¿qué campo contiene la prioridad 802.1p (PCP)?", 
                         opciones: ["12 bits VLAN ID", "3 bits PCP", "1 bit DEI", "Ninguno"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. Identifica el número de red (VLAN).", "¡Correcto! Priority Code Point usa 3 bits (8 niveles) para Calidad de Servicio (QoS).", "Falso. DEI es para tráfico descartable.", "Incorrecto. Sí contiene este campo."]
-                    },
+                    }, */
                     {
                         enunciado: "Cantidad de VLANs identificables con 802.1Q:", 
                         opciones: ["1024", "2048", "4094", "8192"], 
                         correcta: 2, 
                         feedback: ["Incorrecto. Es un cuarto de la capacidad real.", "Incorrecto. Es la mitad de la capacidad.", "¡Exacto! El campo VID tiene 12 bits (4096). Quitando la 0 y 4095 reservadas, quedan 4094 utilizables.", "Falso. Excede los 12 bits."]
                     },
-                    {
+                    /* {
                         enunciado: "El rango de VLAN extendidas en Cisco es:", 
                         opciones: ["2–1001", "1002–4096", "1006–4094", "4095–8190"], 
                         correcta: 2, 
                         feedback: ["Incorrecto. Ese es el rango Normal.", "Falso. Las 1002-1005 están reservadas (Token Ring/FDDI).", "¡Sí! De la 1006 a la 4094. Requieren modo VTP Transparent o VTPv3.", "Incorrecto."]
-                    },
+                    }, */
                     {
                         enunciado: "La VLAN nativa por defecto en Cisco es:", 
                         opciones: ["0", "1", "100", "4094"], 
@@ -4888,30 +4910,30 @@
                         correcta: 1, 
                         feedback: ["Incorrecto. Muestra un resumen de IPs L3.", "¡Sí! Confirma la negociación troncal y lista qué VLANs cruzan activamente el enlace.", "Falso. Muestra vecinos conectados.", "Incorrecto. Resume puertos LACP/PAgP."]
                     },
-                    {
+                   /*  {
                         enunciado: "¿Qué encapsulado de VLAN fue propietario de Cisco y hoy está obsoleto?", 
                         opciones: ["ISL", "QinQ", "MPLS", "L2TP"], 
                         correcta: 0, 
                         feedback: ["¡Correcto! Inter-Switch Link (ISL) fue sustituido globalmente por el estándar IEEE 802.1Q.", "Incorrecto. QinQ (802.1ad) se usa masivamente en ISPs.", "Falso. Enrutamiento avanzado de operadoras.", "Incorrecto. Protocolo VPN de capa 2."]
-                    },
-                    {
+                    }, */
+                   /*  {
                         enunciado: "QinQ (802.1ad) permite:", 
                         opciones: ["Encapsular una VLAN dentro de otra", "Cifrar VLANs", "Enrutar entre VLANs", "Eliminar la VLAN nativa"], 
                         correcta: 0, 
                         feedback: ["¡Sí! Un ISP envuelve el tráfico VLAN del cliente con su propia etiqueta VLAN para transportarlo sin colisiones de ID.", "Incorrecto. No incluye cifrado.", "Falso. Es puramente Capa 2.", "Incorrecto."]
-                    },
-                    {
+                    }, */
+                   /*  {
                         enunciado: "DTP es un protocolo para:", 
                         opciones: ["Negociar troncales en Cisco", "Autenticación 802.1X", "QoS en Wi‑Fi", "Agregación de enlaces estándar"], 
                         correcta: 0, 
                         feedback: ["¡Correcto! Dynamic Trunking Protocol negocia automáticamente si un enlace debe ser de acceso o troncal.", "Incorrecto. Usa RADIUS/EAP.", "Falso. Eso es WMM.", "Incorrecto. Eso es LACP."]
-                    },
-                    {
+                    }, */
+                    /* {
                         enunciado: "Mejor práctica respecto a DTP en puertos trunk:", 
                         opciones: ["Dejar en dynamic desirable", "Forzar trunk o access y desactivar DTP", "Usar auto en ambos extremos", "Habilitar DTP en servidores"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. Es un gran riesgo de seguridad dejar puertos negociando.", "¡Exacto! Usar 'switchport mode trunk' y 'switchport nonegotiate' evita ataques de VLAN Hopping.", "Falso. Nunca formarán trunk.", "Incorrecto. Los servidores no entienden DTP."]
-                    },
+                    }, */
                     {
                         enunciado: "¿Para qué sirve VTP?", 
                         opciones: ["Propagar rutas entre switches", "Centralizar gestión de VLANs entre switches Cisco", "Balancear carga por enlaces", "Evitar bucles de capa 2"], 
@@ -4954,30 +4976,30 @@
                         correcta: 0, 
                         feedback: ["¡Correcto! Despliega la versión, el dominio, el modo (Server/Client) y el crítico Configuration Revision Number.", "Incorrecto. Muestra las VLANs locales.", "Falso.", "Incorrecto."]
                     },
-                    {
+                    /* {
                         enunciado: "¿Qué protocolo de agregación de enlaces es estándar?", 
                         opciones: ["PAgP", "LACP", "DTP", "VTP"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. Es exclusivo y propietario de Cisco.", "¡Sí! Link Aggregation Control Protocol (802.3ad) es universal y agrupa equipos de distintos fabricantes.", "Falso. Negocia troncales.", "Incorrecto. Sincroniza VLANs."]
-                    },
-                    {
+                    }, */
+                    /* {
                         enunciado: "LACP opera en los modos:", 
                         opciones: ["on/off", "active/passive", "desirable/auto", "root/backup"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. 'on' fuerza la agregación sin protocolo LACP.", "¡Correcto! 'Active' negocia activamente enviando mensajes; 'Passive' solo espera pasivamente a recibirlos.", "Falso. Son modos de PAgP.", "Incorrecto. Son roles de STP."]
                     },
-                    {
+                    /* {
                         enunciado: "PAgP opera en los modos:", 
                         opciones: ["active/passive", "desirable/auto", "on/off", "forward/block"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. Son modos de LACP.", "¡Sí! 'Desirable' inicia la negociación proactivamente; 'Auto' espera a que el vecino inicie.", "Falso.", "Incorrecto. Son estados de puertos en STP."]
-                    },
-                    {
+                    }, */
+                   /*  {
                         enunciado: "Comando para ver el método de balanceo de EtherChannel:", 
                         opciones: ["show etherchannel summary", "show etherchannel load-balance", "show lacp neighbors", "show pagp neighbor"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. Solo muestra si los puertos están levantados o caídos.", "¡Correcto! Indica si el tráfico del canal se reparte usando MACs origen/destino, IPs origen/destino, etc.", "Falso.", "Incorrecto."]
-                    },
+                    },  */
                     {
                         enunciado: "La tabla CAM de un switch almacena:", 
                         opciones: ["Rutas IP", "MACs y puertos asociados", "Usuarios autenticados", "Direcciones IPv6"], 
@@ -5024,12 +5046,12 @@
                         correcta: 1, 
                         feedback: ["Incorrecto. PVST+ es la versión propietaria de Cisco basada en el viejo y lento STP.", "¡Correcto! Rapid STP negocia activamente y recorta el tiempo de convergencia de 50 segundos a unos pocos milisegundos.", "Falso. MSTP usa RSTP internamente, pero su principal función es agrupar muchas VLANs en pocos árboles.", "Incorrecto. VTP gestiona bases de datos de VLANs."]
                     },
-                    {
+                    /* {
                         enunciado: "RSTP define estados de puerto:", 
                         opciones: ["Blocking/Listening/Learning/Forwarding", "Discarding/Learning/Forwarding", "Disabled/Listening/Forwarding", "Alternate/Backup/Designated/Root"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. Esos cuatro son los estados del antiguo protocolo STP original (802.1D).", "¡Sí! RSTP (802.1w) simplificó la vida fusionando todos los estados inactivos en uno solo: Discarding (Descarte).", "Falso. Es una mezcla de estados que no existe en el estándar.", "Incorrecto. Esos son los roles funcionales de los puertos, no sus estados físicos."]
-                    },
+                    }, */
                     {
                         enunciado: "Comando para bajar la prioridad de un switch y que otro sea root (VLAN 1):", 
                         opciones: ["spanning-tree vlan 1 priority 4096", "stp root primary", "spanning-tree mode rapid-pvst", "spanning-tree vlan 1 cost 0"], 
@@ -5066,19 +5088,19 @@
                         correcta: 1, 
                         feedback: ["Incorrecto. Lo que hace es bloquear un puerto designado si recibe una BPDU superior, protegiendo al Root.", "¡Correcto! Si un switch no autorizado anuncia una prioridad de Root mejor, el puerto se bloquea para evitar que robe el trono de tu red.", "Falso. Al contrario, lo protege de posibles usurpadores.", "Incorrecto. No modifica las prioridades de ningún equipo de forma automática."]
                     },
-                    {
+                    /* {
                         enunciado: "Storm Control sirve para:", 
                         opciones: ["Priorizar voz", "Limitar broadcast/multicast/unknown unicast", "Marcar DSCP", "Acelerar STP"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. La priorización se hace mediante reglas y colas de QoS.", "¡Exacto! Define un porcentaje de ancho de banda máximo. Si una tormenta L2 supera ese umbral, bloquea o filtra el tráfico para salvar el switch.", "Falso. Eso es marcado L3 para calidad de servicio.", "Incorrecto. No afecta a los temporizadores ni a la velocidad del árbol de expansión."]
-                    },
-                    {
+                    }, */
+                   /*  {
                         enunciado: "¿Qué FHRP es propietario de Cisco?", 
                         opciones: ["VRRP", "GLBP", "HSRP", "CARP"], 
                         correcta: 2, 
                         feedback: ["Incorrecto. VRRP es un estándar abierto desarrollado por la IETF.", "Incorrecto. GLBP es de Cisco, pero HSRP es la respuesta clásica, propietaria y más antigua para redundancia de puerta de enlace.", "¡Sí! Hot Standby Router Protocol es la famosa patente de Cisco para proveer IPs virtuales de puerta de enlace.", "Falso. Common Address Redundancy Protocol es un estándar de sistemas BSD/Linux."]
-                    },
-                    {
+                    }, */
+                   /*  {
                         enunciado: "VRRP es un estándar definido por:", 
                         opciones: ["IEEE", "IETF", "ISO", "ETSI"], 
                         correcta: 1, 
@@ -5089,14 +5111,14 @@
                         opciones: ["Solo activo/pasivo", "Balanceo de carga de gateway", "Solo redundancia sin balanceo", "Enrutamiento dinámico"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. HSRP y VRRP sufren de esa limitación Activo/Pasivo.", "¡Sí! Gateway Load Balancing Protocol asigna diferentes MACs virtuales a los PCs de la LAN, repartiendo activamente la carga entre todos los routers físicos.", "Falso. Precisamente su principal innovación frente a HSRP es el balanceo.", "Incorrecto. Su misión es la redundancia LAN local, no encontrar rutas a redes externas."]
-                    },
-                    {
+                    }, */
+                    /* {
                         enunciado: "HSRP envía hellos a:", 
                         opciones: ["224.0.0.18 UDP 1985", "224.0.0.2 UDP 1985", "224.0.0.102 UDP 3222", "224.0.0.5 IP 89"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. La dirección 224.0.0.18 es la que utiliza el estándar abierto VRRP.", "¡Correcto! HSRP v1 envía paquetes Hello cada 3 segundos a la dirección 'todos los routers' 224.0.0.2 mediante UDP 1985.", "Falso. Esa IP (224.0.0.102) y puerto (3222) son exclusivos de HSRP versión 2.", "Incorrecto. Esa es la dirección multicast genérica de OSPF."]
-                    },
-                    {
+                    }, */
+                    /* {
                         enunciado: "Comando para dar preferencia a un router como activo en HSRP:", 
                         opciones: ["standby 1 priority 110", "hsrp priority 110", "standby group 1 weight 110", "glbp 1 priority 110"], 
                         correcta: 0, 
@@ -5107,7 +5129,7 @@
                         opciones: ["Evitar que el switch sea root", "Permitir tomar el rol activo si tiene mayor prioridad", "Bloquear el grupo", "Reiniciar HSRP"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. Eso hace referencia al Root Guard en configuraciones de Spanning Tree.", "¡Exacto! Si el router principal se reinicia, el secundario toma el poder. Por defecto, cuando el principal vuelve NO recupera el mando a menos que actives 'preempt'.", "Falso. No tiene efecto de bloqueo.", "Incorrecto. No ejecuta un reinicio del servicio."]
-                    },
+                    }, */
                     {
                         enunciado: "El ataque que falsifica respuestas ARP para realizar MITM se denomina:", 
                         opciones: ["ARP Split", "ARP Snooping", "ARP Spoofing/Poisoning", "ARP Tunneling"], 
@@ -5267,6 +5289,39 @@
                 
                 "Bloque 6: Enrutamiento Avanzado (EIGRP y BGP) e Internet": [
                     {
+                        "enunciado": "El algoritmo de EIGRP se llama:",
+                        "opciones": ["SPF", "DUAL", "Bellman-Ford", "Path Vector"],
+                        "correcta": 1,
+                        "feedback": [
+                        "Incorrecto. Shortest Path First es el motor de OSPF.",
+                        "¡Correcto! Diffusing Update Algorithm (DUAL) es el cerebro que usa EIGRP para calcular rutas ultrarrápidas y tener caminos de respaldo sin bucles.",
+                        "Falso. Es el usado por RIP.",
+                        "Incorrecto. Es la familia a la que pertenece BGP."
+                        ]
+                    },
+                    {
+                        "enunciado": "Un PoP (Point of Presence) es:",
+                        "opciones": ["Un router doméstico", "Un punto de interconexión de un ISP", "Un servidor DNS raíz", "Un firewall"],
+                        "correcta": 1,
+                        "feedback": [
+                        "Incorrecto.",
+                        "¡Correcto! Es una ubicación física (centro de datos) donde un proveedor de Internet tiene sus equipos para dar acceso a los clientes de esa zona geográfica.",
+                        "Falso.",
+                        "Incorrecto."
+                        ]
+                    },
+                    {
+                        "enunciado": "El 'peering' entre dos ISPs suele ser:",
+                        "opciones": ["Siempre de pago", "No pagado entre pares para intercambio local", "Solo con Tier 1", "Exclusivo de IPv6"],
+                        "correcta": 1,
+                        "feedback": [
+                        "Incorrecto. Si es de pago se le llama conexión de 'tránsito'.",
+                        "¡Sí! Es un acuerdo mutuo donde dos operadoras conectan sus redes directamente y se intercambian tráfico gratis porque les beneficia a ambas por igual.",
+                        "Falso.",
+                        "Incorrecto."
+                        ]
+                    },
+                    {
                         enunciado: "EIGRP es:", 
                         opciones: ["Un IGP abierto de estado de enlace", "Propietario de Cisco, híbrido con DUAL", "Un EGP de backbone", "Equivalente a BGP"], 
                         correcta: 1, 
@@ -5320,12 +5375,12 @@
                         correcta: 3, 
                         feedback: ["Incorrecto. BGP lo usa para evitar bucles (guardando la lista de Sistemas Autónomos cruzados).", "Incorrecto. BGP lo usa para elegir por dónde SALIR de su red local hacia Internet.", "Incorrecto. BGP lo usa para sugerir por dónde ENTRAR a su red.", "¡Correcto! Hop Count (número de saltos de routers) es la métrica de RIP, no existe en los atributos de BGP."]
                     },
-                    {
+                   /*  {
                         enunciado: "¿Qué atributo BGP es local y específico de Cisco?", 
                         opciones: ["LOCAL_PREF", "MED", "WEIGHT", "AS-PATH"], 
                         correcta: 2, 
                         feedback: ["Incorrecto. Es un atributo estándar que se envía a todos los routers del mismo Sistema Autónomo (iBGP).", "Falso. Es estándar y se envía al AS vecino.", "¡Sí! El peso (Weight) es el atributo de mayor prioridad, solo existe en equipos Cisco y NUNCA sale del router donde se configura.", "Incorrecto. Es el atributo estándar más importante de BGP."]
-                    },
+                    }, */
                     {
                         enunciado: "En BGP, la relación ‘peering’ entre AS suele ser:", 
                         opciones: ["Cliente‑proveedor", "No pagada entre pares para intercambio local", "Exclusivamente internacional", "Solo en IXPs globales"], 
@@ -5368,12 +5423,12 @@
                         correcta: 1, 
                         feedback: ["Incorrecto. Eso es Tier 1.", "¡Sí! Son la operadora que da servicio final a tu casa o pequeña empresa, comprando el 100% de su acceso a redes superiores.", "Falso. Eso es tarea de la ICANN/IANA.", "Incorrecto."]
                     },
-                    {
+                    /* {
                         enunciado: "Un IXP (Internet Exchange Point) sirve para:", 
                         opciones: ["Aumentar el TTL", "Intercambiar tráfico entre redes/ISPs localmente", "Cambiar direcciones MAC", "Traducir direcciones IP"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. El TTL lo disminuyen los routers.", "¡Correcto! Es un edificio neutro lleno de grandes switches donde las operadoras se enchufan para enviarse tráfico directo sin dar un rodeo por otro continente.", "Falso. Eso ocurre naturalmente en cada salto L2.", "Incorrecto. Eso es NAT."]
-                    },
+                    }, */
                     {
                         enunciado: "Entre las ventajas de un IXP se citan:", 
                         opciones: ["Mayor costo y latencia", "Reducir tránsito superior y latencia local", "Imposibilitar redundancia", "Eliminar BGP"], 
@@ -5540,12 +5595,12 @@
                         correcta: 2, 
                         feedback: ["Incorrecto. Muestra la tabla de enrutamiento interna de Windows.", "Falso. Despliega todas las IPs, MACs y DNS de las tarjetas de red.", "¡Correcto! Network Statistics (-na) lista todos los puertos TCP/UDP a la escucha y las conexiones activas en formato numérico.", "Incorrecto. Muestra la caché local de ARP."]
                     },
-                    {
+                   /*  {
                         enunciado: "TFTP usa por defecto el puerto:", 
                         opciones: ["69/UDP", "69/TCP", "20/TCP", "445/TCP"], 
                         correcta: 0, 
                         feedback: ["¡Sí! Trivial FTP es un protocolo súper ligero que no requiere login, muy usado para guardar configuraciones de routers, sobre el puerto 69 UDP.", "Incorrecto. TFTP está diseñado para ser rápido y usa UDP, no TCP.", "Falso. El puerto 20 TCP es de datos del FTP normal.", "Incorrecto. Puerto del protocolo SMB de Windows."]
-                    },
+                    }, */
                     {
                         enunciado: "En FTP activo, el puerto de datos del servidor es:", 
                         opciones: ["21/TCP", "20/TCP", "69/UDP", "445/TCP"], 
@@ -5558,12 +5613,12 @@
                         correcta: 0, 
                         feedback: ["¡Sí! Network Time Protocol sincroniza los relojes de toda la infraestructura enviando rápidos paquetes UDP por el puerto 123.", "Incorrecto. NTP no requiere el sobrecoste de una sesión TCP.", "Falso. Ese es el puerto de Syslog.", "Incorrecto."]
                     },
-                    {
+                   /*  {
                         enunciado: "Puerto por defecto de Syslog (UDP) es:", 
                         opciones: ["514", "162", "22", "25"], 
                         correcta: 0, 
                         feedback: ["¡Correcto! Los routers y switches envían los mensajes de log (avisos y errores) a un servidor de monitoreo central usando UDP 514.", "Incorrecto. Puerto para recibir trampas (Traps) SNMP.", "Falso. Puerto de SSH.", "Incorrecto. Puerto de envío de correo SMTP."]
-                    },
+                    }, */
                     {
                         enunciado: "El puerto por defecto para consultas SNMP es:", 
                         opciones: ["UDP 161", "TCP 161", "UDP 162", "TCP 162"], 
@@ -5712,18 +5767,18 @@
                         correcta: 1, 
                         feedback: ["Incorrecto. El estático gasta IPs en relación 1 a 1.", "¡Correcto! PAT es la variante de NAT universalmente utilizada en los routers domésticos y empresariales para esconder la red LAN.", "Falso. Requiere que la empresa tenga compradas tantas IPs públicas como ordenadores haya encendidos.", "Incorrecto. Facilita la transición a IPv6."]
                     },
-                    {
+                    /* {
                         enunciado: "NAT64 traduce:", 
                         opciones: ["IPv4 público a privado", "IPv6 a IPv4", "IPv4 a IPv6 y viceversa sin estado", "MAC a IP"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. Ese es el propósito histórico del NAT convencional.", "¡Sí! Actúa de traductor entre los dos protocolos de Internet. Permite a una red pura IPv6 comunicarse con servicios alojados en servidores que solo tienen IPv4.", "Falso. La traducción sin estado se aproxima más al protocolo NAT46.", "Incorrecto. Tarea encargada localmente al protocolo ARP."]
-                    },
-                    {
+                    }, */
+                    /* {
                         enunciado: "NPTv6 realiza:", 
                         opciones: ["Port Address Translation", "Traducción de prefijos IPv6 (1:1)", "Traducción de IPv6 a IPv4", "SLAAC"], 
                         correcta: 1, 
                         feedback: ["Incorrecto. Como en IPv6 hay IPs casi infinitas, ya no hace falta esconder puertos mediante PAT.", "¡Correcto! Network Prefix Translation traduce únicamente la porción de red (el prefijo) sin tocar los bits del host, logrando un NAT 1:1 limpísimo.", "Falso. Eso es trabajo de NAT64.", "Incorrecto. SLAAC es el sistema de autoconfiguración de IPs para clientes."]
-                    },
+                    }, */
                     {
                         enunciado: "Comando para ver traducciones NAT activas:", 
                         opciones: ["show ip nat translations", "show nat table", "show ip route nat", "show access-lists nat"], 
@@ -5752,6 +5807,94 @@
                     // 🔽 PEGA AQUÍ EL RESTO DE PREGUNTAS DEL BLOQUE 8 🔽
                 
                 "Bloque 9: Seguridad de Red y ACLs": [
+                    {
+                        "enunciado": "En una ACL extendida para bloquear HTTP hacia 10.10.10.5, ¿qué puerto se debe denegar?",
+                        "opciones": ["21", "23", "80", "443"],
+                        "correcta": 2,
+                        "feedback": [
+                        "Incorrecto. El puerto 21 es para FTP.",
+                        "Incorrecto. El puerto 23 es para Telnet.",
+                        "¡Sí! El protocolo HTTP (web sin cifrar) viaja a través del puerto TCP 80.",
+                        "Incorrecto. El puerto 443 es para HTTPS (web segura)."
+                        ]
+                    },
+                    {
+                        "enunciado": "¿Qué instrucción habilita Port Security en un puerto?",
+                        "opciones": ["switchport port-security", "port-security enable", "security port on", "switchport secure"],
+                        "correcta": 0,
+                        "feedback": [
+                        "¡Correcto! En Cisco, primero debes poner el puerto en modo acceso y luego ejecutar este comando para encender la función de seguridad.",
+                        "Incorrecto. Sintaxis no válida en Cisco IOS.",
+                        "Falso. Comando inventado.",
+                        "Incorrecto."
+                        ]
+                    },
+                    {
+                        "enunciado": "La característica 'sticky MAC' en Port Security:",
+                        "opciones": ["Aprende MACs y las convierte en estáticas", "Borra todas las MAC", "Duplica VLANs", "Apaga el puerto al ver MACs"],
+                        "correcta": 0,
+                        "feedback": [
+                        "¡Sí! Aprende dinámicamente la MAC del primer PC que se conecta y la guarda en la configuración (running-config) como si la hubieras escrito a mano, haciéndola permanente (pegajosa).",
+                        "Incorrecto.",
+                        "Falso.",
+                        "Incorrecto. Eso lo haría una violación de seguridad, no la función sticky."
+                        ]
+                    },
+                    {
+                        "enunciado": "¿Qué hace 'login block-for' en IOS?",
+                        "opciones": ["Bloquea logins tras intentos fallidos", "Cierra VTY por inactividad", "Restringe Telnet", "Deshabilita SSH"],
+                        "correcta": 0,
+                        "feedback": [
+                        "¡Correcto! Es una medida para evitar ataques de fuerza bruta. Si alguien falla X contraseñas, el router bloquea los intentos de inicio de sesión durante un tiempo determinado.",
+                        "Incorrecto. Para la inactividad se usa 'exec-timeout'.",
+                        "Falso.",
+                        "Incorrecto."
+                        ]
+                    },
+                    {
+                        "enunciado": "Un ataque de envenenamiento ARP (ARP spoofing) permite:",
+                        "opciones": ["Cifrar ICMP", "Man‑in‑the‑Middle en la LAN", "Eliminar DHCP", "Crear VLANs"],
+                        "correcta": 1,
+                        "feedback": [
+                        "Incorrecto. ARP no tiene capacidad de cifrado.",
+                        "¡Sí! Al engañar a los PCs diciéndoles que la MAC del atacante es la puerta de enlace, todo el tráfico pasa por su ordenador antes de ir al router (Hombre en el medio).",
+                        "Falso.",
+                        "Incorrecto."
+                        ]
+                    },
+                    {
+                        "enunciado": "Medida de mitigación contra ARP spoofing indicada en el temario:",
+                        "opciones": ["VTP server", "Dynamic ARP Inspection", "Spanning‑Tree PortFast", "OSPF passive‑interface"],
+                        "correcta": 1,
+                        "feedback": [
+                        "Incorrecto. Gestiona VLANs.",
+                        "¡Correcto! DAI inspecciona los paquetes ARP y bloquea los que contienen información falsa, protegiendo la red de este tipo de ataques.",
+                        "Falso. Agiliza el STP.",
+                        "Incorrecto. Silencia OSPF en puertos."
+                        ]
+                    },
+                    {
+                        "enunciado": "Para permitir solo SSH en VTY se usa:",
+                        "opciones": ["transport input ssh", "login local", "transport output ssh", "ip ssh version 2"],
+                        "correcta": 0,
+                        "feedback": [
+                        "¡Correcto! Entrando a la configuración de las líneas VTY, este comando asegura que el equipo solo acepte conexiones remotas cifradas (SSH) y rechace Telnet.",
+                        "Incorrecto. Indica que use la base de datos local para verificar el usuario.",
+                        "Falso. Eso limitaría las conexiones que SALEN desde el router.",
+                        "Incorrecto. Eso fuerza el uso de la versión 2 (más segura) pero no bloquea explícitamente Telnet."
+                        ]
+                    },
+                    {
+                        "enunciado": "¿En qué capa OSI opera 802.1X?",
+                        "opciones": ["Física", "Enlace de datos", "Red", "Transporte"],
+                        "correcta": 1,
+                        "feedback": [
+                        "Incorrecto.",
+                        "¡Sí! Opera en la Capa 2 (Enlace de datos). Bloquea el tráfico en el puerto del switch hasta que el usuario se autentica correctamente.",
+                        "Falso. No necesita IP para funcionar, trabaja antes que la capa de red.",
+                        "Incorrecto."
+                        ]
+                    },
                     {
                         enunciado: "¿Cuál es el propósito principal de una Lista de Control de Acceso (ACL)?", 
                         opciones: ["Enrutar paquetes dinámicamente", "Filtrar tráfico de red según reglas definidas", "Traducir direcciones IP privadas a públicas", "Asignar IPs automáticamente"], 
@@ -5918,6 +6061,127 @@
                     // 🔽 PEGA AQUÍ EL RESTO DE PREGUNTAS DEL BLOQUE 9 🔽
                 
                 "Bloque 10: Gestión, Mantenimiento y Redes Wi-Fi": [
+                    {
+                        "enunciado": "En Wi‑Fi, ¿qué banda suele ofrecer mayor alcance pero más interferencias?",
+                        "opciones": ["5 GHz", "2.4 GHz", "6 GHz", "60 GHz"],
+                        "correcta": 1,
+                        "feedback": [
+                        "Incorrecto. La banda de 5 GHz ofrece más velocidad y menos interferencias, pero su onda más corta tiene menor alcance y penetra peor las paredes.",
+                        "¡Correcto! La banda de 2.4 GHz llega más lejos, pero está muy saturada porque la usan muchos dispositivos (bluetooth, microondas, otros routers).",
+                        "Incorrecto. La banda de 6 GHz (Wi-Fi 6E) es muy rápida pero tiene un alcance aún más limitado que la de 5 GHz.",
+                        "Incorrecto. Se usa para distancias cortísimas (en la misma habitación) debido a su altísima frecuencia."
+                        ]
+                    },
+                    {
+                        "enunciado": "¿Qué protocolo de seguridad Wi‑Fi es el recomendado actualmente para redes personales?",
+                        "opciones": ["WEP", "WPA", "WPA2-PSK", "WPA3-Personal"],
+                        "correcta": 3,
+                        "feedback": [
+                        "Incorrecto. WEP está totalmente obsoleto y se puede hackear en segundos.",
+                        "Incorrecto. Fue una solución temporal que también quedó obsoleta.",
+                        "Incorrecto. Aunque sigue siendo muy usado, ya ha mostrado vulnerabilidades (como el ataque KRACK).",
+                        "¡Sí! WPA3 es el estándar actual. Incorpora protección contra ataques de diccionario incluso si la contraseña es sencilla."
+                        ]
+                    },
+                    {
+                        "enunciado": "¿Cuál de las siguientes es una buena práctica al configurar un AP doméstico?",
+                        "opciones": ["Usar WEP por compatibilidad", "Ocultar SSID siempre", "Usar WPA3 si es posible", "Canales aleatorios diarios"],
+                        "correcta": 2,
+                        "feedback": [
+                        "Incorrecto. Nunca se debe sacrificar la seguridad usando WEP.",
+                        "Incorrecto. Ocultar el SSID no aporta seguridad real (se puede capturar fácilmente) y da problemas de conexión a algunos dispositivos.",
+                        "¡Correcto! Siempre que tus dispositivos lo soporten, WPA3 es la opción más robusta y segura actualmente.",
+                        "Incorrecto. Cambiar canales constantemente puede desconectar a los clientes."
+                        ]
+                    },
+                    {
+                        "enunciado": "¿Cuál de estos estándares corresponde a Wi‑Fi 7?",
+                        "opciones": ["802.11ac", "802.11ax", "802.11be", "802.11g"],
+                        "correcta": 2,
+                        "feedback": [
+                        "Incorrecto. Corresponde a Wi-Fi 5.",
+                        "Incorrecto. Corresponde a Wi-Fi 6.",
+                        "¡Exacto! El estándar IEEE 802.11be es el nombre técnico de lo que comercialmente llamamos Wi-Fi 7 (Extremely High Throughput).",
+                        "Incorrecto. Es un estándar muy antiguo (54 Mbps)."
+                        ]
+                    },
+                    {
+                        "enunciado": "¿Qué mejoras clave introduce Wi‑Fi 6/6E respecto a 5?",
+                        "opciones": ["DSSS y FHSS", "OFDMA y MU-MIMO mejorado", "Solo más potencia de transmisión", "Cambio a 60 GHz"],
+                        "correcta": 1,
+                        "feedback": [
+                        "Incorrecto. Son técnicas de modulación antiguas.",
+                        "¡Sí! Introduce OFDMA para dividir los canales y repartir datos a varios usuarios a la vez, mejorando la eficiencia en redes congestionadas.",
+                        "Falso. La potencia está regulada por ley, no por el estándar Wi-Fi.",
+                        "Incorrecto. Opera en 2.4 GHz, 5 GHz y añade la banda de 6 GHz (en la versión 6E)."
+                        ]
+                    },
+                    {
+                        "enunciado": "En redes inalámbricas, el modo Ad‑hoc significa:",
+                        "opciones": ["Clientes conectados a un AP", "Dispositivos se conectan directamente entre sí", "Backhaul punto‑multipunto", "Uso exclusivo de 6 GHz"],
+                        "correcta": 1,
+                        "feedback": [
+                        "Incorrecto. Eso se llama modo Infraestructura.",
+                        "¡Correcto! En modo Ad-hoc no hay un Punto de Acceso central; los equipos (como dos portátiles) forman una red punto a punto entre ellos.",
+                        "Falso. El backhaul suele usar puentes (bridges) dedicados.",
+                        "Incorrecto."
+                        ]
+                    },
+                    {
+                        "enunciado": "Canales no solapados típicos en 2.4 GHz (ETSI/US):",
+                        "opciones": ["1, 5, 9", "1, 6, 11", "2, 7, 12", "3, 8, 13"],
+                        "correcta": 1,
+                        "feedback": [
+                        "Incorrecto. Las frecuencias de estos canales chocan entre sí.",
+                        "¡Exacto! Para evitar interferencias en la banda de 2.4 GHz, se recomienda usar exclusivamente los canales 1, 6 y 11, ya que están lo suficientemente separados.",
+                        "Incorrecto.",
+                        "Incorrecto."
+                        ]
+                    },
+                    {
+                        "enunciado": "¿Cómo se posiciona WiMAX frente a Wi‑Fi?",
+                        "opciones": ["WiMAX sustituye a Wi‑Fi en interiores", "WiMAX es para acceso metropolitano/rural; Wi‑Fi para LAN locales", "Ambos son idénticos", "Wi‑Fi reemplaza a WiMAX en backhaul"],
+                        "correcta": 1,
+                        "feedback": [
+                        "Incorrecto. Wi-Fi es el rey en interiores.",
+                        "¡Correcto! WiMAX (802.16) está diseñado para cubrir grandes distancias (kilómetros) actuando como proveedor de Internet, mientras que Wi-Fi (802.11) es para la red local (metros).",
+                        "Falso. Usan tecnologías y protocolos distintos.",
+                        "Incorrecto."
+                        ]
+                    },
+                    {
+                        "enunciado": "¿Qué protocolo de descubrimiento de dispositivos es propietario de Cisco?",
+                        "opciones": ["LLDP", "CDP", "EDP", "STP"],
+                        "correcta": 1,
+                        "feedback": [
+                        "Incorrecto. Link Layer Discovery Protocol es un estándar abierto.",
+                        "¡Correcto! Cisco Discovery Protocol es una herramienta exclusiva de los equipos Cisco para ver qué hay conectado a sus puertos.",
+                        "Falso. EDP es de Extreme Networks.",
+                        "Incorrecto. STP es para evitar bucles."
+                        ]
+                    },
+                    {
+                        "enunciado": "¿Qué comando habilita LLDP globalmente en un switch Cisco?",
+                        "opciones": ["lldp run", "cdp enable", "enable lldp", "lldp discovery enable"],
+                        "correcta": 0,
+                        "feedback": [
+                        "¡Sí! En el modo de configuración global, 'lldp run' enciende el protocolo para que el switch empiece a descubrir a los vecinos de otras marcas.",
+                        "Incorrecto. Eso habilita CDP por interfaz.",
+                        "Falso. Comando incorrecto.",
+                        "Incorrecto."
+                        ]
+                    },
+                    {
+                        "enunciado": "¿Qué comando guarda logs en buffer en IOS?",
+                        "opciones": ["logging buffered 4096", "log buffer on", "service timestamps log", "logging console"],
+                        "correcta": 0,
+                        "feedback": [
+                        "¡Correcto! Guarda los eventos del sistema temporalmente en la memoria RAM del equipo (buffer). Puedes ajustar el tamaño asignado (ej. 4096 bytes).",
+                        "Incorrecto.",
+                        "Falso. Este comando le pone fecha y hora a los logs.",
+                        "Incorrecto. Este envía los mensajes de log a la pantalla de la consola activa."
+                        ]
+                    },
                     {
                         enunciado: "¿Qué protocolo de descubrimiento de vecinos es un estándar abierto de la capa 2?", 
                         opciones: ["CDP", "LLDP", "STP", "VTP"], 
@@ -6116,7 +6380,157 @@
                         correcta: 1, 
                         feedback: ["Incorrecto. Eso se hace en la fase de diagnóstico/análisis posterior.", "¡Correcto! Antes de tocar nada, debes preguntar al usuario para reunir información (síntomas), definir qué es exactamente lo que falla y acotar el entorno.", "Falso. Cambiar cosas sin planificar es una mala práctica.", "Incorrecto. Ese es el paso final que cierra el ticket de soporte."]
                     }
-                ]
+                ],
+
+                "Bloque de preguntas eliminadas/difíciles": [
+                    {
+                        enunciado: "Un IXP (Internet Exchange Point) sirve para:", 
+                        opciones: ["Aumentar el TTL", "Intercambiar tráfico entre redes/ISPs localmente", "Cambiar direcciones MAC", "Traducir direcciones IP"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. El TTL lo disminuyen los routers.", "¡Correcto! Es un edificio neutro lleno de grandes switches donde las operadoras se enchufan para enviarse tráfico directo sin dar un rodeo por otro continente.", "Falso. Eso ocurre naturalmente en cada salto L2.", "Incorrecto. Eso es NAT."]
+                    },
+                {
+                        enunciado: "En 802.1Q, ¿qué campo contiene la prioridad 802.1p (PCP)?", 
+                        opciones: ["12 bits VLAN ID", "3 bits PCP", "1 bit DEI", "Ninguno"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. Identifica el número de red (VLAN).", "¡Correcto! Priority Code Point usa 3 bits (8 niveles) para Calidad de Servicio (QoS).", "Falso. DEI es para tráfico descartable.", "Incorrecto. Sí contiene este campo."]
+                    },
+                    {
+                        enunciado: "El rango de VLAN extendidas en Cisco es:", 
+                        opciones: ["2–1001", "1002–4096", "1006–4094", "4095–8190"], 
+                        correcta: 2, 
+                        feedback: ["Incorrecto. Ese es el rango Normal.", "Falso. Las 1002-1005 están reservadas (Token Ring/FDDI).", "¡Sí! De la 1006 a la 4094. Requieren modo VTP Transparent o VTPv3.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "¿Qué protocolo de agregación de enlaces es estándar?", 
+                        opciones: ["PAgP", "LACP", "DTP", "VTP"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. Es exclusivo y propietario de Cisco.", "¡Sí! Link Aggregation Control Protocol (802.3ad) es universal y agrupa equipos de distintos fabricantes.", "Falso. Negocia troncales.", "Incorrecto. Sincroniza VLANs."]
+                    },
+                    {
+                        enunciado: "LACP opera en los modos:", 
+                        opciones: ["on/off", "active/passive", "desirable/auto", "root/backup"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. 'on' fuerza la agregación sin protocolo LACP.", "¡Correcto! 'Active' negocia activamente enviando mensajes; 'Passive' solo espera pasivamente a recibirlos.", "Falso. Son modos de PAgP.", "Incorrecto. Son roles de STP."]
+                    },
+                    {
+                        enunciado: "PAgP opera en los modos:", 
+                        opciones: ["active/passive", "desirable/auto", "on/off", "forward/block"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. Son modos de LACP.", "¡Sí! 'Desirable' inicia la negociación proactivamente; 'Auto' espera a que el vecino inicie.", "Falso.", "Incorrecto. Son estados de puertos en STP."]
+                    },
+                    {
+                        enunciado: "Comando para ver el método de balanceo de EtherChannel:", 
+                        opciones: ["show etherchannel summary", "show etherchannel load-balance", "show lacp neighbors", "show pagp neighbor"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. Solo muestra si los puertos están levantados o caídos.", "¡Correcto! Indica si el tráfico del canal se reparte usando MACs origen/destino, IPs origen/destino, etc.", "Falso.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "¿Qué atributo BGP es local y específico de Cisco?", 
+                        opciones: ["LOCAL_PREF", "MED", "WEIGHT", "AS-PATH"], 
+                        correcta: 2, 
+                        feedback: ["Incorrecto. Es un atributo estándar que se envía a todos los routers del mismo Sistema Autónomo (iBGP).", "Falso. Es estándar y se envía al AS vecino.", "¡Sí! El peso (Weight) es el atributo de mayor prioridad, solo existe en equipos Cisco y NUNCA sale del router donde se configura.", "Incorrecto. Es el atributo estándar más importante de BGP."]
+                    },
+
+                    {
+                        enunciado: "¿Qué FHRP es propietario de Cisco?", 
+                        opciones: ["VRRP", "GLBP", "HSRP", "CARP"], 
+                        correcta: 2, 
+                        feedback: ["Incorrecto. VRRP es un estándar abierto desarrollado por la IETF.", "Incorrecto. GLBP es de Cisco, pero HSRP es la respuesta clásica, propietaria y más antigua para redundancia de puerta de enlace.", "¡Sí! Hot Standby Router Protocol es la famosa patente de Cisco para proveer IPs virtuales de puerta de enlace.", "Falso. Common Address Redundancy Protocol es un estándar de sistemas BSD/Linux."]
+                    },
+                   {
+                        enunciado: "HSRP envía hellos a:", 
+                        opciones: ["224.0.0.18 UDP 1985", "224.0.0.2 UDP 1985", "224.0.0.102 UDP 3222", "224.0.0.5 IP 89"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. La dirección 224.0.0.18 es la que utiliza el estándar abierto VRRP.", "¡Correcto! HSRP v1 envía paquetes Hello cada 3 segundos a la dirección 'todos los routers' 224.0.0.2 mediante UDP 1985.", "Falso. Esa IP (224.0.0.102) y puerto (3222) son exclusivos de HSRP versión 2.", "Incorrecto. Esa es la dirección multicast genérica de OSPF."]
+                    },
+                    {
+                        enunciado: "VRRP es un estándar definido por:", 
+                        opciones: ["IEEE", "IETF", "ISO", "ETSI"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. La IEEE estandariza protocolos puramente de capa 1 y 2 (Ethernet, Wi-Fi).", "¡Correcto! La Internet Engineering Task Force creó este estándar abierto de redundancia como alternativa libre al HSRP de Cisco.", "Falso. Es una organización general internacional, no específica de redes.", "Incorrecto. Es un instituto de normas de telecomunicación europeo."]
+                    },
+                    {
+                        enunciado: "GLBP permite:", 
+                        opciones: ["Solo activo/pasivo", "Balanceo de carga de gateway", "Solo redundancia sin balanceo", "Enrutamiento dinámico"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. HSRP y VRRP sufren de esa limitación Activo/Pasivo.", "¡Sí! Gateway Load Balancing Protocol asigna diferentes MACs virtuales a los PCs de la LAN, repartiendo activamente la carga entre todos los routers físicos.", "Falso. Precisamente su principal innovación frente a HSRP es el balanceo.", "Incorrecto. Su misión es la redundancia LAN local, no encontrar rutas a redes externas."]
+                    },
+                    {
+                        enunciado: "TFTP usa por defecto el puerto:", 
+                        opciones: ["69/UDP", "69/TCP", "20/TCP", "445/TCP"], 
+                        correcta: 0, 
+                        feedback: ["¡Sí! Trivial FTP es un protocolo súper ligero que no requiere login, muy usado para guardar configuraciones de routers, sobre el puerto 69 UDP.", "Incorrecto. TFTP está diseñado para ser rápido y usa UDP, no TCP.", "Falso. El puerto 20 TCP es de datos del FTP normal.", "Incorrecto. Puerto del protocolo SMB de Windows."]
+                    },
+                    {
+                        enunciado: "Storm Control sirve para:", 
+                        opciones: ["Priorizar voz", "Limitar broadcast/multicast/unknown unicast", "Marcar DSCP", "Acelerar STP"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. La priorización se hace mediante reglas y colas de QoS.", "¡Exacto! Define un porcentaje de ancho de banda máximo. Si una tormenta L2 supera ese umbral, bloquea o filtra el tráfico para salvar el switch.", "Falso. Eso es marcado L3 para calidad de servicio.", "Incorrecto. No afecta a los temporizadores ni a la velocidad del árbol de expansión."]
+                    },
+                    {
+                        enunciado: "DTP es un protocolo para:", 
+                        opciones: ["Negociar troncales en Cisco", "Autenticación 802.1X", "QoS en Wi‑Fi", "Agregación de enlaces estándar"], 
+                        correcta: 0, 
+                        feedback: ["¡Correcto! Dynamic Trunking Protocol negocia automáticamente si un enlace debe ser de acceso o troncal.", "Incorrecto. Usa RADIUS/EAP.", "Falso. Eso es WMM.", "Incorrecto. Eso es LACP."]
+                    },
+                    {
+                        enunciado: "Mejor práctica respecto a DTP en puertos trunk:", 
+                        opciones: ["Dejar en dynamic desirable", "Forzar trunk o access y desactivar DTP", "Usar auto en ambos extremos", "Habilitar DTP en servidores"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. Es un gran riesgo de seguridad dejar puertos negociando.", "¡Exacto! Usar 'switchport mode trunk' y 'switchport nonegotiate' evita ataques de VLAN Hopping.", "Falso. Nunca formarán trunk.", "Incorrecto. Los servidores no entienden DTP."]
+                    },
+
+                  {
+                        enunciado: "RSTP define estados de puerto:", 
+                        opciones: ["Blocking/Listening/Learning/Forwarding", "Discarding/Learning/Forwarding", "Disabled/Listening/Forwarding", "Alternate/Backup/Designated/Root"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. Esos cuatro son los estados del antiguo protocolo STP original (802.1D).", "¡Sí! RSTP (802.1w) simplificó la vida fusionando todos los estados inactivos en uno solo: Discarding (Descarte).", "Falso. Es una mezcla de estados que no existe en el estándar.", "Incorrecto. Esos son los roles funcionales de los puertos, no sus estados físicos."]
+                    },
+                    {
+                        enunciado: "NAT64 traduce:", 
+                        opciones: ["IPv4 público a privado", "IPv6 a IPv4", "IPv4 a IPv6 y viceversa sin estado", "MAC a IP"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. Ese es el propósito histórico del NAT convencional.", "¡Sí! Actúa de traductor entre los dos protocolos de Internet. Permite a una red pura IPv6 comunicarse con servicios alojados en servidores que solo tienen IPv4.", "Falso. La traducción sin estado se aproxima más al protocolo NAT46.", "Incorrecto. Tarea encargada localmente al protocolo ARP."]
+                    },
+                    {
+                        enunciado: "NPTv6 realiza:", 
+                        opciones: ["Port Address Translation", "Traducción de prefijos IPv6 (1:1)", "Traducción de IPv6 a IPv4", "SLAAC"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. Como en IPv6 hay IPs casi infinitas, ya no hace falta esconder puertos mediante PAT.", "¡Correcto! Network Prefix Translation traduce únicamente la porción de red (el prefijo) sin tocar los bits del host, logrando un NAT 1:1 limpísimo.", "Falso. Eso es trabajo de NAT64.", "Incorrecto. SLAAC es el sistema de autoconfiguración de IPs para clientes."]
+                    },
+                    {
+                        enunciado: "Puerto por defecto de Syslog (UDP) es:", 
+                        opciones: ["514", "162", "22", "25"], 
+                        correcta: 0, 
+                        feedback: ["¡Correcto! Los routers y switches envían los mensajes de log (avisos y errores) a un servidor de monitoreo central usando UDP 514.", "Incorrecto. Puerto para recibir trampas (Traps) SNMP.", "Falso. Puerto de SSH.", "Incorrecto. Puerto de envío de correo SMTP."]
+                    },
+                    {
+                        enunciado: "¿Qué encapsulado de VLAN fue propietario de Cisco y hoy está obsoleto?", 
+                        opciones: ["ISL", "QinQ", "MPLS", "L2TP"], 
+                        correcta: 0, 
+                        feedback: ["¡Correcto! Inter-Switch Link (ISL) fue sustituido globalmente por el estándar IEEE 802.1Q.", "Incorrecto. QinQ (802.1ad) se usa masivamente en ISPs.", "Falso. Enrutamiento avanzado de operadoras.", "Incorrecto. Protocolo VPN de capa 2."]
+                    },
+                    {
+                        enunciado: "QinQ (802.1ad) permite:", 
+                        opciones: ["Encapsular una VLAN dentro de otra", "Cifrar VLANs", "Enrutar entre VLANs", "Eliminar la VLAN nativa"], 
+                        correcta: 0, 
+                        feedback: ["¡Sí! Un ISP envuelve el tráfico VLAN del cliente con su propia etiqueta VLAN para transportarlo sin colisiones de ID.", "Incorrecto. No incluye cifrado.", "Falso. Es puramente Capa 2.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "Comando para dar preferencia a un router como activo en HSRP:", 
+                        opciones: ["standby 1 priority 110", "hsrp priority 110", "standby group 1 weight 110", "glbp 1 priority 110"], 
+                        correcta: 0, 
+                        feedback: ["¡Sí! La prioridad por defecto de HSRP es 100. Aumentarla a 110 en el grupo 1 asegura matemáticamente la victoria en la elección del rol Activo.", "Incorrecto. Esa sintaxis no es válida en Cisco IOS.", "Falso. El parámetro correcto se llama 'priority', no 'weight'.", "Incorrecto. Ese comando configuraría la prioridad del protocolo GLBP, no de HSRP."]
+                    },
+                    {
+                        enunciado: "En HSRP, 'preempt' implica:", 
+                        opciones: ["Evitar que el switch sea root", "Permitir tomar el rol activo si tiene mayor prioridad", "Bloquear el grupo", "Reiniciar HSRP"], 
+                        correcta: 1, 
+                        feedback: ["Incorrecto. Eso hace referencia al Root Guard en configuraciones de Spanning Tree.", "¡Exacto! Si el router principal se reinicia, el secundario toma el poder. Por defecto, cuando el principal vuelve NO recupera el mando a menos que actives 'preempt'.", "Falso. No tiene efecto de bloqueo.", "Incorrecto. No ejecuta un reinicio del servicio."]
+                    },
+                ],
+
                     // 🔽 PEGA AQUÍ EL RESTO DE PREGUNTAS DEL BLOQUE 10 🔽
             },
             "Bases de Datos (BD)": {
