@@ -6381,6 +6381,608 @@
                         feedback: ["Incorrecto. Eso se hace en la fase de diagnóstico/análisis posterior.", "¡Correcto! Antes de tocar nada, debes preguntar al usuario para reunir información (síntomas), definir qué es exactamente lo que falla y acotar el entorno.", "Falso. Cambiar cosas sin planificar es una mala práctica.", "Incorrecto. Ese es el paso final que cierra el ticket de soporte."]
                     }
                 ],
+                "Gran Repaso Final (Resumen Olga)": [
+                    {
+                        enunciado: "1. ¿Cuántos bits tiene un byte?",
+                        opciones: ["4", "8", "16", "32"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. 4 bits forman lo que se conoce como 'nibble' (medio byte).", "¡Correcto! Un byte estándar está formado exactamente por 8 bits (octeto).", "Incorrecto. 16 bits equivaldrían a 2 bytes (un 'word' en algunas arquitecturas).", "Incorrecto. 32 bits equivaldrían a 4 bytes."]
+                    },
+                    {
+                        enunciado: "2. ¿Cuál es el resultado decimal del número binario 101010?",
+                        opciones: ["40", "41", "42", "44"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. 40 en binario sería 101000.", "Incorrecto. 41 en binario sería 101001.", "¡Correcto! Sumando los pesos de los bits a 1 (32 + 8 + 2) obtenemos 42 en decimal.", "Incorrecto. 44 en binario sería 101100."]
+                    },
+                    {
+                        enunciado: "3. ¿Cuál es la conversión correcta del número decimal 22 a binario?",
+                        opciones: ["10110", "11010", "10011", "11100"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! 16 + 4 + 2 = 22, que en binario es 10110.", "Incorrecto. 11010 equivale a 26 en decimal (16 + 8 + 2).", "Incorrecto. 10011 equivale a 19 en decimal (16 + 2 + 1).", "Incorrecto. 11100 equivale a 28 en decimal (16 + 8 + 4)."]
+                    },
+                    {
+                        enunciado: "4. ¿Qué modelo incluye las capas Aplicación, Presentación, Sesión, Transporte, Red, Enlace y Física?",
+                        opciones: ["Modelo TCP/IP", "Modelo OSI", "Modelo Ethernet", "Modelo IEEE"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. El modelo TCP/IP agrupa estas funciones en solo 4 capas.", "¡Correcto! El modelo OSI se compone teóricamente de estas siete capas bien diferenciadas.", "Incorrecto. Ethernet es un estándar (802.3) de las capas bajas, no un modelo de 7 capas.", "Incorrecto. IEEE es el organismo que crea los estándares, no el modelo de red en sí."]
+                    },
+                    {
+                        enunciado: "5. En el modelo OSI, ¿qué PDU corresponde a la capa de Aplicación?",
+                        opciones: ["Bits", "Trama", "Datos", "Paquete"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Los bits son la PDU de la capa 1 (Física).", "Incorrecto. La trama (frame) es la PDU de la capa 2 (Enlace).", "¡Correcto! En la capa de Aplicación (y hasta que llega a Transporte), la PDU genérica se denomina simplemente 'Datos'.", "Incorrecto. El paquete es la PDU de la capa 3 (Red)."]
+                    },
+                    {
+                        enunciado: "6. En el modelo OSI, ¿qué PDU corresponde a la capa de Transporte cuando se usa TCP?",
+                        opciones: ["Segmentos", "Datagramas", "Tramas", "Bits"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! TCP trocea los datos de aplicación en bloques numerados llamados 'segmentos' en la capa de Transporte.", "Incorrecto. El datagrama es la PDU equivalente pero cuando se usa el protocolo UDP.", "Incorrecto. Las tramas operan en la capa de Enlace de datos.", "Incorrecto. Los bits operan en la capa Física."]
+                    },
+                    {
+                        enunciado: "7. En el modelo OSI, ¿qué PDU corresponde a UDP en la capa de Transporte?",
+                        opciones: ["Paquetes", "Datagramas", "Tramas", "Bits"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Los paquetes pertenecen a la capa de Red (IP).", "¡Correcto! UDP trabaja con datagramas en la capa de Transporte (no garantiza entrega ni orden).", "Incorrecto. PDU de capa 2.", "Incorrecto. PDU de capa 1."]
+                    },
+                    {
+                        enunciado: "8. ¿Qué PDU corresponde a la capa de Red en el modelo OSI?",
+                        opciones: ["Trama", "Segmento", "Paquete", "Bit"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Capa 2 (Enlace).", "Incorrecto. Capa 4 (Transporte TCP).", "¡Correcto! La capa de Red encapsula los segmentos en 'paquetes' añadiéndoles las IPs de origen y destino.", "Incorrecto. Capa 1 (Física)."]
+                    },
+                    {
+                        enunciado: "9. ¿Qué PDU corresponde a la capa de Enlace?",
+                        opciones: ["Datos", "Trama", "Segmento", "Paquete"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Capas superiores (5, 6 y 7).", "¡Correcto! La capa de Enlace (Capa 2) encapsula los paquetes en 'tramas' (frames) y les añade las direcciones MAC y el FCS.", "Incorrecto. Capa de Transporte.", "Incorrecto. Capa de Red."]
+                    },
+                    {
+                        enunciado: "10. ¿Qué PDU corresponde a la capa Física?",
+                        opciones: ["Bits", "Datos", "Paquetes", "Datagramas"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! La capa Física transmite la información pura en forma de ceros y unos (impulsos eléctricos, luz o radiofrecuencia).", "Incorrecto. Capa de Aplicación.", "Incorrecto. Capa de Red.", "Incorrecto. Capa de Transporte UDP."]
+                    },
+                    {
+                        enunciado: "11. ¿Cuáles son las capas del modelo TCP/IP según el repaso?",
+                        opciones: ["Física, Enlace, Red y Transporte", "Aplicación, Transporte, Internet y Acceso a la red", "Aplicación, Sesión, Internet y Física", "Presentación, Transporte, Red y Enlace"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Esas son las capas inferiores del modelo OSI.", "¡Correcto! El modelo original TCP/IP condensa las 7 del OSI en estas 4 capas.", "Incorrecto. Mezcla nombres del modelo OSI y TCP/IP de forma incorrecta.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "12. ¿Qué contiene el tráiler de una trama según el documento?",
+                        opciones: ["Solo dirección IP origen", "FCS", "Puerto TCP", "Máscara de subred"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. La IP va en la cabecera (header) de Capa 3, no en el tráiler de Capa 2.", "¡Correcto! A diferencia de otras PDUs que solo tienen cabecera, la trama tiene un final o 'tráiler' que contiene el Frame Check Sequence para detectar errores.", "Incorrecto. Va en la cabecera de Capa 4.", "Incorrecto. Es un parámetro lógico de IP."]
+                    },
+                    {
+                        enunciado: "13. ¿Qué significa FCS?",
+                        opciones: ["Fast Cable System", "Frame Control Segment", "Frame Check Sequence", "Fiber Connection Standard"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. No tiene relación con cables.", "Incorrecto.", "¡Correcto! Traducido como 'Secuencia de Verificación de Trama', es un código matemático anexo al final de la trama.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "14. ¿En qué capa se calcula el CRC para detectar errores de bits?",
+                        opciones: ["Capa 2", "Capa 3", "Capa 4", "Capa 7"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! El Control de Redundancia Cíclica (CRC) se calcula e inserta en el campo FCS del tráiler de la Capa 2 (Enlace de datos).", "Incorrecto. En la capa 3 se hace un checksum solo de la cabecera IP.", "Incorrecto. En la capa 4 hay checksums de puertos/datos, pero el CRC puro de bits del medio físico se controla en la 2.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "15. ¿Qué comprueba el checksum IP de capa 3?",
+                        opciones: ["Los datos y la cabecera TCP", "Solo la cabecera IP", "Solo la dirección MAC", "La contraseña de red"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Eso lo haría el checksum de la capa de transporte.", "¡Correcto! Por eficiencia, los routers en capa 3 solo comprueban que la cabecera IP no se haya corrompido, ignorando el contenido del paquete.", "Incorrecto. Las MACs son de capa 2.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "16. ¿Qué comprueba el checksum TCP/UDP de capa 4?",
+                        opciones: ["Solo el tráiler", "Solo la MAC destino", "Datos y cabecera", "Solo la máscara de red"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. El tráiler pertenece a la capa 2.", "Incorrecto. MAC es capa 2.", "¡Correcto! En la capa 4, el mecanismo de comprobación es más exhaustivo y valida la integridad tanto de la cabecera de transporte como de los datos que contiene.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "17. ¿Qué significa WAN?",
+                        opciones: ["Wireless Area Network", "Wide Area Network", "Web Access Network", "Wired Automatic Network"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Eso sería WLAN (Wireless Local Area Network).", "¡Correcto! Wide Area Network (Red de Área Amplia), abarca grandes distancias geográficas interconectando LANs.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "18. ¿Qué tipo de red corresponde a una red de área personal?",
+                        opciones: ["PAN", "LAN", "MAN", "CAN"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Personal Area Network. Ejemplo clásico: tu móvil conectado por Bluetooth a unos auriculares a pocos metros de distancia.", "Incorrecto. Local Area Network (una oficina o casa entera).", "Incorrecto. Metropolitan Area Network (una ciudad).", "Incorrecto. Campus Area Network (universidad o complejo hospitalario)."]
+                    },
+                    {
+                        enunciado: "19. ¿Qué significa VLAN?",
+                        opciones: ["Very Large Area Network", "Virtual Local Area Network", "Visual LAN", "Verified Local Area Network"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! Red de Área Local Virtual. Permite segmentar lógicamente redes LAN físicas usando switches manejables.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "20. ¿Qué tipo de red representa WLAN?",
+                        opciones: ["Red local cableada", "Red metropolitana", "Red local inalámbrica", "Red de área personal"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Sería LAN a secas.", "Incorrecto. Sería MAN.", "¡Correcto! Wireless Local Area Network. El ejemplo por excelencia es la red Wi-Fi de tu casa o empresa.", "Incorrecto. Sería PAN."]
+                    },
+                    {
+                        enunciado: "21. ¿Cuál de las siguientes opciones es una perturbación de la señal?",
+                        opciones: ["Trunking", "Atenuación", "Subnetting", "Encapsulación"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Es una técnica para pasar múltiples VLANs por un cable.", "¡Correcto! La atenuación es la pérdida de fuerza o potencia de la señal eléctrica o luminosa a medida que viaja por el cable.", "Incorrecto. Es una técnica lógica de división de IPs.", "Incorrecto. Es el proceso de envolver datos en capas."]
+                    },
+                    {
+                        enunciado: "22. ¿Qué tres perturbaciones aparecen en los apuntes?",
+                        opciones: ["Ruido, atenuación y distorsión", "Ruido, cifrado y latencia", "Trama, paquete y segmento", "NAT, PAT y DNS"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Son los 3 problemas físicos principales: Ruido (interferencias externas), Atenuación (pérdida de fuerza) y Distorsión (deformación de la onda).", "Incorrecto. Cifrado es una técnica de seguridad y latencia es un retardo de tiempo.", "Incorrecto. Son PDUs.", "Incorrecto. Son protocolos/servicios lógicos."]
+                    },
+                    {
+                        enunciado: "23. ¿Qué tipo de transmisión permite comunicación en un solo sentido?",
+                        opciones: ["Full-duplex", "Half-duplex", "Simplex", "Trunk"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Ambos sentidos a la vez.", "Incorrecto. Ambos sentidos, pero por turnos.", "¡Correcto! En Simplex uno emite y el otro solo puede recibir (ejemplo clásico: la señal de radio FM o televisión de antena).", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "24. ¿Qué tipo de transmisión permite comunicación en ambos sentidos, pero no simultáneamente?",
+                        opciones: ["Simplex", "Half-duplex", "Full-duplex", "Multimodo"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Solo un sentido.", "¡Correcto! Pueden hablar los dos, pero por turnos (ejemplo clásico: un walkie-talkie).", "Incorrecto. Ambos a la vez.", "Incorrecto. Es un tipo de fibra óptica."]
+                    },
+                    {
+                        enunciado: "25. ¿Qué tipo de transmisión permite comunicación simultánea en ambos sentidos?",
+                        opciones: ["Full-duplex", "Half-duplex", "Simplex", "Broadcast"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Al igual que una llamada telefónica, ambas partes pueden hablar y escuchar a la vez por carriles físicos/lógicos separados.", "Incorrecto. Por turnos.", "Incorrecto. Un solo sentido.", "Incorrecto. Broadcast es hablar a 'todos' en la red."]
+                    },
+                    {
+                        enunciado: "26. ¿Qué estándar IEEE corresponde a Ethernet?",
+                        opciones: ["802.11", "802.15.1", "802.3", "802.16"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Define Wi-Fi.", "Incorrecto. Define Bluetooth.", "¡Correcto! El IEEE 802.3 es la familia de estándares que rige las conexiones LAN cableadas (Ethernet).", "Incorrecto. Define WiMAX."]
+                    },
+                    {
+                        enunciado: "27. ¿Qué estándar IEEE corresponde a Wi-Fi?",
+                        opciones: ["802.11", "802.3", "802.16", "802.1Q"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! IEEE 802.11 rige las redes locales inalámbricas (WLAN/Wi-Fi).", "Incorrecto. Ethernet.", "Incorrecto. WiMAX.", "Incorrecto. Trunking de VLANs."]
+                    },
+                    {
+                        enunciado: "28. ¿Qué estándar IEEE corresponde a Bluetooth según el repaso?",
+                        opciones: ["802.1Q", "802.15.1", "802.3", "802.16"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! Rige las redes inalámbricas de área personal (WPAN).", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "29. ¿Qué estándar IEEE corresponde a WiMAX?",
+                        opciones: ["802.11", "802.3", "802.16", "802.15.1"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! IEEE 802.16 estandariza las conexiones inalámbricas metropolitanas de largo alcance.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "30. ¿Qué estándar se utiliza en enlaces trunk para etiquetado VLAN?",
+                        opciones: ["802.11", "802.3", "802.1Q", "802.16"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! El IEEE 802.1Q inyecta una 'etiqueta' en la trama original para indicar a qué VLAN pertenece antes de mandarla por el cable troncal.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "31. ¿Qué significa dot1Q en el contexto del repaso?",
+                        opciones: ["Un tipo de cable de fibra", "Una técnica de cifrado Wi-Fi", "Encapsulación usada en enlaces trunk", "Un protocolo de correo"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! 'dot1Q' es la forma hablada y abreviada de decir '802.1Q' (punto uno Q), el estándar para trunking de VLANs.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "32. ¿Cuál de estos cables Ethernet aparece en el documento?",
+                        opciones: ["HDMI", "UTP", "VGA", "SATA"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Cable de vídeo/audio.", "¡Correcto! Unshielded Twisted Pair (par trenzado no apantallado), el cable de red LAN más común y barato del mundo.", "Incorrecto. Vídeo analógico.", "Incorrecto. Datos de discos duros."]
+                    },
+                    {
+                        enunciado: "33. ¿Qué categoría Ethernet soporta 100 Mbps según la tabla?",
+                        opciones: ["Cat5", "Cat6a", "Cat7", "Cat8"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! La categoría 5 clásica está diseñada para el estándar Fast Ethernet (100 Mbps). Está obsoleta hoy en día.", "Incorrecto. 10 Gbps.", "Incorrecto. 10 Gbps a alta frecuencia.", "Incorrecto. 40 Gbps."]
+                    },
+                    {
+                        enunciado: "34. ¿Qué categoría aparece con velocidad de 1 Gbps y ancho de banda de 100 MHz?",
+                        opciones: ["Cat5e", "Cat7", "Cat8", "Cat6a"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! La versión 'enhanced' (mejorada) del Cat5 redujo interferencias permitiendo llegar al ansiado Gigabit (1 Gbps) a 100 metros.", "Incorrecto.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "35. ¿Qué categoría ofrece 10 Gbps a 100 metros y 500 MHz?",
+                        opciones: ["Cat5", "Cat6", "Cat6a", "Cat8"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto. Cat6 ofrece 10 Gbps, pero sufre y solo los garantiza hasta 55 metros.", "¡Correcto! La Cat6a (Augmented) subió las frecuencias a 500 MHz blindando mejor el cable para garantizar los 10 Gbps a los 100 metros máximos de Ethernet.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "36. ¿Qué categoría mínima se indica para soportar 10 Gbps a 100 metros?",
+                        opciones: ["Cat5e", "Cat6", "Cat6a", "Cat5"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! Si quieres asegurar 10 Gbps en un troncal largo (100m) en un CPD o edificio, Cat6a es el mínimo requerido.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "37. ¿Qué categoría puede alcanzar 10 Gbps en corto alcance de 55 metros?",
+                        opciones: ["Cat5", "Cat5e", "Cat6", "Cat8"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! La Cat6 puede manejar 10 Gbps, pero pasados los 55 metros el 'crosstalk' (interferencia entre pares) arruina la señal y cae a 1 Gbps.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "38. ¿Qué categoría Ethernet aparece con 25-40 Gbps?",
+                        opciones: ["Cat6", "Cat6a", "Cat7a", "Cat8"],
+                        correcta: 3,
+                        feedback: ["Incorrecto.", "Incorrecto.", "Incorrecto.", "¡Correcto! La categoría 8 es un monstruo de cable superapantallado diseñado específicamente para interconectar racks en Data Centers a 25 y 40 Gbps."]
+                    },
+                    {
+                        enunciado: "39. ¿Cuál es la distancia máxima recomendada para Cat8 según la tabla?",
+                        opciones: ["100 metros", "55 metros", "30 metros", "300 metros"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! Para poder enviar 40 Gbps por cobre sin que la señal colapse, la longitud física del enlace debe recortarse a un máximo de 30 metros.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "40. ¿Qué ancho de banda tiene Cat7a según la tabla?",
+                        opciones: ["100 MHz", "250 MHz", "600 MHz", "1000 MHz"],
+                        correcta: 3,
+                        feedback: ["Incorrecto.", "Incorrecto.", "Incorrecto.", "¡Correcto! La Categoría 7A duplica el ancho de banda del canal respecto a su predecesora, llegando al Gigahertzio (1000 MHz)."]
+                    },
+                    {
+                        enunciado: "41. ¿Qué tipo de cable de fibra usa un solo camino?",
+                        opciones: ["Multimodo", "Monomodo", "FTP", "SFTP"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Multimodo permite varios caminos o rebotes de luz (dispersión modal).", "¡Correcto! Monomodo (SMF) dispara un haz láser concentrado en línea recta a través de un núcleo microscópico (9 micrones).", "Incorrecto. Es cable de cobre.", "Incorrecto. Es cable de cobre."]
+                    },
+                    {
+                        enunciado: "42. ¿Qué tipo de fibra es más adecuada para larga distancia?",
+                        opciones: ["Multimodo", "Monomodo", "UTP", "Cat6"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! Al usar un láser directo sin rebotes que debiliten la señal, la fibra Monomodo puede atravesar continentes enteros bajo el océano.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "43. ¿Qué tipo de fibra es más barata y se usa en distancias cortas?",
+                        opciones: ["Monomodo", "Multimodo", "Cat8", "OS2"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! Multimodo (MMF) usa LEDs en lugar de láseres caros, y núcleos anchos. Ideal para distancias intra-edificio (hasta ~500m).", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "44. ¿Qué tipo de fibra monomodo se usa en interiores o edificios?",
+                        opciones: ["OS1", "OS2", "OM3", "OM5"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! OS (Optical Single-mode) 1 tiene una protección física ajustada pensada para recintos cerrados (interiores).", "Incorrecto. Pensada para exteriores/tubos.", "Incorrecto. Es multimodo.", "Incorrecto. Es multimodo."]
+                    },
+                    {
+                        enunciado: "45. ¿Qué tipo de fibra monomodo se usa en exterior o larga distancia?",
+                        opciones: ["OM1", "OM2", "OS2", "OM4"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! OS2 tiene tubos holgados y gel para soportar humedad y cambios de temperatura al aire libre o bajo tierra.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "46. ¿Qué tipo de fibra multimodo soporta 300 m a 10 Gbps?",
+                        opciones: ["OM1", "OM2", "OM3", "OS1"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! OM3 fue optimizada para láser VCSEL y es un estándar tremendo en CPDs para enlaces de 10 Gigabits hasta 300 metros.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "47. ¿Qué tipo de fibra multimodo soporta 550 m y 10-40 Gbps?",
+                        opciones: ["OM1", "OM2", "OM4", "OS2"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! OM4 es una mejora química del núcleo respecto a OM3, permitiendo estirar los 10G a 550m, o soportar 40G a cortas distancias.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "48. ¿Qué tipo de fibra multimodo es parecida a OM4 pero más eficiente y puede llegar a 40-100 Gbps?",
+                        opciones: ["OM1", "OM2", "OM3", "OM5"],
+                        correcta: 3,
+                        feedback: ["Incorrecto.", "Incorrecto.", "Incorrecto.", "¡Correcto! OM5 usa WDM (Wave Division Multiplexing), permitiendo enviar colores de luz diferentes por la misma fibra para multiplicar su ancho de banda a nivel extremo."]
+                    },
+                    {
+                        enunciado: "49. ¿Qué conector de fibra se describe como redondito antiguo?",
+                        opciones: ["LC", "SC", "ST", "RJ45"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Es cuadradito pequeño.", "Incorrecto. Es cuadrado grande.", "¡Correcto! El conector ST (Straight Tip) se acopla con un giro de bayoneta como los conectores de vídeo de antena BNC antiguos.", "Incorrecto. Cobre."]
+                    },
+                    {
+                        enunciado: "50. ¿Qué conector de fibra se describe como cuadrado y a presión?",
+                        opciones: ["SC", "LC", "ST", "RJ45"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! El conector SC (Standard Connector o Subscriber Connector) es de plástico cuadrado y encaja con un simple clic a presión.", "Incorrecto.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "51. ¿Qué conector de fibra se describe como pequeño y tipo clip?",
+                        opciones: ["ST", "SC", "LC", "FTP"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! El LC (Lucent Connector) ocupa la mitad que el SC, tiene una pestañita como el cable de red de casa y es el rey indiscutible de las tarjetas SFP modernas.", "Incorrecto. Es un tipo de cable de cobre."]
+                    },
+                    {
+                        enunciado: "52. ¿Cuál de estos dispositivos aparece como obsoleto en el repaso?",
+                        opciones: ["Router", "Switch", "Hub", "AP"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! El Hub funcionaba en Capa 1 repitiendo eléctricamente la señal a todos los puertos, creando colisiones y bajando la seguridad y velocidad. Hoy en día no se usan.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "53. ¿Cuál de los siguientes dispositivos aparece en la lista de comunicaciones?",
+                        opciones: ["Router", "Monitor", "Teclado", "Procesador"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! El router es el equipo principal de capa 3 encargado de enrutar los paquetes entre redes diferentes o hacia Internet.", "Incorrecto.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "54. ¿Qué dispositivo permite trabajar también en capa 3 según la lista?",
+                        opciones: ["Hub", "Switch de capa 3", "Tester de red", "Pelacables"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! Los switches tradicionalmente son de capa 2 (usan MACs), pero los multicapa (L3) integran capacidades de enrutamiento IP por hardware a velocidad extrema.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "55. ¿Cuál de las siguientes es una topología de red mencionada?",
+                        opciones: ["Lineal extendida", "Estrella", "Circular dinámica", "Multicast"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! Estrella es la topología reina en LAN hoy en día: todos los cables de los PCs terminan concentrados en un switch central.", "Incorrecto.", "Incorrecto. Es un método de transmisión IP."]
+                    },
+                    {
+                        enunciado: "56. ¿Qué conjunto contiene únicamente topologías mencionadas en el repaso?",
+                        opciones: ["Estrella, árbol, malla, bus y anillo", "TCP, UDP, IP y DNS", "Cat5, Cat6, Cat7 y Cat8", "UTP, STP, FTP y SFTP"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Estas 5 representan cómo se pueden cablear o estructurar físicamente los equipos de una red.", "Incorrecto. Protocolos.", "Incorrecto. Categorías de cobre.", "Incorrecto. Blindajes de cobre."]
+                    },
+                    {
+                        enunciado: "57. ¿Qué banda Wi-Fi tiene mayor alcance, menor velocidad y más dispositivos?",
+                        opciones: ["2.4 GHz", "5 GHz", "6 GHz", "10 GHz"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! La banda 2.4GHz cruza mejor las paredes físicas (onda más ancha), pero está saturadísima por microondas, bluetooth y vecinos, limitando mucho la velocidad máxima.", "Incorrecto. Tiene menor alcance.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "58. ¿Qué banda Wi-Fi tiene menor alcance y mayor velocidad?",
+                        opciones: ["2.4 GHz", "5 GHz", "900 MHz", "1 GHz"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! La banda 5GHz tiene mucha más capacidad para transportar megas de ancho de banda (canales más limpios), pero choca contra las paredes de la casa reduciendo drásticamente su alcance.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "59. ¿De qué depende la seguridad Wi-Fi según los apuntes?",
+                        opciones: ["De la frecuencia", "Del tipo de cifrado", "Del número de antenas", "Del ancho de banda del cable"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! Como el aire es un medio compartido que cualquiera puede 'escuchar', la seguridad real solo reside en usar protocolos criptográficos fuertes para encriptar los datos de las ondas.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "60. ¿Cuál de los siguientes es un tipo de cifrado Wi-Fi mencionado?",
+                        opciones: ["OSPF", "WPA2", "BGP", "ICMP"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! Wi-Fi Protected Access 2 (WPA2) usa el potente algoritmo AES para blindar la red doméstica contra intrusos.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "61. ¿Cuál de estos protocolos de enrutamiento tiene un máximo de 15 saltos?",
+                        opciones: ["OSPF", "BGP", "RIP", "EIGRP"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! Routing Information Protocol (RIP) cuenta el número de routers por los que pasa un paquete. Su límite de diseño antiguo asume que una red no puede tener más de 15 routers de distancia.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "62. ¿Qué valor indica unreachable en RIP?",
+                        opciones: ["15", "16", "88", "179"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. 15 es el último salto válido.", "¡Correcto! Si a RIP le llega una ruta marcada con '16 saltos', significa 'infinito' o 'red inalcanzable', por lo que borra esa ruta de sus tablas.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "63. ¿Qué puerto usa RIP según los apuntes?",
+                        opciones: ["UDP 520", "TCP 179", "IP 89", "TCP 23"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! RIP lanza sus actualizaciones de tabla de ruteo periódicas por broadcast/multicast usando UDP puerto 520.", "Incorrecto. BGP.", "Incorrecto. OSPF.", "Incorrecto. Telnet."]
+                    },
+                    {
+                        enunciado: "64. ¿Qué algoritmo se asocia a OSPF?",
+                        opciones: ["DUAL", "SPF/Dijkstra", "Three-Way Handshake", "CRC"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. DUAL es de EIGRP.", "¡Correcto! OSPF usa el algoritmo de Shortest Path First (creado por Edsger Dijkstra) para calcular matemáticamente la topología exacta del mapa y elegir el camino más rápido basado en el 'coste' o ancho de banda del cable.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "65. ¿Qué número de protocolo IP usa OSPF según el repaso?",
+                        opciones: ["IP 88", "IP 89", "TCP 179", "UDP 520"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. EIGRP.", "¡Correcto! OSPF se salta la capa de transporte TCP/UDP. Se encapsula directamente en el paquete IP bajo el número de protocolo 89.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "66. ¿Qué protocolo se describe como Cisco, híbrido o DUAL?",
+                        opciones: ["RIP", "OSPF", "EIGRP", "BGP"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! Enhanced Interior Gateway Routing Protocol fue creado en exclusiva por Cisco combinando lo mejor del vector distancia y el estado de enlace, apoyándose en el algoritmo DUAL.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "67. ¿Qué número de protocolo IP utiliza EIGRP?",
+                        opciones: ["IP 88", "IP 89", "TCP 179", "UDP 520"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Al igual que OSPF, EIGRP va metido directamente dentro del paquete IP, marcado con el protocolo número 88.", "Incorrecto. OSPF.", "Incorrecto. BGP.", "Incorrecto. RIP."]
+                    },
+                    {
+                        enunciado: "68. ¿Qué protocolo utiliza peering entre sistemas autónomos?",
+                        opciones: ["RIP", "OSPF", "EIGRP", "BGP"],
+                        correcta: 3,
+                        feedback: ["Incorrecto.", "Incorrecto.", "Incorrecto.", "¡Correcto! Border Gateway Protocol es el rey del exterior. Une los grandes Sistemas Autónomos (ISP mundiales como Telefónica u Orange) para formar la propia Internet."]
+                    },
+                    {
+                        enunciado: "69. ¿Qué puerto utiliza BGP?",
+                        opciones: ["TCP 21", "TCP 22", "TCP 179", "UDP 520"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! Como BGP mueve la tabla de rutas de Internet (que tiene casi 1 millón de redes), necesita un transporte robusto y sin fallos, de ahí que use conexión TCP por el puerto 179.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "70. ¿Cuál de estos protocolos se clasifica como externo en los apuntes?",
+                        opciones: ["RIP", "OSPF", "EIGRP", "BGP"],
+                        correcta: 3,
+                        feedback: ["Incorrecto.", "Incorrecto.", "Incorrecto.", "¡Correcto! Protocolo Exterior (EGP). Es el único de esta lista diseñado para salir de tu empresa y hablar con los routers de otras corporaciones o ISPs."]
+                    },
+                    {
+                        enunciado: "71. ¿Qué protocolos aparecen como internos en el documento?",
+                        opciones: ["RIP, OSPF y EIGRP", "BGP, DNS y HTTP", "NAT, PAT y FTP", "STP, VTP y SMTP"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Estos tres son Protocolos de Pasarela Interior (IGP). Se usan solo *dentro* de las fronteras de una empresa bajo una misma administración técnica.", "Incorrecto.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "72. ¿Qué registro DNS se usa para IPv6?",
+                        opciones: ["A", "AAAA", "MX", "CNAME"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. 'A' se usa para resolver un nombre hacia una IP versión 4 normal.", "¡Correcto! Como una dirección IPv6 (128 bits) es exactamente 4 veces más grande que una IPv4 (32 bits), el registro se bautizó lógicamente como AAAA.", "Incorrecto. Identifica al servidor de correos del dominio.", "Incorrecto. Alias."]
+                    },
+                    {
+                        enunciado: "73. ¿Qué dominio se usa para resolución inversa en IPv4?",
+                        opciones: ["ipv6.arpa", "in-addr.arpa", "reverse.dns", "dns.local"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! Cuando le das una IP al servidor DNS y quieres saber qué dominio tiene asociado (al revés de lo normal), el sistema usa la zona especial 'in-addr.arpa'.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "74. ¿Qué capas se asocian a HTTP(s) en los apuntes?",
+                        opciones: ["Red y Enlace", "Transporte y Red", "Aplicación, Presentación y Sesión", "Física y Enlace"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! Como el modelo TCP/IP agrupa estas tres del OSI en su capa superior única ('Aplicación'), el protocolo HTTP engloba funciones de sesión y visualización de forma integrada.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "75. ¿En qué capa del modelo OSI se sitúa IP según el documento?",
+                        opciones: ["Capa 2", "Capa 3", "Capa 4", "Capa 7"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! El protocolo de Internet (IP) da vida a la capa de Red, proporcionando un esquema lógico de direcciones jerárquico mundial para poder interconectar redes separadas físicamente.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "76. ¿Qué protocolo se asocia al comando ping?",
+                        opciones: ["ICMP", "FTP", "SMTP", "BGP"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! El ping no es más que una mini-herramienta que utiliza los mensajes de diagnóstico del protocolo ICMP por debajo para comprobar si hay conexión con otra IP.", "Incorrecto.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "77. ¿Qué mensajes ICMP se mencionan en el repaso?",
+                        opciones: ["SYN y ACK", "Discover y Offer", "Echo Request y Echo Reply", "Request y Acknowledge"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. Son banderas de control de conexión de TCP.", "Incorrecto. DHCP.", "¡Correcto! Tu PC manda un 'Echo Request' (solicitud de eco) y el destino, si está vivo y su firewall lo permite, contesta con un 'Echo Reply' (respuesta de eco).", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "78. ¿Qué característica tiene ICMP según el documento?",
+                        opciones: ["Es orientado a conexión", "No es orientado a conexión", "Usa TCP 179", "Usa UDP 520"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! ICMP simplemente lanza paquetes IP de control. No establece sesiones previas ni mecanismos de recuperación complejos como TCP.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "79. ¿Cuál es el orden correcto del proceso DHCP indicado?",
+                        opciones: ["Offer, Discover, Request, Acknowledge", "Discover, Offer, Request, Acknowledge", "Request, Discover, Offer, Acknowledge", "Acknowledge, Offer, Request, Discover"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! Es el famoso proceso DORA. El PC busca el servidor a gritos (Discover), el server le ofrece una IP (Offer), el PC la pide formalmente (Request), y el server se la asienta y confirma (Acknowledge).", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "80. ¿Qué puerto utiliza Telnet?",
+                        opciones: ["21", "22", "23", "179"],
+                        correcta: 2,
+                        feedback: ["Incorrecto. FTP.", "Incorrecto. SSH.", "¡Correcto! Es el puerto del obsoleto y peligrosísimo servicio de control remoto donde todo el texto e incluso las contraseñas viajaban en plano por el cable, sin encriptar.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "81. ¿Qué puerto utiliza SSH?",
+                        opciones: ["20", "21", "22", "23"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! Secure Shell vino a sustituir a Telnet usando el puerto 22, permitiendo el control remoto seguro por terminal al encriptar todo el tráfico.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "82. ¿Qué puerto utiliza FTP según el repaso?",
+                        opciones: ["21", "22", "23", "520"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! El File Transfer Protocol usa el TCP 21 para el canal de control (mandar órdenes) y el 20 para enviar los archivos físicos.", "Incorrecto.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "83. ¿Qué puerto utiliza SFTP según los apuntes?",
+                        opciones: ["21", "22", "23", "179"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! Como SFTP no es un FTP real, sino una herramienta de transferencia de ficheros encapsulada y protegida dentro del propio protocolo SSH, comparte su mismo puerto TCP 22.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "84. ¿Qué secuencia representa el Three-Way Handshake de TCP?",
+                        opciones: ["Discover, Offer, Request", "SYN, SYN-ACK, ACK", "Echo Request, Echo Reply, ACK", "DNS, HTTP, TCP"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. DHCP.", "¡Correcto! Es el saludo de 3 vías vital de TCP: 'Quiero sincronizar (SYN)', 'Vale, yo también, confirmo (SYN-ACK)', 'Recibido, te confirmo (ACK)'.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "85. ¿Qué protocolo se describe como 'ahí lo llevas'?",
+                        opciones: ["TCP", "UDP", "DNS", "BGP"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. TCP verifica que todo llegue bien.", "¡Correcto! UDP funciona bajo la política de 'best effort' (mejor esfuerzo): empaqueta los datos, los dispara a la red y se olvida. Si se pierden, no le importa, 'ahí lo llevas'.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "86. ¿Cuál es una característica de UDP según el repaso?",
+                        opciones: ["Garantiza siempre la entrega", "Es orientado a conexión", "Tiene baja latencia", "Usa three-way handshake"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! Al no tener que enviar confirmaciones constantes ni establecer conexión previa, es rapidísimo y tiene cero retrasos, ideal para videojuegos en línea y llamadas de voz sobre IP.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "87. ¿En qué capa trabaja UDP según los apuntes?",
+                        opciones: ["Capa 2", "Capa 3", "Capa 4", "Capa 7"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto.", "¡Correcto! Es uno de los dos gigantes (junto a TCP) encargados del transporte de datos en el nivel 4 del OSI y de proveer el enrutamiento por 'puertos'.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "88. ¿Qué protocolo evita bucles entre switches?",
+                        opciones: ["VTP", "STP", "BGP", "DHCP"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! El Spanning Tree Protocol (STP) bloquea temporalmente cables redundantes. Si no existiera, una trama de broadcast daría vueltas infinitamente entre switches cruzados colapsando la red en segundos (tormenta de broadcast).", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "89. ¿Qué elemento principal elige STP?",
+                        opciones: ["Root Bridge", "Servidor DNS", "Gateway NAT", "Cliente DHCP"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Es el 'jefe' de los switches (Puente Raíz). Todos los demás switches calculan el camino más corto hacia él y bloquean el resto de caminos redundantes para evitar bucles.", "Incorrecto.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "90. ¿Qué mensajes utiliza STP según el documento?",
+                        opciones: ["BPDU", "DORA", "SYN", "MX"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Las Bridge Protocol Data Units son paquetitos de control que los switches se mandan constantemente por todas sus bocas de red para chivarse de la topología existente y calcular el árbol.", "Incorrecto.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "91. ¿Qué versión rápida de STP aparece en los apuntes?",
+                        opciones: ["RSTP 802.1w", "OSPF 89", "dot1Q", "WPA3"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Rapid STP es la evolución del antiguo 802.1D. Permite que la red se recupere de una caída de cable en unos 2 segundos (antes tardaba hasta 50s).", "Incorrecto.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "92. ¿Para qué sirve VTP?",
+                        opciones: ["Para evitar bucles físicos", "Para crear VLANs automáticas entre switches", "Para traducir IP pública y privada", "Para comprobar errores de bits"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. STP.", "¡Correcto! VLAN Trunking Protocol permite propagar mágicamente la base de datos de VLANs desde un switch central a todos los demás de la empresa para no tener que escribirlas a mano una a una.", "Incorrecto. NAT.", "Incorrecto. CRC."]
+                    },
+                    {
+                        enunciado: "93. ¿Cuáles son modos de VTP mencionados?",
+                        opciones: ["Root, Backup y Forward", "Server, Client y Transparent", "Discover, Offer y Request", "SYN, ACK y FIN"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! El 'Server' crea y propaga las VLAN, el 'Client' solo aprende y sincroniza, y el 'Transparent' pasa los mensajes de largo ignorándolos.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "94. ¿Qué hacen NAT/PAT según el repaso?",
+                        opciones: ["Cifran la red Wi-Fi", "Traducen entre IP pública e IP privada", "Evitan bucles de switches", "Calculan CRC en la trama"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! El Network Address Translation permite que toda una empresa u hogar navegue con IPs internas ilegales (ej. 192.168.1.X), usando el router para 'disfrazarlas' y salir a Internet con una única IP Pública válida.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "95. ¿Cuántos puertos posibles se indican para NAT/PAT?",
+                        opciones: ["1024", "4096", "32768", "65536"],
+                        correcta: 3,
+                        feedback: ["Incorrecto.", "Incorrecto.", "Incorrecto.", "¡Correcto! Como el campo de puerto de la cabecera TCP/UDP tiene 16 bits, podemos tener 2^16 = 65536 combinaciones numéricas de puerto distintas para que PAT enrute internamente múltiples conexiones por la misma IP."]
+                    },
+                    {
+                        enunciado: "96. ¿Cuál de estos comandos aparece en el repaso?",
+                        opciones: ["chmod", "ping", "mkdir", "nano"],
+                        correcta: 1,
+                        feedback: ["Incorrecto. Comando de Linux para permisos.", "¡Correcto! Ping y otros como tracert e ipconfig son los básicos de troubleshooting presentados para redes.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "97. ¿Qué herramienta se usa para verificar cableado RJ45?",
+                        opciones: ["Tester de red", "OTDR", "Fusionadora", "Puntero láser"],
+                        correcta: 0,
+                        feedback: ["¡Correcto! Mediante sus lucecitas, comprueba la continuidad de cobre extremo a extremo validando que los 8 hilos no estén cortados o invertidos tras crimpar.", "Incorrecto.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "98. ¿Qué herramienta se utiliza para comprobar fibra óptica?",
+                        opciones: ["Crimpadora", "OTDR", "Pelacables", "Multímetro"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! El Reflectómetro Óptico en el Dominio del Tiempo dispara láseres y mide el reflejo para certificar a cuántos metros exactos hay un microcorte, una fusión o suciedad en la fibra.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "99. ¿Cuántas subredes se obtienen al dividir 192.168.1.0/24 en /26?",
+                        opciones: ["2", "4", "6", "8"],
+                        correcta: 1,
+                        feedback: ["Incorrecto.", "¡Correcto! Pasar de una máscara barra 24 a una barra 26 implica 'robar' 2 bits de la parte de hosts para entregárselos a las subredes. La fórmula matemática es 2 elevado a n (2^2) = 4 nuevas redes.", "Incorrecto.", "Incorrecto."]
+                    },
+                    {
+                        enunciado: "100. ¿Cuántos hosts útiles por subred hay en una red /27?",
+                        opciones: ["16", "32", "30", "62"],
+                        correcta: 2,
+                        feedback: ["Incorrecto.", "Incorrecto. Ese es el número matemático base, pero no puedes usar todas.", "¡Correcto! Una máscara barra 27 deja 5 bits libres para PCs (32-27=5). La fórmula 2^5 = 32 IPs posibles, a las que se resta siempre la primera (Id de red) y la última (Broadcast), quedando 30 IPs útiles para equipos.", "Incorrecto."]
+                    }
+                ],
 
                 "Bloque de preguntas eliminadas/difíciles": [
                     {
