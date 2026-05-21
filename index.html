@@ -457,7 +457,7 @@
                     {enunciado:"Estructura válida XML (bien formado)", opciones:["Atributos obligatorios","Mayúsculas prohibidas","Bien anidado","DTD obligatorio"], correcta:2, feedback:["Falso.","Falso.","¡Exacto! Etiquetas de cierre en orden inverso.","Es opcional."]},
                     {enunciado:"Característica XML", opciones:["Etiquetas fijas","Orden no importa","Etiquetas definidas por el usuario","Sin atributos"], correcta:2, feedback:["Eso HTML.","Importa mucho.","¡Correcto! Tú te inventas el nombre de la etiqueta.","Falso."]},
                     {enunciado:"Documento que define reglas XML", opciones:["CSS","JSON","DTD","HTML"], correcta:2, feedback:["Visual.","Datos.","¡Sí! Reglas de negocio.","Visual."]},
-                    {enunciado:"Comentarios XML", opciones:["//","","##","/**/"], correcta:1, feedback:["JS.","¡Correcto! Como en HTML.","Python.","CSS."]},
+                    {enunciado:"Comentarios XML", opciones:["//","<!-- -->","##","/**/"], correcta:1, feedback:["JS.","¡Correcto! Como en HTML.","Python.","CSS."]},
                     {enunciado:"Lenguaje para transformar XML", opciones:["XQuery","HTML","XSLT","JSON"], correcta:2, feedback:["Consulta BD XML.","Visual.","¡Exacto! XSL Transformations.","Datos."]},
                     {enunciado:"Documento moderno para validar XML (con tipos)", opciones:["HTML-Schema","XML-Schema (XSD)","JSON-Schema","XLS-Schema"], correcta:1, feedback:["No.","¡Correcto! XSD es mejor que DTD por su tipado.","Valida JSON.","No."]},
                     {enunciado:"Salida HTML en XSLT", opciones:["xsl:xml","xsl:template","xsl:output method='html'","html-output"], correcta:2, feedback:["No.","Plantilla.","¡Eso es! Salida global generada.","No."]},
@@ -512,7 +512,7 @@
                     },
                     {
                         enunciado: "¿Cuál es el símbolo para comentarios de una línea?", 
-                        opciones: ["", "//", "/* */", "##"], 
+                        opciones: ["<!-- -->", "//", "/* */", "##"], 
                         correcta: 1, 
                         feedback: ["Ese es para HTML.", "¡Correcto! Barra doble anula todo lo que haya a su derecha en esa línea.", "Ese sirve para comentar varias líneas a la vez.", "Ese es para Python o Bash."]
                     },
@@ -614,7 +614,7 @@
                     },
                     {
                         enunciado: "¿Cómo se escribe un comentario de varias líneas?", 
-                        opciones: ["// comentario //", "", "/* comentario */", "** comentario **"], 
+                        opciones: ["// comentario //", "<!-- comentario -->", "/* comentario */", "** comentario **"], 
                         correcta: 2, 
                         feedback: ["Las dobles barras solo comentan una línea.", "Ese es el formato para comentar en HTML.", "¡Sí! Todo lo que haya entre /* y */ será ignorado por el navegador.", "Ese formato se usa en Markdown para poner negritas."]
                     }
